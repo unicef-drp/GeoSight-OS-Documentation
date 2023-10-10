@@ -12,3 +12,7 @@ license: This program is free software; you can redistribute it and/or modify it
 ---
 
 # User Guide
+
+This section covers all the activities that users will be performing on the platform.
+
+* [Creating your account](creating-your-account.md) - here we discuss how to set up your own account, and for administrators, how to give people access.

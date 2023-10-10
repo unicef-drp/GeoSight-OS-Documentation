@@ -49,6 +49,7 @@ nav:
                         - user/quickstart/index.md
                 - Guide:
                         - user/guide/index.md
+                        #- Registering: user/guide/creating-your-account.md
                         - Disclaimer: about/disclaimer.md
                         - License: about/license.md
                 - Manual: 
