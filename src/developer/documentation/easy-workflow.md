@@ -57,6 +57,7 @@ You can easily upload images into the documentation sources and then add them to
 3. ``Shift+Drag`` the image into your markdown document.
 4. Edit the image description (the part in square brackets)
 
+
 ## Adding links
 
 You can add a link to any text by doing the following:

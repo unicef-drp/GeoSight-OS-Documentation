@@ -16,3 +16,5 @@ This page walks you through setting up your own account, and for administrators,
 
 ## Registering
 
+
+![The Landing Page](img/landing-page.png)
