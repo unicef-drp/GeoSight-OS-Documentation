@@ -73,3 +73,7 @@ You can easily preview the page you are working on by doing this:
 
 1. Press ``Ctl-Shift-V`` to open a preview of the page you are currently working in.
 2. Drag and drop the preview tab to the right side of the editing environment for a side-by-side view.
+
+## Leaving the editor viewer
+
+Click the 'hamburger' menu and go to the repository.
