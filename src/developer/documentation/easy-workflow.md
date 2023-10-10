@@ -76,4 +76,7 @@ You can easily preview the page you are working on by doing this:
 
 ## Leaving the editor viewer
 
-Click the 'hamburger' menu and go to the repository.
+How to leave the interactive editor.
+
+1. Click the 'hamburger' menu and go to the repository.
+2. Wait a few moments and the 'normal' GitHub page will load.
