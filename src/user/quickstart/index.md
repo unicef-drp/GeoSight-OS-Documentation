@@ -12,7 +12,7 @@ license: This program is free software; you can redistribute it and/or modify it
 ---
 
 # Quickstart
-<!-- Replace all of the titles with relevant titles -->
+This pages describes the main steps to set up a dashboard in GeoSight: from creating an indicator, importing data and creating a dashboard.
 
 ## Installing the Product
 <!-- Easy to follow instructions for installing the product
