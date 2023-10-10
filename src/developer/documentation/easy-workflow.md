@@ -65,8 +65,16 @@ You can add a link to any text by doing the following:
 1. Copy the link from your web browser to your clipboard.
 2. Either
   2.1 Past the link directly into the document sources.
-  2.2 or, highlight some words and press paste, VSCode will create a markdown formatted link.
-2
+  2.2 or, write some words ine square brackets and paste the link in round brackets after, VSCode will create a markdown formatted link.
+
+This is a normal link https://staging-geosight.unitst.org/, [this is a link](https://staging-geosight.unitst.org/).
+
+The above in markdown:
+
+```
+This is a normal link https://staging-geosight.unitst.org/, [this is a link](https://staging-geosight.unitst.org/).
+
+```
 
 ## Page previews
 
