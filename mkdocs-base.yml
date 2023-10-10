@@ -80,7 +80,8 @@ nav:
                 - Manual: developer/manual/index.md
                 - Documentation: 
                         - developer/documentation/index.md
-                        - "Overview": developer/documentation/overview.md
+                        - "Easy Workflow" : developer/documentation/easy-workflow.md
+                        - "Detailed Workflow": developer/documentation/overview.md
                         - "Context Help": developer/documentation/context-help.md
                 - API:
                         - developer/api/index.md
