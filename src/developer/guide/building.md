@@ -38,9 +38,7 @@ Once you see that, you can continue the next step below.
 
 Open  terminal within the dev container context by clicking the `+`icon in the terminal pane 1️⃣. The new terminal 2️⃣ will show up in the list of running terminals 3️⃣
 
-
-![image.png](img/building-4.png)
-
+![image.png](img/building-3.png)
 
 ## Run django migration
 
@@ -60,17 +58,20 @@ During this process you will be prompted for your user name (defaults to root), 
 
 ## Run application
 
-After completing the steps above, You need to run the app.
+After completing the steps above, You need to run the app.<br>
+Click `Run and Debug` button 1️⃣ and then select `Django + React` 2️⃣. After it is selected, click `Start Debugging` 3️⃣.
+
 ![image.png](img/building-6.jpg)
 
-Click `Run and Debug` button 1️⃣ and then select `Django + React` 2️⃣. After it is selected, click `Start Debugging` 3️⃣. 
- 
-![image.png](img/building-7.png)
 After run, it will open 2 tab in the right bottom. React 1️⃣ and Python Debug 2️⃣.
 You need to wait Python debug to finish by saying `Quit the server with CONTROL-C.`3️⃣,
 
+![image.png](img/building-7.png)
+
+And for React, you need to wait until it shows below message.
+
 ![image.png](img/building-8.png)
-And for React, you need to wait until it shows above message.
+
 
 ## Viewing your test instance
 
