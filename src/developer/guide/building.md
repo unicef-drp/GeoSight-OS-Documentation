@@ -25,6 +25,15 @@ Press `Ctrl -> P` 1️⃣ and then `>`and search for `Rebuild`. Select `Dev Cont
 Once the task is running, a notification 1️⃣ will be shown in the bottom right of the VSCode window. Clicking in the notification will show you the setup progress 2️⃣. Note that this make take quite a while depending on the internet bandwidth you have and the CPU power of your machine.
 
 ![image.png](img/building-2.png)
+
+At the end of this process, you will see a message like this:
+
+```
+[229365 ms] Port forwarding 53251 > 46727 > 46727 terminated with code 0 and signal null.
+```
+
+Once you see that, you can continue the next step below.
+
 ## Open a dev container terminal
 
 Open  terminal within the dev container context by clicking the `+`icon in the terminal pane 1️⃣. The new terminal 2️⃣ will show up in the list of running terminals 3️⃣

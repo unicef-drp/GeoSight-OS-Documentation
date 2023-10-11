@@ -41,6 +41,7 @@ DJANGO_SETTINGS_MODULE=core.settings.dev
 ```
 
 ![image.png](./img/ide-setup-4.png)
+
 ### Override Docker Configs
 We are going to copy the docker overrides template to a local file that will not be under version control.
 
@@ -54,6 +55,8 @@ Initially you will not need to change anything in this file, though you may want
 
 
 Now that you have your IDE set up, we can move on to [building the project](building.md).
+
+
 
 ## Using pycharm
 
