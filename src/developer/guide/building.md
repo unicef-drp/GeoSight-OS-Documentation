@@ -29,13 +29,6 @@ Once the task is running, a notification 1️⃣ will be shown in the bottom rig
 
 Open  terminal within the dev container context by clicking the `+`icon in the terminal pane 1️⃣. The new terminal 2️⃣ will show up in the list of running terminals 3️⃣
 
-![image.png](img/building-3.png)
-
-## Install FrontEnd libraries
-
-```
-make frontend-dev
-```
 
 ![image.png](img/building-4.png)
 
@@ -55,6 +48,20 @@ python manage.py createsuperuser
 
 During this process you will be prompted for your user name (defaults to root), email address and a password (which you need to confirm). Complete these as needed.
 
+
+## Run application
+
+After completing the steps above, You need to run the app.
+![image.png](img/building-6.jpg)
+
+Click `Run and Debug` button 1️⃣ and then select `Django + React` 2️⃣. After it is selected, click `Start Debugging` 3️⃣. 
+ 
+![image.png](img/building-7.png)
+After run, it will open 2 tab in the right bottom. React 1️⃣ and Python Debug 2️⃣.
+You need to wait Python debug to finish by saying `Quit the server with CONTROL-C.`3️⃣,
+
+![image.png](img/building-8.png)
+And for React, you need to wait until it shows above message.
 
 ## Viewing your test instance
 
