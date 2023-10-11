@@ -85,4 +85,49 @@ http://localhost:2000
 
 The site will be rather bare bones since it will need to be configured in the admin area to set up the theme etc.
 
+## Setup the georepo config
+
+Now to make site working properly, we need to put our georepo config in django admin.
+
+First, we need to login to site.
+
+![image.png](img/building-9.png)
+
+Put username 1️⃣ and password 2️⃣ based on what we create before on phase `Create super user`
+
+![image.png](img/building-10.png)
+
+After logged in, click "white circle" on the top-right 1️⃣  and click `django admin`  2️⃣.
+
+![image.png](img/building-11.png)
+
+Find `Site preferences` 1️⃣  and click it and find GeoRepo section 2️⃣. Uncheck `Georepo using user api key` if you want to not force user to put their own georepo api key, instead using GeoSight api key 3️⃣.
+
+![image.png](img/building-12.png)
+
+First you need to decide which georepo instance you are going to use.
+Put in Georepo url input with <url georepo>/api/v1
+
+Example, we are going to use https://staging-georepo.unitst.org/
+So the GeoRepo url is https://staging-georepo.unitst.org/api/v1
+
+![image.png](img/building-13.png)
+
+There are 2 types of georepo api key, which is level 1 and level 4.
+You can ask georepo admin to provide those 2 key or you can put your own api key for both of those.
+
+To do that, you can go to <your Georepo url>/profile.
+In this case, it is https://staging-georepo.unitst.org/profile
+And you can check documentation how to generate it.
+https://unicef-drp.github.io/GeoRepo-OS/user/api/guide/#generating-an-api-key
+
+One user can just have 1 api key, so for that you can put the same api key to level 1 and level 4.
+So, you can fill Georepo api key level 1 and level 4 with your api key 1️⃣  and Georepo api key level 1 email and level 4 email with your email in georepo 2️⃣.
+
+![image.png](img/building-14.png)
+
+Then click `save` button 1️⃣ in the most bottom of the page and the site is ready.
+
+![image.png](img/building-15.png)
+
 🪧 Now that you have the built the project, move on to the [Design](design.md) documentation.
