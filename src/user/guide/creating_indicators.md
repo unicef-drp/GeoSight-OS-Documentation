@@ -1,3 +1,16 @@
+---
+title: GeoSight-OS Documentation Home - User Account Enrolement 
+summary: GeoSight is UNICEF's geospatial web-based business intelligence platform.
+    - Tim Sutton
+date: 2023-08-03
+some_url: https://github.com/unicef-drp/GeoSight-OS
+copyright: Copyright 2023, Unicef
+contact: geosight-no-reply@unicef.org
+license: This program is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
+#context_id: 1234
+---
+
+# How Do Indicators Work in GeoSight?
 Indicators are a central part of GeoSight, individual pieces of relevant data are uploaded to the platform and in turn are visualized based on location to communicate that information to users. This applies for each dataset, values for the indicator are assigned to the given reference boundaries within the reference dataset.
 Indicators are first created as empty shells. A name, color rule and basic information is applied before any data is imported. In pursuit of open data sharing and ease of access, Indicators are formatted so data can exist across multiple dimensions (time and geographical location/reference dataset) within one common indicator as opposed to repeating indicators for separate countries.
 
@@ -5,7 +18,8 @@ Indicators are first created as empty shells. A name, color rule and basic infor
 
 Similarly, this prevents the repetition of similar or the same indicators that may be created for different time periods, by users from different Country/Regional Offices. As such users are encouraged to use existing indicators and not create country specific ones. 
 
-To create an indicator
+## Creating an Indicator
+
 1.	Navigate to the Indicators tab via the Admin Panel. 
 
     a.	Users can see all existing indicators to search for and manage them. 
