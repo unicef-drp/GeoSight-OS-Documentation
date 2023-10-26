@@ -15,11 +15,18 @@ license: This program is free software; you can redistribute it and/or modify it
 This section describes the key steps for preparing a GeoSight dashboard.
 
 ![Quick Steps](img/geosight-quick-start-main-steps.png)
+
+
 1. Find existing or create a new reference boundary dataset in GeoRepo (e.g. world country boundaries or subnational boundaries for your country / region of interest)
-2. Find existing or create new Indicator(s) -> e.g. Number of armed conflict events, level of malnutrition, number of children etc
-3. Import data for Indicator(s) -> e.g. import one-time from Excel file, or add scheduled data harvesters (from SharePoint or API)
-4. Find existing or add new Context Layer(s) -> e.g. Armed conflict events, location of schools / hospitals / UNICEF offices, areas of control etc
-5. Create a new Project -> Add Indicators -> Create Indicator Layers -> Add Context Layers -> Define Filters -> Define Widgets -> Share your Project
+
+2. Find existing or create new Indicator(s) ➡️ e.g. Number of armed conflict events, level of malnutrition, number of children etc
+
+3. Import data for Indicator(s) ➡️ e.g. import one-time from Excel file, or add scheduled data harvesters (from SharePoint or API)
+
+4. Find existing or add new Context Layer(s) ➡️ e.g. Armed conflict events, location of schools / hospitals / UNICEF offices, areas of control etc
+
+5. Create a new Project ➡️ Add Indicators ➡️ Create Indicator Layers ➡️ Add Context Layers ➡️ Define Filters ➡️ Define Widgets ➡️ Share your Project
+
 
 
 ## How to prepare data for GeoSight?
