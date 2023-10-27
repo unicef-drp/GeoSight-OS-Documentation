@@ -42,6 +42,8 @@ nav:
                 - About: about/index.md
                 - Contributing: about/contributing.md
                 - Code of Conduct: about/code-of-conduct.md
+                - Disclaimer: about/disclaimer.md
+                - License: about/license.md
                 - Running Instances: about/running-instances.md
         - Users:
                 - user/index.md
@@ -49,12 +51,10 @@ nav:
                         - user/quickstart/index.md
                 - Guide:
                         - user/guide/index.md
-                        #- Registering: user/guide/creating-your-account.md
-                        - Disclaimer: about/disclaimer.md
-                        - License: about/license.md
                 - Manual: 
                         - user/manual/index.md
                         - Home Page: user/manual/home.md
+                        - Dashboard Page: user/manual/dashboard.md
                         - Administrator Page: user/manual/administrator-page.md
         - Administrators:
                 - administrator/index.md
@@ -70,20 +70,18 @@ nav:
                         - Prerequisites: developer/guide/prerequisites.md
                         - Cloning: developer/guide/cloning.md
                         - IDE Setup: developer/guide/ide-setup.md
+                        - Configuration: developer/guide/configuration.md
                         - Building: developer/guide/building.md
                         - Design: developer/guide/design.md
                         - Road Map: developer/guide/roadmap.md
                         - Workflows: developer/guide/workflows.md
-                        - Removing: developer/guide/removing.md
                         # Pages to render but exclude from navigation
-                        - "": developer/guide/configuration.md
                         - "": developer/guide/templates/pull-request-template.md 
                         - "": developer/guide/templates/commit-message-convention.md
                 - Manual: developer/manual/index.md
                 - Documentation: 
                         - developer/documentation/index.md
-                        - "Easy Workflow" : developer/documentation/easy-workflow.md
-                        - "Detailed Workflow": developer/documentation/overview.md
+                        - "Overview": developer/documentation/overview.md
                         - "Context Help": developer/documentation/context-help.md
                 - API:
                         - developer/api/index.md
