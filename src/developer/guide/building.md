@@ -85,6 +85,20 @@ http://localhost:2000
 
 The site will be rather bare bones since it will need to be configured in the admin area to set up the theme etc.
 
+## Run demo data
+
+GeoSight has demo data that can be restored.
+
+To restore demo data:
+```
+cd django_project/
+python manage.py loaddata core/fixtures/demo/1.core.json
+python manage.py loaddata core/fixtures/demo/2.geosight_georepo.json
+python manage.py loaddata core/fixtures/demo/3.geosight_data.json
+```
+The demo data is using https://georepo.unicef.org/api/v1/, so change the georepo url and it's config to that API.
+To change it, do the next step.
+
 ## Setup the georepo config
 
 Now to make site working properly, we need to put our georepo config in django admin.
