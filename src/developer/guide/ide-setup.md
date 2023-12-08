@@ -176,10 +176,33 @@ Next step:
 - Do commands below
 ```
 make up
+docker logs -f geosight_django
+```
+
+wait until it says
+```
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55e78f7927d0 pid: 1 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1)
+spawned uWSGI worker 1 (pid: 194, cores: 1)
+spawned uWSGI worker 2 (pid: 195, cores: 1)
+unable to stat() /tmp/touch-me-to-reload, events will be triggered as soon as the file is created
+```
+
+After that, do below commands:
+```
+ctrl + c
+make dev
+```
+or on new terminal
+```
 make dev
 ```
 
-Wait until it is on.
+Wait until it is done.
 
 The web can be accessed using `http://localhost:2000/`
 
