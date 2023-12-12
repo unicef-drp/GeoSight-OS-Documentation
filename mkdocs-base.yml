@@ -51,6 +51,9 @@ nav:
                         - user/quickstart/index.md
                 - Guide:
                         - user/guide/index.md
+                        - Creating Your Account: user/guide/creating-your-account.md
+                        - Creating Indicators: user/guide/creating_indicators.md
+                        - Importing Data: user/guide/importing_data.md
                 - Manual: 
                         - user/manual/index.md
                         - Home Page: user/manual/home.md
@@ -72,6 +75,7 @@ nav:
                         - IDE Setup: developer/guide/ide-setup.md
                         - Configuration: developer/guide/configuration.md
                         - Building: developer/guide/building.md
+                        - Removing: developer/guide/removing.md
                         - Design: developer/guide/design.md
                         - Road Map: developer/guide/roadmap.md
                         - Workflows: developer/guide/workflows.md
