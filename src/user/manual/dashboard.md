@@ -20,7 +20,7 @@ The Dashboard page is where users can interact with the final GeoSight dashboard
 
 1. Left panel - contains a list of Indicator Layers, Context Layers and Filters.
 2. Map window - is used to visualize Indicator Layers, Context Layers and Basemaps along with map legend, map disclaimer and Time Slider.
-3. Widget panel - shows widgets that display sumary data.
+3. Widget panel - shows widgets that display summary data.
 4. Map toolbar - contains a number of tools for interacting with the map and side panels. Users can change Date/Time settings, admin level, switch between 2D/3D modes etc.
 5. Top panel - depending on priviledges users can enter the Edit mode, open Admin panel, open the Help Center or access their Profile page. 
 
