@@ -37,7 +37,7 @@ If the description overflows the space provided, you can scroll vertically insid
 
 ## Log In
 
-If you have an account on the platform, you can click the log in link to enter your account credentials.
+If you have an account on the platform, you can click the login link to enter your account credentials.
 
 ## Home Link
 
