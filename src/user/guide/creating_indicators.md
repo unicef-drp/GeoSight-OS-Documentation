@@ -4,7 +4,7 @@ summary: GeoSight is UNICEF's geospatial web-based business intelligence platfor
     - Tim Sutton
 date: 2023-08-03
 some_url: https://github.com/unicef-drp/GeoSight-OS
-copyright: Copyright 2023, Unicef
+copyright: Copyright 2024, Unicef
 contact: geosight-no-reply@unicef.org
 license: This program is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
 #context_id: 1234
@@ -24,7 +24,12 @@ Similarly, this prevents the repetition of similar or the same indicators that m
 
     a.	Users can see all existing indicators to search for and manage them. 
 2.	Select the Add New Indicator button on the top right.
-3.	Complete the Form tab (figure 4)
+
+![Add New Indicator Button Location](image-5.png)
+
+## General Tab
+
+3.	Complete the General tab (figure 4)
     
     a.	Enter background on the indicator, including: 
 
@@ -44,6 +49,8 @@ Similarly, this prevents the repetition of similar or the same indicators that m
               - Categories are text values
     A description, data source, unit as well as min and max values are optional.
 
+## Aggregations Tab
+
 4.	Complete the Aggregations tab which allows for the summarization of high level sub-national data into larger administrative districts. (optional)
 
     a.	Check the box “Allow aggregation upper level”.
@@ -56,14 +63,18 @@ Similarly, this prevents the repetition of similar or the same indicators that m
         - AVG is the average of the data within the appropriate sub-districts. 
     Aggregation multiple values is for the management of different instances of the dataset over a period of time. 
 
+## Style Tab 
+
 5. Complete the Style tab (figure 6) to decide how your data is visualized (see Styles for details).
 
      a.	Either create a custom style, use a pre-made one from the library OR a dynamic style
 
+## Label Tab
+
 6.	Complete the Label (figure 7) to create labels for the administrative polygons. (optional)
 
      a.	Complete the textbox to decide the contents of the label in brackets "{ }".
-
+     
         "code" = geography code
         "date"= date of data
         "label" = label of data based on
@@ -75,7 +86,11 @@ Similarly, this prevents the repetition of similar or the same indicators that m
 7.	Select Save in the top right. 
 
     a.	This will confirm and save your indicator settings. 
+
+## Editing Indicators
+
 8.	To make changes to an indicator, select the blue name on the main indicator page and the same tabs will appear. (optional)
+
 9.	Batch Editing allows for users to make the same feature changes to multiple indicators at once. 
 
     a.	Select desired indicators
