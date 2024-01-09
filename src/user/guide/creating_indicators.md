@@ -2,7 +2,7 @@
 title: GeoSight-OS Documentation Home - User Account Enrolement 
 summary: GeoSight is UNICEF's geospatial web-based business intelligence platform.
     - Tim Sutton
-date: 2023-08-03
+date: 2024-01-09
 some_url: https://github.com/unicef-drp/GeoSight-OS
 copyright: Copyright 2024, Unicef
 contact: geosight-no-reply@unicef.org
