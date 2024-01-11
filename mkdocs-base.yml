@@ -76,6 +76,7 @@ nav:
                         - Data Browser Page: user/manual/data-browser.md
                         - Data Access Page: user/manual/data-access.md
                         - Logs: user/manual/logs.md
+                        - Users and Groups: user/manual/users-and-groups.md
         - Administrators:
                 - administrator/index.md
                 - Guide:
