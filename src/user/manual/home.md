@@ -17,7 +17,13 @@ license: This program is free software; you can redistribute it and/or modify it
 
 GeoSight is an open-source web geospatial data platform developed by UNICEF for easy data visualization and analysis. It is specifically designed to simplify the creation of online maps for visualizing multiple indicators at a sub-national level to support evidence-based decision-making for better results for children. This data is displayed utilizing reference boundaries pulled dynamically from GeoRepo.
 
-The home page is your first destination when opening GeoSight. It contains 1️. a banner, 2️. a list of projects (either owned by you or shared with you) and, 3️. Admin/User menu.
+The home page is your first destination when opening GeoSight. It contains:
+
+1️. A banner
+
+2️. a list of projects (either owned by you or shared with you) 
+
+3️. Admin/User menu.
 
 ## The Project Gallery 
 
