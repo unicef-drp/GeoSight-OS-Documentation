@@ -73,6 +73,9 @@ nav:
                         - Basemaps Page: user/manual/basemaps-edit-page.md
                         - Styles Page: user/manual/creating-styles-page.md
                         - Data Importer Page: user/manual/data-importer.md
+                        - Data Browser Page: user/manual/data-browser.md
+                        - Data Access Page: user/manual/data-access.md
+                        - Logs: user/manual/logs.md
         - Administrators:
                 - administrator/index.md
                 - Guide:
