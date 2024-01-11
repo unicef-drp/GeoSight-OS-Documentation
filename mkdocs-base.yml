@@ -51,6 +51,16 @@ nav:
                         - user/quickstart/index.md
                 - Guide:
                         - user/guide/index.md
+                        - Creating Projects: user/guide/creating-projects.md
+                        - Creating Indicators: user/guide/indicator-page.md
+                        - Creating Context Layers: user/guide/creating-context-layers.md
+                        - Creating Basemaps: user/guide/creating-basemaps.md
+                        - Creating Styles: user/guide/creating-styles.md
+                        - Importing Data: user/guide/importing_data.md
+                        - Related Tables: user/guide/related-tables.md
+                        - Adding Users and Groups: user/guide/adding-users-groups.md
+                        - Sharing: user/guide/sharing.md
+                        - Access Requests: user/guide/access-request-guide.md
                 - Manual: 
                         - user/manual/index.md
                         - Home Page: user/manual/home.md
