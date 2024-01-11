@@ -53,6 +53,7 @@ nav:
                         - user/guide/index.md
                         - Creating Projects: user/guide/creating-projects.md
                         - Creating Indicators: user/guide/indicator-page.md
+                        - Indicator Layers: user/guide/indicator-layers.md
                         - Creating Context Layers: user/guide/creating-context-layers.md
                         - Creating Basemaps: user/guide/creating-basemaps.md
                         - Creating Styles: user/guide/creating-styles.md
