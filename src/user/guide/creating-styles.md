@@ -17,7 +17,9 @@ In short, the user is determining the legend and how the data is visualized.
 To create color rules, users simply need to follow the color matrix presented to them.
 
 ### Name 
-the Label you wish to assign to the class of values. This can be any text or numerical values and will appear (next to the chosen color) on the legend.
+The label you wish to assign to the class of values. This can be any text or numerical values and will appear (next to the chosen color) on the legend.
+
+![Legend Example](image-18.png)
 
 ### Rule
 

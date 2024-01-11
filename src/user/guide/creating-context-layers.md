@@ -61,7 +61,7 @@ Context Layers are geospatial information that is not tied to an administrative 
 
 ![Context Layer Edit Page with URL and Token Applied](image-7.png)
 
-9.	Check the validity of the context layer below. 
+9. Check the validity of the context layer below. 
 
     a.	“Map” option displays the visualization of the layer. 
 
@@ -69,9 +69,9 @@ Context Layers are geospatial information that is not tied to an administrative 
 
     c.	“Styles” allows you to dictate how the layer appears.
 
-10.	Click submit to save the layer.
+10. Click submit to save the layer.
 
-11.	 Style, Label and Display options are available in the following tabs. 
+11. Style, Label and Display options are available in the following tabs. 
 	
     Like Indicators, Context Layers can be managed by navigating to the context layer section and clicking on the name of the desired layer.
 
