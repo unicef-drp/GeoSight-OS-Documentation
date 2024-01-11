@@ -12,6 +12,10 @@ license: This program is free software; you can redistribute it and/or modify it
 ---
 
 # Basemaps
+Basemaps are layers of geographic information that serve as a background for maps and provide additional context that often is static, and may not be captured in a layer.
+
+![Alt text](image-1.png)
+
 The basemap creation page allows users to add, edit and manipulate basemaps that they have access to. Adding a basemap requires just a few elements.
 1.	General – metadata including a name, description, URL and file type.
 2.	Share – allows those with access to control, add and remove permissions for users, groups and the public.
