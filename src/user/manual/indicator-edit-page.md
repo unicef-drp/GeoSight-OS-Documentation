@@ -22,13 +22,18 @@ Indicators are standard across GeoSight, and for the purposes of data management
 Accessible indicators are highlighted with _blue_ text.
 
 
-# Indicator Editing
+## Indicator Editing
 
 The indicator creation page allows users to add, edit and manipulate indicators that they have access to. Remember, any changes made to an indicator on this page are global. Project specific changes should be done under the “Indicator Layers” section of the project creation page. Creating an indicator requires 5 different elements.
+
 1.	General – metadata including a name, description, short code and category.
+
 2.	Aggregation -  determines if/how data will be aggregated across administrative boundaries as well as time. 
+
 3.	Style – determines the visualization and front-end display of an indicator.
+
 4.	Labels -  determines if/how a label looks on a project for each administrative area.
+
 5.	Share – allows those with access to control, add and remove permissions for users, groups and the public.
 
 **DO NOT CREATE ANY COUNTRY SPECIFIC INDICATORS THAT MIGHT ALREADY EXIST AS GLOBAL INDICATORS**
