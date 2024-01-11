@@ -17,5 +17,7 @@ Basemaps are layers of geographic information that serve as a background for map
 ![Alt text](image-1.png)
 
 The basemap creation page allows users to add, edit and manipulate basemaps that they have access to. Adding a basemap requires just a few elements.
+
 1.	General – metadata including a name, description, URL and file type.
+
 2.	Share – allows those with access to control, add and remove permissions for users, groups and the public.

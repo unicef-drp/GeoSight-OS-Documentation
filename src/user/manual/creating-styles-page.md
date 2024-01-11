@@ -24,6 +24,9 @@ Styles can be understood as a dynamic tool that can exist in many different vers
 
 ## Adding Styles and Color Rules
 The "Add New Styles" page allows users to add, edit and manipulate styles in the style library that they have access to. Creating a style requires just a few elements, but comes with various customization options.
+
 1.	General – metadata including a name, description, category and value type.
+
 2.	Style Config – where users can either manually define the boundaries of a style OR develop an automatic classification for both quantitative and qualitative values.
+
 3.	Share – allows those with access to control, add and remove permissions for users, groups and the public.
