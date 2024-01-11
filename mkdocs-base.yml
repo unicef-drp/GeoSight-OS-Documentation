@@ -67,6 +67,7 @@ nav:
                         - user/manual/index.md
                         - Home Page: user/manual/home.md
                         - Dashboard Page: user/manual/dashboard.md
+                        - Analysis Tools: user/manual/analysis-tools.md
                         - Administrator Page: user/manual/administrator-page.md
                         - Projects Page: user/manual/project-page.md
                         - Data Importer Page: user/manual/data-importer.md
