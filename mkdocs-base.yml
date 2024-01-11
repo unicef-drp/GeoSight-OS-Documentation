@@ -56,7 +56,7 @@ nav:
                         - Home Page: user/manual/home.md
                         - Dashboard Page: user/manual/dashboard.md
                         - Administrator Page: user/manual/administrator-page.md
-                        - Data Importer Page: user/manual/data-importer.md
+                        - Data Importer Page: /user/manual/data-importer/
         - Administrators:
                 - administrator/index.md
                 - Guide:
