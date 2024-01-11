@@ -56,7 +56,13 @@ nav:
                         - Home Page: user/manual/home.md
                         - Dashboard Page: user/manual/dashboard.md
                         - Administrator Page: user/manual/administrator-page.md
+                        - Projects Page: user/manual/project-page.md
                         - Data Importer Page: user/manual/data-importer.md
+                        - Indicator Page: user/manual/indicator-edit-page.md
+                        - Context Layers: user/manual/context-layer-edit-page.md
+                        - Basemaps Page: user/manual/basemaps-edit-page.md
+                        - Styles Page: user/manual/creating-styles-page.md
+                        - Style Library Page: user/manual/style-library-page.md
         - Administrators:
                 - administrator/index.md
                 - Guide:
