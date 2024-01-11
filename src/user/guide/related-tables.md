@@ -60,3 +60,21 @@ Next, related table indicator layers can be created, like many other features, i
 4.	Set color rules (See Styles).
 
 5.	Verify the data is valid and click Apply. 
+
+## Manipulating Splicers as Indicator Layers
+
+To create multi-Indicator layers, navigate to the Indicator Layer tab under project managemnt 
+
+1.	Select Add Indicator Layer and then Multi Indicators Layer in the pop-up
+
+2.	Complete the filter to select your indicators, it is identical to other layer filters such as time series widgets.
+
+        a. Determine the color by using the color selection tool.
+
+3.	Determine the chart type and size.
+
+        a. Users can display a pie chart or bar chart.
+
+        b. Size can be standardized or flexible.
+
+![Slicers](image-23.png)
