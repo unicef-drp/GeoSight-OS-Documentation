@@ -62,6 +62,7 @@ nav:
                         - Context Layers: user/manual/context-layer-edit-page.md
                         - Basemaps Page: user/manual/basemaps-edit-page.md
                         - Styles Page: user/manual/creating-styles-page.md
+                        - Data Importer Page: user/manual/data-importer.md
         - Administrators:
                 - administrator/index.md
                 - Guide:
