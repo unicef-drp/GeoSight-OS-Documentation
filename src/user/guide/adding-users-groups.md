@@ -11,6 +11,7 @@ license: This program is free software; you can redistribute it and/or modify it
 ---
 # Adding Users and Groups
 Most users, including all UNICEF staff and some consultants are able to access GeoSight with their UNCIEF email. In some cases, access may be needed for someone without a UNICEF email, including a consultant or government partner. Whatever the case may be, users can be created in the Users and Groups tab of the Access section.
+
 1.	Navigate to and select "+ Add New Groups"
 
 2.	Enter the information including Name and Email
