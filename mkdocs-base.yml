@@ -81,6 +81,7 @@ nav:
                         - Data Access Page: user/manual/data-access.md
                         - Logs: user/manual/logs.md
                         - Users and Groups: user/manual/users-and-groups.md
+                        - PDF User Guide: user/manual/GeoSight User Guide.pdf
         - Administrators:
                 - administrator/index.md
                 - Guide:
