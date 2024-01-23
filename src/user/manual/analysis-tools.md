@@ -24,6 +24,8 @@ This enables the unique data visualization feature where one indicator becomes a
 
 ![Compare Layers Tool](image-3.png)
 
+## 3D Layers
+
 The 3D layers tool is an important tool that enables for the analysis and comprehension of different values across different administrative polygons. In a 2D model, indicators are split into different classifications, but all values within the same class are the same color and so the values appear the same. By enabling a 3D view, GeoSight allows users to consider values within the same class and understand how these administrative areas differ to one another. 
 
 Users can enable this view by clicking the _3D Layers_ button  which is located at the top of the project. 

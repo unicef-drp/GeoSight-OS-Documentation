@@ -11,6 +11,7 @@ license: This program is free software; you can redistribute it and/or modify it
 ---
 # Creating a Project
 The project helps to display context and indicators layers have tools and widgets for performing data analysis on country/regional levels. 
+
 1.	Navigate to the project section under the admin panel. 
 
 2.	Select “Add New Project” 
@@ -26,7 +27,7 @@ The project helps to display context and indicators layers have tools and widget
     c.	Define available levels
 
         i.	This allows users to control what administrative levels can be used. This can limit the display of empty datasets and allow the management of datasets across different scales.
-    d.	Define the extent (figure 17)
+    d.	Define the extent
 
         i.	Extent- T view you would like the dashboard to open on. 
 
@@ -52,11 +53,11 @@ The project helps to display context and indicators layers have tools and widget
 
         iv.	The number in parentheses shows the number of indicators you’ve selected.
 
-![Grouping indicator layers and adjusting their name ](image-2.png)
-
 ## Indicator Layers Tab
 
-6.	Complete the Indicator Layers tab (figure 17)
+6.	Complete the Indicator Layers tab
+
+![Grouping indicator layers and adjusting their name ](image-2.png)
 
     a.	Add individual indicators using the “Add Indicators” button. 
 
@@ -72,19 +73,25 @@ The eye symbol ![Eye Symbol](image-4.png) represents the chosen indicator layer 
     
 Types of Indicator Layers include:
 
-    a. 	Single Layers are for visualizing single and simple indicators. They are the base type of Indicator Layer, and simply display one dataset and within the chosen reference dataset.
+### Single Layers 
+Visualizing single and simple indicators. They are the base type of Indicator Layer, and simply display one dataset and within the chosen reference dataset.
 
-    b.	Multi-Indicator Layers are analysis tools that visualize multiple layer values in proportion to one another via pie or bar charts. 
+### Multi-Indicator Layers 
+Analysis tools that visualize multiple layer values in proportion to one another via pie or bar charts. 
+    
+    When defining this style, users will be prompted to select the desired indicators as well as determine one appropriate color for that indicator. 
 
-    c.	When defining this style, users will be prompted to select the desired indicators as well as determine one appropriate color for that indicator. 
+### Dynamic Layers 
+Customizable layers that can be created by using a custom expression tailored by user feedback.
 
-    d.	Dynamic Layers are customizable layers that can be created by using a custom expression tailored by user feedback.
+    Users will be prompted to define SQL expressions that allow for data to be filtered and selected from other datasets for visualization.
 
-    e.	Users will be prompted to define SQL expressions that allow for data to be filtered and selected from other datasets for visualization.
+### Related Tables 
+Layers that allow for Splicing and the manipulation of previously uploaded related tables. See Related Tables for more details.
 
-    f.	Related Tables are layers that allow for Splicing and the manipulation of previously uploaded related tables. See Related Tables for more details.
-
-    g.	The Configure option allows for project specific visualization adjustments. This can be useful when the indicator default does not fit your needs.
+    
+### Configure Layers
+The Configure option allows for project specific visualization adjustments. This can be useful when the indicator default does not fit your needs.
 
         i.	General allows users to adjust metadata and available administrative levels.
 
@@ -106,7 +113,7 @@ Types of Indicator Layers include:
 
         ii.	You can add context layers to the group by selecting “Add to group” or adding a single context layer and dragging it into the group. 
 
-        iii.	Similarly, groups can be nested within one another, but a context layer must be present within a group as well for the group to save.
+        iii. Similarly, groups can be nested within one another, but a context layer must be present within a group as well for the group to save.
 
 ## Basemap Tab
 
@@ -121,11 +128,11 @@ Types of Indicator Layers include:
 
     c.	To group basemap, select “Add Group”. 
 
-        i.	You can name the group by selecting the pencil icon and entering the name in the text box. 
+        i. You can name the group by selecting the pencil icon and entering the name in the text box. 
 
-        ii.	You can add basemap to the group by selecting “Add to group” or adding a single basemap and dragging it into the group. 
+        ii. You can add basemap to the group by selecting “Add to group” or adding a single basemap and dragging it into the group. 
 
-        iii.	Similarly, groups can be nested within one another, but a basemap must be present within a group as well for the group to save.
+        iii. Similarly, groups can be nested within one another, but a basemap must be present within a group as well for the group to save.
 
         iv.	Use the Open Street Map basemap (OSM) as it shows country borders and when zoomed, local roads. 
 
@@ -141,7 +148,7 @@ Types of Indicator Layers include:
 
         ii.	Read allows them to view it. 
 
-        iii.	Write allows them to edit the project and make changes. 
+        iii. Write allows them to edit the project and make changes. 
 
         iv.	Share allows them to control access to the project.
     

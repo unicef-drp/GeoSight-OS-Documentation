@@ -25,17 +25,17 @@ The label you wish to assign to the class of values. This can be any text or num
 
 Determines the values/categories that are assigned the chosen color. 
 
-    Numbers
+#### Numbers
 
-    Numerical values that can either be a singular value or a range of values. Users can only enter in one box, or the other. 
+Numerical values that can either be a singular value or a range of values. Users can only enter in one box, or the other. 
 
-        a. Ranges are written as: Greater than the value on the left & Less than or Equal to the value on the right. 
+    a. Ranges are written as: Greater than the value on the left & Less than or Equal to the value on the right. 
 
-    Categories
+#### Categories
     
-    The category data type allows for string/text fields to be imported as datasets for total data visualization.
+The category data type allows for string/text fields to be imported as datasets for total data visualization.
     
-    If appropriate, users may set this for their color rules.
+If appropriate, users may set this for their color rules.
 
 ### Color
     
