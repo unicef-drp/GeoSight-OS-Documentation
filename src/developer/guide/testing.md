@@ -74,9 +74,9 @@ npx playwright install --with-deps
 npx playwright install chromium --with-deps
 ```
 
-## Setting up playwright
+## Setting up playwright and usage
 
-### For continuous integration(`CI`):
+### For continuous integration(`CI`)
 
 Playwright does support Continuous Integration.
 For more information, visit the [playwright ci docs](https://playwright.dev/docs/ci-intro).
@@ -115,6 +115,9 @@ npx playwright test
 By default, this test will run in `headless` mode(No browser will be opened).
 
 ### For staging tests
+
+
+#### Linux/WSL based systems
 
 In setting up environment for staging tests, it uses the same approach as in setting up for CI.
 The only difference is that installing dependencies for CI won't be required.
@@ -180,6 +183,133 @@ It will use the session state that was previously created.
 - It will open a GUI playwright test runner with all tests. You can then proceed to run the tests.
 
 ![GUI test runner](./img/testing-e2e-playwright-14.png)
+
+#### Windows based systems
+
+This is strictly for windows based systems not using WSL.
+
+On Visual Studio Code, click on the `Run and debug` icon.
+
+![setup playwright1](./img/testing-e2e-playwright-39.png)
+
+Click on the drop-down button.
+You will be able to see the options available.
+
+![setup playwright2](./img/testing-e2e-playwright-38.png)
+
+##### Create an authentication file
+
+Click on `Playwright runner: Authentication`.
+It will check if you have playwright installed, and if it is not installed, it will be installed.
+
+![create auth](./img/testing-e2e-playwright-22.png)
+
+After the installation is complete, it will create an authentication file.
+This file is necessary as you will be able to save a session state.
+In this case, to save the logged-in session.
+
+Click on Log in.
+
+![proceed to login](./img/testing-e2e-playwright-28.png)
+
+Enter your details.
+Proceed to Sign in.
+Once signed in, close the browser window.
+
+![proceed to login 2](./img/testing-e2e-playwright-29.png)
+
+If you look at the files in Visual Studio Code, you will notice the `auth` file has been created.
+
+![auth file created](./img/testing-e2e-playwright-21.png)
+
+##### Recording tests
+
+The next step will be to record our steps.
+Click on `Playwright runner: Create test`.
+
+![record test2](./img/testing-e2e-playwright-30.png)
+
+It will prompt the file name.
+
+![record test_filename](./img/testing-e2e-playwright-31.png)
+
+It will start a browser session.
+At the top, this is a panel with tools used for testing.
+
+![record test3](./img/testing-e2e-playwright-33.png)
+
+You can start by;
+
+1. Click on the tool highlighted with `1`.
+2. Click on the text highlighted with the arrow labelled `2`
+3. Look at the text box that appears after clicking on the text.
+Click the green tick.
+
+We have recorded a test to assert if that element contains that text.
+
+![record test4](./img/testing-e2e-playwright-34.png)
+
+Proceed to click on `Demo GeoSight project`.
+
+It will open the below page.
+
+Click on `district` available on the map the click on the highlighted tool on the panel.
+Click on the name at the top of the pop-up.
+
+Click on the tool again then click on the value of the pop-up.
+
+Basically what we have done is record a test to assert if the pop-up is visible when a district is clicked on the map.
+
+![record test5](./img/testing-e2e-playwright-35.png)
+
+You can proceed to the search bar on the top right.
+
+Click on the highlighted tool on the panel.
+
+Click on the search bar(asserts that the search bar is empty).
+
+Enter a value for example `somalia` in this case then click on search.
+
+Click on the highlighted tool again then on the search bar.
+
+This asserts if the value typed in the search bar did not change or clear after clicking search.
+
+![record test6](./img/testing-e2e-playwright-36.png)
+
+After recording tests, you can proceed to close the browser.
+You will see the test file has been generated in the `tests` folder under `staging-tests`.
+
+![record test7](./img/testing-e2e-playwright-37.png)
+
+**Note:** You can create an authentication file and start recording tests by using one option.
+Click on `Playwright runner: Authentication + Create test`.
+
+![record test8](./img/testing-e2e-playwright-24.png)
+
+##### Running tests
+
+To run the tests, Click on `Playwright runner: Run test`.
+
+![run test](./img/testing-e2e-playwright-40.png)
+
+It will start up a browser session whereby you can run the tests.
+
+On the browser session;
+
+1. Shows the recorded test.
+When you click on the triangle icon next to it, the test will execute.
+2. Shows the view panel. You can view the tests execute step by step.
+3. Shows the script or where the check fails.
+
+![run test2](./img/testing-e2e-playwright-41.png)
+
+You can use the playwright extension as well to run the tests.
+
+Click on the testing icon, and then click on the test you want to run.
+Click on the triangle next to it.
+
+![run test3](./img/testing-e2e-playwright-42.png)
+
 
 ### Setup using visual studio code
 
