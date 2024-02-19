@@ -36,4 +36,15 @@ The indicator creation page allows users to add, edit and manipulate indicators 
 
 5.	Share – allows those with access to control, add and remove permissions for users, groups and the public.
 
+### Indicator Repetition Tool
+
+As a part of the data management strategy of GeoSight, the goal is to prevent indicator repetition as all data should be stored within the same indicator across time series and geographies. 
+
+Because of this, GeoSight has a tool developed to prevent this and alert users of similar indicators during the creation process. 
+
+This tool will be activated when users enter a name for their indicator. GeoSight will then compare the similarity of the name/indicator details to the one you are creating as a way to help users determine whether or not this indicator already exists.
+
+![image](https://github.com/unicef-drp/GeoSight-OS-Documentation/assets/110991093/591c2b7e-cdf3-468f-9b43-eb82633b23dc)
+
+
 **DO NOT CREATE ANY COUNTRY SPECIFIC INDICATORS THAT MIGHT ALREADY EXIST AS GLOBAL INDICATORS**
