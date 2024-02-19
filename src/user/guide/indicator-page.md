@@ -53,6 +53,17 @@ Accessible indicators are highlighted with _blue_ text.
               - Categories are text values
     A description, data source, unit as well as min and max values are optional.
 
+### Indicator Repitition
+
+As a part of the data management strategy of GeoSight, the goal is to prevent indicator repetition as all data should be stored within the same indicator across time series and geographies. 
+
+Because of this, GeoSight has a tool developed to prevent this and alert users of similar indicators during the creation process. 
+
+This tool will be activated when users enter a name for their indicator. GeoSight will then compare the similarity of the name/indicator details to the one you are creating as a way to help users determine whether or not this indicator already exists.
+
+
+![image](https://github.com/unicef-drp/GeoSight-OS-Documentation/assets/110991093/4f1c5d79-2836-401a-9925-8d846625ca10)
+
 ## Aggregations Tab
 
 4.	Complete the Aggregations tab which allows for the summarization of high level sub-national data into larger administrative districts. (optional)
@@ -90,17 +101,6 @@ Accessible indicators are highlighted with _blue_ text.
 7.	Select Save in the top right. 
 
     a.	This will confirm and save your indicator settings. 
-
-### Indicator Repitition
-
-As a part of the data management strategy of GeoSight, the goal is to prevent indicator repetition as all data should be stored within the same indicator across time series and geographies. 
-
-Because of this, GeoSight has a tool developed to prevent this and alert users of similar indicators during the creation process. 
-
-This tool will be activated when users enter a name for their indicator. GeoSight will then compare the similarity of the name/indicator details to the one you are creating as a way to help users determine whether or not this indicator already exists.
-
-
-![image](https://github.com/unicef-drp/GeoSight-OS-Documentation/assets/110991093/4f1c5d79-2836-401a-9925-8d846625ca10)
 
 
 ## Editing Indicators
