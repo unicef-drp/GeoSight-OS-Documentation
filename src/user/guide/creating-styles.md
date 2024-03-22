@@ -37,6 +37,14 @@ The category data type allows for string/text fields to be imported as datasets 
     
 If appropriate, users may set this for their color rules.
 
+- Catagories are managed via a code list which is specified as codes of value being used. The codes exist in brackets. 
+
+        Example: Male (m), the value that expected for indicator is 'm'. 
+
+- Codelists can be managed by super-admins. 
+
+_**Please contact GeoSight administrator(s) if you need to create a new codelist or add a new value to the existing codelist.**_
+
 ### Color
     
 The interior color of the administrative polygon (including when using the compare layers tool). This color will also be what is next to the label/name in the legend. 
