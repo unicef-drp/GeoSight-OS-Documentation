@@ -61,6 +61,12 @@ Next, related table indicator layers can be created, like many other features, i
 
 5.	Verify the data is valid and click Apply. 
 
+## Visualizing Point Data from Related Tables
+
+Related tables can also include latitude and longitude (x & y) data that users can visualize as indicators. These related tables can be imported and added as indicator layers are normally imported. 
+
+To configure these point layers, users can determine the configuration of the dataset by adding **Related Tables** as an **Indicator Layer** (see above). 
+
 ## Manipulating Splicers as Indicator Layers
 
 To create multi-Indicator layers, navigate to the Indicator Layer tab under project managemnt 
