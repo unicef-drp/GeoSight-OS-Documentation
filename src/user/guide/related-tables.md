@@ -65,7 +65,18 @@ Next, related table indicator layers can be created, like many other features, i
 
 Related tables can also include latitude and longitude (x & y) data that users can visualize as indicators. These related tables can be imported and added as indicator layers are normally imported. 
 
-To configure these point layers, users can determine the configuration of the dataset by adding **Related Tables** as an **Indicator Layer** (see above). 
+To configure these point layers, users can determine the configuration of the dataset through adding Related Tables as a context layer (see above).
+
+To create this context layer:
+
+1. Upload the related table via the Importer.
+2. 
+3. Create a context layer, setting the layer type as Related Table.
+4. 
+5. After selecting the correct table, you’ll be able to determine the latitude (Y) and longitude (X) fields.
+6. 
+7. Once saved, this will be a successfully created layer available to be added as a context layer to a project.
+ 
 
 ## Manipulating Splicers as Indicator Layers
 
