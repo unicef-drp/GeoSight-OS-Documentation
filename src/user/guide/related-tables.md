@@ -70,12 +70,12 @@ To configure these point layers, users can determine the configuration of the da
 To create this context layer:
 
 1. Upload the related table via the Importer.
-2. 
-3. Create a context layer, setting the layer type as Related Table.
-4. 
-5. After selecting the correct table, you’ll be able to determine the latitude (Y) and longitude (X) fields.
-6. 
-7. Once saved, this will be a successfully created layer available to be added as a context layer to a project.
+   
+2. Create a context layer, setting the layer type as Related Table.
+ 
+3. After selecting the correct table, you’ll be able to determine the latitude (Y) and longitude (X) fields.
+
+4. Once saved, this will be a successfully created layer available to be added as a context layer to a project.
  
 
 ## Manipulating Splicers as Indicator Layers
