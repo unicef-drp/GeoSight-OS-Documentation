@@ -75,7 +75,10 @@ To create this context layer:
  
 3. After selecting the correct table, you’ll be able to determine the latitude (Y) and longitude (X) fields.
 
-4. Once saved, this will be a successfully created layer available to be added as a context layer to a project.
+4. Optionally, users can create filters on this data to allow points with certain characteristics to appear.
+        a. The bottom option reads “Filter the Data” where users can develop an SQL filter
+	- Users can target certain phrases in different columns
+5. Once saved, this will be a successfully created layer available to be added as a context layer to a project.
  
 
 ## Manipulating Splicers as Indicator Layers
