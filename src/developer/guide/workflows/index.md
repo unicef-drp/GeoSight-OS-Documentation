@@ -11,10 +11,9 @@ license: This program is free software; you can redistribute it and/or modify it
 #context_id: 1234
 ---
 
-# End to end test
+# Developer Workflows
 
-GeoSight implements end-to-end testing to ensure the frontend functions correctly. For this purpose, we utilize Playwright.
+In this section of the documentation, we explain how to work with workflows, examples of typical workflows for adding features, fixing bugs etc:
 
-The Playwright tests can be found in the `playwright/ci-test` folder.
-
-
+* **[Github Workflow](./github.md)** Here, we present the documentation workflow for creating a new feature or reporting a bug. 
+* **[End to End Test Workflow](./end-to-end-test.md)** Here, we present the documentation workflow for interacting with end-to-end tests to ensure the frontend functions correctly. 
