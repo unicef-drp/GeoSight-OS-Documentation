@@ -25,6 +25,15 @@ Open the project in VSCode (1️⃣, 2️⃣) by navigating the the place on you
 Accept the 'trust authors' prompt
 
 ![image.png](./img/ide-setup-2.png)
+
+### Install necessary extension
+
+Before proceeding, please ensure that the necessary extension is installed. 
+Navigate to the Extensions panel (1), then search for and install the DevContainers extension (2).
+
+![image.png](./img/ide-setup-7.png)
+
+
 ### Copying the .env
 
 Copy the `template.env` to `.env`

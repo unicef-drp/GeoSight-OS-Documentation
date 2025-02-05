@@ -4,7 +4,7 @@ mkdocs-with-pdf
 #mkpdfs-mkdocs
 # Rather do
 # pip install -e git+https://github.com/jwaschkau/mkpdfs-mkdocs-plugin.git#egg=mkpdfs-mkdocs
-mkdocs-material
+mkdocs-material==9.5.39
 mdx_gh_links
 mkdocs-pdf-export-plugin
 mkdocstrings-python
