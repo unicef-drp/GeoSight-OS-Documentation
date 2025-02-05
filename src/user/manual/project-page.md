@@ -3,6 +3,7 @@ title: GeoSight-OS Project Page
 summary: GeoSight is UNICEF's geospatial web-based business intelligence platform.
     - Tim Sutton
     - Irwan Fathurrahman
+    - Ketan Bamniya
 date: 2024-09-01
 some_url: https://github.com/unicef-drp/GeoSight-OS
 copyright: Copyright 2024, Unicef
@@ -29,4 +30,4 @@ The project creation page allows users to add, edit and manipulate projects that
 
 8.	Related tables – enables users to connect related tables to the project as well as filter the data so it can be added as indicator layers.
 
-9.	Share -  controls the ability of users, groups or the public to access the project.
+9.	[Share](share.md) -  controls the ability of users, groups or the public to access the project.
