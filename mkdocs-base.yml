@@ -52,8 +52,6 @@ nav:
                 - Guide:
                         - user/guide/index.md
                         - Creating Your Account: user/guide/creating-your-account.md
-                        - Creating Indicators: user/guide/creating_indicators.md
-                        - Importing Data: user/guide/importing_data.md
                         - Creating Projects: user/guide/creating-projects.md
                         - Creating Indicators: user/guide/indicator-page.md
                         - Indicator Layers: user/guide/indicator-layers.md
@@ -67,6 +65,7 @@ nav:
                         - Adding Users and Groups: user/guide/adding-users-groups.md
                         - Sharing: user/guide/sharing.md
                         - Access Requests: user/guide/access-request-guide.md
+                        - "": user/guide/API_Documentation.md
                 - Manual: 
                         - user/manual/index.md
                         - Home Page: user/manual/home.md
@@ -85,6 +84,7 @@ nav:
                         - Logs: user/manual/logs.md
                         - Users and Groups: user/manual/users-and-groups.md
                         - PDF User Guide: user/manual/GeoSight User Guide.pdf
+                        - "": user/manual/date-and-time.md
         - Administrators:
                 - administrator/index.md
                 - Guide:
