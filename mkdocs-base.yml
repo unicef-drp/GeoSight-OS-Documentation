@@ -104,7 +104,6 @@ nav:
                         - Plugins: developer/guide/plugins.md
                         - Workflows:
                                 - developer/guide/workflows/index.md
-                                - developer/guide/workflows.md
                                 - "Github": developer/guide/workflows/github.md
                                 - "End to End Test": developer/guide/workflows/end-to-end-test.md
                         - FAQ: developer/guide/faq.md
