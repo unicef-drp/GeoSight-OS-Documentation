@@ -22,6 +22,12 @@ Press `Ctrl -> P` 1️⃣ and then `>`and search for `Rebuild`. Select `Dev Cont
 
 ![image.png](img/building-1.png)
 
+If the option above is not visible, you can click on the bell icon in the bottom-right corner (1). 
+If the DevContainers extension is already installed, an option to Reopen in Container will appear (2). 
+Simply click on this option, and it will automatically build the development containers for you.
+
+![image.png](img/building-16.png)
+
 Once the task is running, a notification 1️⃣ will be shown in the bottom right of the VSCode window. Clicking in the notification will show you the setup progress 2️⃣. Note that this make take quite a while depending on the internet bandwidth you have and the CPU power of your machine.
 
 ![image.png](img/building-2.png)
