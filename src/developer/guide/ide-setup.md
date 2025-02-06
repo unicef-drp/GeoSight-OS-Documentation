@@ -41,13 +41,17 @@ Copy the `template.env` to `.env`
 Edit the `.env` file and change the 
 
 ```
+SECRET_KEY=SECRET_KEY
 DJANGO_SETTINGS_MODULE=core.settings.prod
 ```
 to   
 
 ```
+SECRET_KEY=<Random text as it is the secret key of app>
 DJANGO_SETTINGS_MODULE=core.settings.dev
 ```
+
+Make sure that `SECRET_KEY` is not empty.
 
 ![image.png](./img/ide-setup-4.png)
 
