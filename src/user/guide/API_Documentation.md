@@ -3,14 +3,14 @@
 ## Data-Pipelines
 
 **Running on Databricks**
+
 | **Source** | **Platform** | **Type** |**Description** |**Status** |
-| :--------- | :----------- | :-------------- |:-------------- |:--------- |
+| :--------- | :----------- | :-------------- | :-------------- | :--------- |
 | ACLED | ArcGIS | Point Layer | Conflict Events | ✅ every Friday |
 | ACLED | GeoSight | Indicator | Number of Conflicts in the last 30 days |✅ every Friday |
 | ACLED | GeoSight | Indicator | Number of Fatalities in the last 30 days |✅ every Friday |
 | ACLED | GeoSight | Indicator | % Change of Fatalities in the last 7 days |✅ every Friday |
 | ACLED | GeoSight | Related Table | Conflict Events |🔜 coming soon |
-
 
 The following documentation explains the ETL-scripts for pulling data into a Pandas DataFrame, geocoding the data using **GeoRepo**, and calculating indicators that can be pushed to **GeoSight**, as well as pushing the data points to an **ArcGIS** layer.
 
@@ -18,20 +18,20 @@ The following documentation explains the ETL-scripts for pulling data into a Pan
 
 The directory `ACLED` contains all scripts specifically made for this source of data, along with **further explanation for using the ACLED API and calculating basic conflict indicators**. The general flow of data is as follows:
 
-|-- `ACLED Data - Pull ACLED data into pandas DataFrame`\
-|&emsp;&emsp;Pulls data from the source and structures it into a Pandas DataFrame.\
-|\
-|-- `GeoRepo - Geocoding pandas DataFrames`\
-|&emsp;&emsp;Retrieves the 'ucodes' from GeoRepo for the specified administrative level.\
-&emsp;&emsp;|\
-&emsp;&emsp;|-- `GeoSight - API functions`\
-&emsp;&emsp;|&emsp;&emsp;|-- `GeoSight - ACLED Conflict Indicators`\
-&emsp;&emsp;|&emsp;&emsp;|&emsp;&ensp;Calculates indicators and pushes them to GeoSight.\
-&emsp;&emsp;|&emsp;&emsp;|\
-&emsp;&emsp;|&emsp;&emsp;|-- `GeoSight - ACLED Related Tables`\
-&emsp;&emsp;|&emsp;&emsp;|&emsp;&ensp;*COMING SOON*\
-&emsp;&emsp;|\
-&emsp;&emsp;|-- `ArcGIS - ACLED data pipeline`\
+|-- `ACLED Data - Pull ACLED data into pandas DataFrame`<br/>
+|&emsp;&emsp;Pulls data from the source and structures it into a Pandas DataFrame.<br/>
+|<br/>
+|-- `GeoRepo - Geocoding pandas DataFrames`<br/>
+|&emsp;&emsp;Retrieves the 'ucodes' from GeoRepo for the specified administrative level.<br/>
+&emsp;&emsp;|<br/>
+&emsp;&emsp;|-- `GeoSight - API functions`<br/>
+&emsp;&emsp;|&emsp;&emsp;|-- `GeoSight - ACLED Conflict Indicators`<br/>
+&emsp;&emsp;|&emsp;&emsp;|&emsp;&ensp;Calculates indicators and pushes them to GeoSight.<br/>
+&emsp;&emsp;|&emsp;&emsp;|<br/>
+&emsp;&emsp;|&emsp;&emsp;|-- `GeoSight - ACLED Related Tables`<br/>
+&emsp;&emsp;|&emsp;&emsp;|&emsp;&ensp;*COMING SOON*<br/>
+&emsp;&emsp;|<br/>
+&emsp;&emsp;|-- `ArcGIS - ACLED data pipeline`<br/>
 &emsp;&emsp;|&emsp;&emsp;Updates ArcGIS layer.
 
 
