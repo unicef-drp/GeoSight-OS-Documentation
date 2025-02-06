@@ -65,6 +65,8 @@ nav:
                         - Adding Users and Groups: user/guide/adding-users-groups.md
                         - Sharing: user/guide/sharing.md
                         - Access Requests: user/guide/access-request-guide.md
+                        - Project Page: user/guide/project-page.md
+                        - Share Page: user/guide/share.md 
                         - "": user/guide/API_Documentation.md
                 - Manual: 
                         - user/manual/index.md
@@ -73,6 +75,7 @@ nav:
                         - Analysis Tools: user/manual/analysis-tools.md
                         - Administrator Page: user/manual/administrator-page.md
                         - Projects Page: user/manual/project-page.md
+                        - Share Page: user/manual/share.md
                         - Data Importer Page: user/manual/data-importer.md
                         - Indicator Page: user/manual/indicator-edit-page.md
                         - Context Layers: user/manual/context-layer-edit-page.md
@@ -104,6 +107,7 @@ nav:
                         - Removing: developer/guide/removing.md
                         - Design: developer/guide/design.md
                         - Road Map: developer/guide/roadmap.md
+                        - Testing: developer/guide/testing.md
                         - Plugins: developer/guide/plugins.md
                         - Workflows:
                                 - developer/guide/workflows/index.md

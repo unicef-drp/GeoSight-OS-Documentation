@@ -38,7 +38,8 @@ At the end of this process, you will see a message like this:
 [229365 ms] Port forwarding 53251 > 46727 > 46727 terminated with code 0 and signal null.
 ```
 
-Once you see that, you can continue the next step below.
+Once you see that, you can continue the next step below.<br>
+Note that the Port forwarding can changes everytime you deploy, so as long as it says `terminated with code 0 and signal null`, you are done and can continue to next step.
 
 ## Open a dev container terminal
 
@@ -107,13 +108,13 @@ To change it, do the next step.
 
 ## Setup the georepo config
 
-Now to make site working properly, we need to put our georepo config in django admin.
+Now to make site working properly, you need to put our georepo config in django admin.
 
-First, we need to login to site.
+First, you need to login to site.
 
 ![image.png](img/building-9.png)
 
-Put username 1️⃣ and password 2️⃣ based on what we create before on phase `Create super user`
+Put username 1️⃣ and password 2️⃣ based on what you create before on phase `Create super user`
 
 ![image.png](img/building-10.png)
 
@@ -149,5 +150,54 @@ So, you can fill Georepo api key level 1 and level 4 with your api key 1️⃣  
 Then click `save` button 1️⃣ in the most bottom of the page and the site is ready.
 
 ![image.png](img/building-15.png)
+
+## Troubleshooting
+
+If you find that the server is keep spinning for a long time like below, here is how to fix it.
+
+![image.png](img/building-22.png)
+
+Stop the current run by clicking `stop` button like below image.
+
+![image.png](img/building-17.png)
+
+And click `trash` icon in the React tab like below image.
+
+![image.png](img/building-18.png)
+
+
+After that, you need to run React and Django one by one.<br>
+The idea in here is you need to run React first, wait it is done, after that run Django.
+
+First, you need to run React.<br>
+Click `Run and Debug` button 1️⃣ and then select `React: Run webpack-dev-server` 2️⃣. After it is selected, click `Start Debugging` 3️⃣.
+
+![image.png](img/building-19.png)
+
+And wait until it shows below message.
+
+![image.png](img/building-20.png)
+
+After that, you can run django app.
+Open new terminal by clicking the `+` 1️⃣ and type the below command 2️⃣ in the terminal.
+
+
+```
+cd /home/web/project/django_project
+python manage.py runserver 2000
+```
+
+![image.png](img/building-21.png)
+
+You need to wait until it says `Quit the server with CONTROL-C.`,
+
+After that you can refresh the website.
+
+```
+http://localhost:2000
+```
+
+But make sure that there is no tab that calling the same url at the first time.
+If it is loaded, you can open in multiple tabs.
 
 🪧 Now that you have the built the project, move on to the [Design](design.md) documentation.
