@@ -47,8 +47,7 @@ nav:
                 - Running Instances: about/running-instances.md
         - Users:
                 - user/index.md
-                - Quick Start: 
-                        - user/quickstart/index.md
+                - Quick Start: user/quickstart/index.md
                 - Guide:
                         - user/guide/index.md
                         - Creating Your Account: user/guide/creating-your-account.md
@@ -70,6 +69,9 @@ nav:
                         - "": user/guide/API_Documentation.md
                 - Manual: 
                         - user/manual/index.md
+                        - Project Page:
+                                       - Visualisation Section: user/manual/visualisation/index.md
+                                       - Indicators Page: user/manual/visualisation/indicators-page.md
                         - Home Page: user/manual/home.md
                         - Dashboard Page: user/manual/dashboard.md
                         - Analysis Tools: user/manual/analysis-tools.md
