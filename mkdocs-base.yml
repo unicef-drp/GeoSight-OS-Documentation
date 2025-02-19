@@ -10,130 +10,130 @@ edit_uri: "https://github.com/unicef-drp/GeoSight-OS/blob/main/docs/"
 copyright: Unicef and Contributors
 
 markdown_extensions:
-        - attr_list # lets us resize images see https://github.com/mkdocs/mkdocs/issues/1678#issuecomment-455500757
-        - pymdownx.highlight:
-                  anchor_linenums: true
-        - pymdownx.inlinehilite
-        #- mdx_truly_sane_lists
-        - toc:
-                  permalink: true
-                   #slugify: !!python/name:pymdownx.slugs.slugify
-        - pymdownx.snippets:
-                  base_path: .
-        - admonition
-        - tables
-        - pymdownx.details
-        - pymdownx.caret
-        - pymdownx.keys
-        - pymdownx.mark
-        - pymdownx.tilde
-        - pymdownx.superfences:
-                  custom_fences:
-                          - name: mermaid
-                            class: mermaid
-                            format: !!python/name:pymdownx.superfences.fence_code_format
-        - pymdownx.emoji:
-                  emoji_generator: !!python/name:material.extensions.emoji.to_svg
-                  emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - attr_list
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  # - mdx_truly_sane_lists
+  - toc:
+      permalink: true
+      # slugify: !!python/name:pymdownx.slugs.slugify
+  - pymdownx.snippets:
+      base_path: .
+  - admonition
+  - tables
+  - pymdownx.details
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
 
 nav:
-        - Home:
-                - index.md
-                - About: about/index.md
-                - Contributing: about/contributing.md
-                - Code of Conduct: about/code-of-conduct.md
-                - Disclaimer: about/disclaimer.md
-                - License: about/license.md
-                - Running Instances: about/running-instances.md
-        - Users:
-                - user/index.md
-                - Quick Start: user/quickstart/index.md
-                - Guide:
-                        - user/guide/index.md
-                        - Access Page: user/guide/access/access-request.md
-                        - Creating Your Account: user/guide/creating-your-account.md
-                        - Creating Projects: user/guide/creating-projects.md
-                        - Creating Indicators: user/guide/indicator-page.md
-                        - Indicator Layers: user/guide/indicator-layers.md
-                        - Creating Context Layers: user/guide/creating-context-layers.md
-                        - Creating Basemaps: user/guide/creating-basemaps.md
-                        - Creating Styles: user/guide/creating-styles.md
-                        - Dynamic Styles: user/guide/dynamic-styles.md
-                        - Importing Data: user/guide/importing_data.md
-                        - Related Tables: user/guide/related-tables.md
-                        - Widgets and Filters: user/guide/widgets-and-filters.md
-                        - Adding Users and Groups: user/guide/adding-users-groups.md
-                        - Sharing: user/guide/sharing.md
-                        - Access Requests: user/guide/access-request-guide.md
-                        - Project Page: user/guide/project-page.md
-                        - Share Page: user/guide/share.md 
-                        - "": user/guide/API_Documentation.md
-                - Manual: 
-                        - user/manual/index.md
-                        - Project Page:
-                                       - Visualisation Section: user/manual/visualisation/index.md
-                                       - Indicators Page: user/manual/visualisation/indicators-page.md
-                                       - Access Page: user/manual/access/access-request.md
-                        - Home Page: user/manual/home.md
-                        - Dashboard Page: user/manual/dashboard.md
-                        - Analysis Tools: user/manual/analysis-tools.md
-                        - Administrator Page: user/manual/administrator-page.md
-                        - Projects Page: user/manual/project-page.md
-                        - Share Page: user/manual/share.md
-                        - Data Importer Page: user/manual/data-importer.md
-                        - Indicator Page: user/manual/indicator-edit-page.md
-                        - Context Layers: user/manual/context-layer-edit-page.md
-                        - Basemaps Page: user/manual/basemaps-edit-page.md
-                        - Styles Page: user/manual/creating-styles-page.md
-                        - Data Importer Page: user/manual/data-importer.md
-                        - Data Browser Page: user/manual/data-browser.md
-                        - Data Access Page: user/manual/data-access.md
-                        - Logs: user/manual/logs.md
-                        - Users and Groups: user/manual/users-and-groups.md
-                        - PDF User Guide: user/manual/GeoSight User Guide.pdf
-                        - "": user/manual/date-and-time.md
-        - Administrators:
-                - administrator/index.md
-                - Guide:
-                        - administrator/guide/index.md
-                - Manual:
-                        - administrator/manual/index.md
-        - Developers:
-                - developer/index.md
-                - Guide:
-                        - developer/guide/index.md
-                        - Architecture: developer/guide/architecture.md
-                        - Prerequisites: developer/guide/prerequisites.md
-                        - Cloning: developer/guide/cloning.md
-                        - IDE Setup: developer/guide/ide-setup.md
-                        - Configuration: developer/guide/configuration.md
-                        - Building: developer/guide/building.md
-                        - Removing: developer/guide/removing.md
-                        - Design: developer/guide/design.md
-                        - Road Map: developer/guide/roadmap.md
-                        - Testing: developer/guide/testing.md
-                        - Plugins: developer/guide/plugins.md
-                        - Workflows:
-                                - developer/guide/workflows/index.md
-                                - "Github": developer/guide/workflows/github.md
-                                - "End to End Test": developer/guide/workflows/end-to-end-test.md
-                        - FAQ: developer/guide/faq.md
-                        # Pages to render but exclude from navigation
-                        - "": developer/guide/templates/pull-request-template.md 
-                        - "": developer/guide/templates/commit-message-convention.md
-                - Manual: developer/manual/index.md
-                - Documentation: 
-                        - developer/documentation/index.md
-                        - "Simple Workflow": developer/documentation/easy-workflow.md
-                        - "Advanced Workflow": developer/documentation/overview.md
-                        - "Context Help": developer/documentation/context-help.md
-                - API:
-                        - developer/api/index.md
-                        - Reference: developer/api/manual/index.md
-                        - Guide: developer/api/guide/index.md
-                - License: about/license.md
-        - DevOps: 
-                - devops/index.md
-                - Guide: devops/guide/index.md
-                - Manual: devops/manual/index.md
-
+  - Home:
+      - index.md
+      - About: about/index.md
+      - Contributing: about/contributing.md
+      - Code of Conduct: about/code-of-conduct.md
+      - Disclaimer: about/disclaimer.md
+      - License: about/license.md
+      - Running Instances: about/running-instances.md
+  - Users:
+      - user/index.md
+      - Quick Start:
+          - user/quickstart/index.md
+      - Guide:
+          - user/guide/index.md
+          - Creating Your Account: user/guide/creating-your-account.md
+          - Creating Projects: user/guide/creating-projects.md
+          - Creating Indicators: user/guide/indicator-page.md
+          - Indicator Layers: user/guide/indicator-layers.md
+          - Creating Context Layers: user/guide/creating-context-layers.md
+          - Creating Basemaps: user/guide/creating-basemaps.md
+          - Creating Styles: user/guide/creating-styles.md
+          - Dynamic Styles: user/guide/dynamic-styles.md
+          - Importing Data: user/guide/importing_data.md
+          - Related Tables: user/guide/related-tables.md
+          - Widgets and Filters: user/guide/widgets-and-filters.md
+          - Adding Users and Groups: user/guide/adding-users-groups.md
+          - Sharing: user/guide/sharing.md
+          - Access Requests: user/guide/access-request-guide.md
+          - Project Page: user/guide/project-page.md
+          - Share Page: user/guide/share.md 
+          - "": user/guide/API_Documentation.md
+      - Manual: 
+          - user/manual/index.md
+          - Visualisation Section: 
+              - user/manual/visualisation/index.md
+              - Indicators Page: user/manual/visualisation/indicators-page.md
+              - Context Layers Page: user/manual/visualisation/context-layers-page.md
+              - Basemaps Page: user/manual/visualisation/basemap-page.md
+              - Styles Page: user/manual/visualisation/style-page.md
+          - Home Page: user/manual/home.md
+          - Dashboard Page: user/manual/dashboard.md
+          - Analysis Tools: user/manual/analysis-tools.md
+          - Administrator Page: user/manual/administrator-page.md
+          - Projects Page: user/manual/project-page.md
+          - Share Page: user/manual/share.md
+          - Data Importer Page: user/manual/data-importer.md
+          - Indicator Page: user/manual/indicator-edit-page.md
+          - Context Layers: user/manual/context-layer-edit-page.md
+          - Basemaps Page: user/manual/basemaps-edit-page.md
+          - Styles Page: user/manual/creating-styles-page.md
+          - Data Importer Page: user/manual/data-importer.md
+          - Data Browser Page: user/manual/data-browser.md
+          - Data Access Page: user/manual/data-access.md
+          - Logs: user/manual/logs.md
+          - Users and Groups: user/manual/users-and-groups.md
+          - PDF User Guide: user/manual/GeoSight User Guide.pdf
+          - "": user/manual/date-and-time.md
+  - Administrators:
+      - administrator/index.md
+      - Guide:
+          - administrator/guide/index.md
+      - Manual:
+          - administrator/manual/index.md
+  - Developers:
+      - developer/index.md
+      - Guide:
+          - developer/guide/index.md
+          - Architecture: developer/guide/architecture.md
+          - Prerequisites: developer/guide/prerequisites.md
+          - Cloning: developer/guide/cloning.md
+          - IDE Setup: developer/guide/ide-setup.md
+          - Configuration: developer/guide/configuration.md
+          - Building: developer/guide/building.md
+          - Removing: developer/guide/removing.md
+          - Design: developer/guide/design.md
+          - Road Map: developer/guide/roadmap.md
+          - Testing: developer/guide/testing.md
+          - Plugins: developer/guide/plugins.md
+          - Workflows:
+              - developer/guide/workflows/index.md
+              - "Github": developer/guide/workflows/github.md
+              - "End to End Test": developer/guide/workflows/end-to-end-test.md
+          - FAQ: developer/guide/faq.md
+          - "": developer/guide/templates/pull-request-template.md 
+          - "": developer/guide/templates/commit-message-convention.md
+      - Manual: developer/manual/index.md
+      - Documentation: 
+          - developer/documentation/index.md
+          - "Simple Workflow": developer/documentation/easy-workflow.md
+          - "Advanced Workflow": developer/documentation/overview.md
+          - "Context Help": developer/documentation/context-help.md
+      - API:
+          - developer/api/index.md
+          - Reference: developer/api/manual/index.md
+          - Guide: developer/api/guide/index.md
+      - License: about/license.md
+  - DevOps: 
+      - devops/index.md
+      - Guide: devops/guide/index.md
+      - Manual: devops/manual/index.md

@@ -12,12 +12,10 @@ license: This program is free software; you can redistribute it and/or modify it
 #context_id: 1234
 ---
 
-# Visualisation 
+# Data
 
-* **[Indicators](./indicators-page.md):** Guides users through an engaging exploration of the `Indicators` tab.
+* **[Data Management](./data-management.md):** Guides users through an engaging exploration of the `Data Management` tab.
 
-* **[Context Layers](./context-layers-page.md):** Guides users through an engaging exploration of the `Context Layers` tab.
+* **[Data Browser](./data-browser.md):** Guides users through an engaging exploration of the `Data Browser` tab.
 
-* **[Basemaps](./basemap-page.md):** Guides users through an engaging exploration of the `Basemaps` tab.
-
-* **[Styles](./style-page.md):** Guides users through an engaging exploration of the `Styles` tab.
+* **[Related Tables](./related-table.md):** Guides users through an engaging exploration of the `Related Tables` tab.
