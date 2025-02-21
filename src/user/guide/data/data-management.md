@@ -50,7 +50,7 @@ You can access the `Reference Layer & Time` section by clicking on the 1️⃣ `
 
 ![Reference Layer & Time](./img/data-management-img-6.png)
 
-For the detailed information you check the [user manual](../../manual/data/data-management.md#reference-layer--time).
+For the detailed information you check the [user manual](../../manual/data/data-management.md).
 
 ### Aggregation
 
