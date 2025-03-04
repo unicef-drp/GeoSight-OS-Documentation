@@ -17,6 +17,13 @@ This section outlines the process for configuring your IDE for development.
 
 🚩 Make sure you have gone through the [Cloning Section](cloning.md) before following these notes.
 ## VS Code Setup
+
+**Note for Apple Silicon**
+Before proceeding with the setup, if you are developing on an Apple Silicon or other AMD-based devices, please ensure to uncomment line 17 in the [deployment/docker/Dockerfile](https://github.com/unicef-drp/GeoSight-OS/blob/main/deployment/docker/Dockerfile#L17).
+
+```
+#ARG PLATFORM=linux/arm64
+```
  
 Open the project in VSCode (1️⃣, 2️⃣) by navigating the the place on your file system where you checked out the code in the pre-requisites step above (3️⃣).
 
