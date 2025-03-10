@@ -71,6 +71,24 @@ RABBITMQ_HOST=rabbitmq
 # Onedrive
 PUID=1000
 PGID=1000
+
+# --------------------------------
+# ---------- APP DOMAIN ----------
+# Required for tenant configurations
+APP_DOMAIN=localhost -> The main domain for the application for tenants
+
+# -------------------------------
+# ---------- PLUGINS ------------
+# Specify the plugins to enable or disable
+# Use a comma-separated list
+
+# GeoSight plugins:
+# - tenants
+# - cloud_native_gis
+# - reference_dataset
+# - machine_info_fetcher
+PLUGINS=cloud_native_gis,reference_dataset -> Use comma separator for activate plugins
+# -----------------------------
 ```
 
 After you change the desired variable and do `make up`. It will rerun the project with new environment.
