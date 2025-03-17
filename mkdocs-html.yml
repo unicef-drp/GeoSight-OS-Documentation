@@ -10,7 +10,7 @@ theme:
     - content.code.annotate
     - content.tabs.link
     - header.autohide
-    - navigation.expand
+    # - navigation.expand
     - navigation.indexes
     - navigation.instant
     - navigation.sections
