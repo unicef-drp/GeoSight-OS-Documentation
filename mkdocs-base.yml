@@ -51,6 +51,18 @@ nav:
           - user/quickstart/index.md
       - Guide:
           - user/guide/index.md
+          - Visualisation Section: 
+              - user/guide/visualisation/index.md
+              - Indicators Page: user/guide/visualisation/indicators-page.md
+              - Context Layers Page: user/guide/visualisation/context-layers-page.md
+              - Basemaps Page: user/guide/visualisation/basemap-page.md
+              - Styles Page: user/guide/visualisation/style-page.md
+          - Data Section:
+              - user/guide/data/index.md
+              - Data Browser: user/guide/data/data-browser.md
+              - Data Management: user/guide/data/data-management.md
+              - Related Tables: user/guide/data/related-table.md
+          - Access Request: user/guide/access/access-request.md
           - Creating Your Account: user/guide/creating-your-account.md
           - Creating Projects: user/guide/creating-projects.md
           - Creating Indicators: user/guide/indicator-page.md
@@ -76,6 +88,12 @@ nav:
               - Context Layers Page: user/manual/visualisation/context-layers-page.md
               - Basemaps Page: user/manual/visualisation/basemap-page.md
               - Styles Page: user/manual/visualisation/style-page.md
+          - Data Section:
+              - user/manual/data/index.md
+              - Data Browser: user/manual/data/data-browser.md
+              - Data Management: user/manual/data/data-management.md
+              - Related Tables: user/manual/data/related-table.md
+          - Access Request: user/manual/access/access-request.md
           - Home Page: user/manual/home.md
           - Dashboard Page: user/manual/dashboard.md
           - Analysis Tools: user/manual/analysis-tools.md
