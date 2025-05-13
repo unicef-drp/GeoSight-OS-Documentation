@@ -104,10 +104,10 @@ plugins:
       exclude:
         - index.md
         - user/index.md
-        - administrator/index.md
+        #- administrator/index.md
         - developer/index.md
         - developer/manual/*.md
-        - devops/index.md
+        #- devops/index.md
       restart_increment_after:
         - second_section.md
 
