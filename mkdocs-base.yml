@@ -115,6 +115,7 @@ nav:
           - Road Map: developer/guide/roadmap.md
           - Testing: developer/guide/testing.md
           - Plugins: developer/guide/plugins.md
+          - Translations: developer/guide/translations.md
           - Workflows:
               - developer/guide/workflows/index.md
               - "Github": developer/guide/workflows/github.md
@@ -122,7 +123,6 @@ nav:
           - FAQ: developer/guide/faq.md
           - "": developer/guide/templates/pull-request-template.md 
           - "": developer/guide/templates/commit-message-convention.md
-      - Manual: developer/manual/index.md
       - Documentation: 
           - developer/documentation/index.md
           - "Simple Workflow": developer/documentation/easy-workflow.md

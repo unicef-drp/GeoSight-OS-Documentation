@@ -35,9 +35,9 @@ PLUGINS=cloud_native_gis,reference_dataset
 # -----------------------------
 ```
 
-## 1. tenants
+## 1. Tenants
 
-The Tenants plugin enables GeoSight to support multiple applications across
+The Tenants plugin (tenants) enables GeoSight to support multiple applications across
 different domains. Each tenant has its own domain and stores its data in a
 separate schema.
 
@@ -54,9 +54,9 @@ If the domain is example.com, set APP_DOMAIN=example.
 For more details about tenants, refer to the
 documentation: [Django Tenants Documentation](https://django-tenants.readthedocs.io/en/latest/).
 
-## 2. cloud_native_gis
+## 2. Cloud Native GIS
 
-Cloud Native GIS is a feature in GeoSight that allows users to upload their own
+Cloud Native GIS plugin (cloud_native_gis) is a feature in GeoSight that allows users to upload their own
 GIS files as context layers.
 Currently, only vector layers are supported, but raster layer support will be
 added in the future.
@@ -67,7 +67,7 @@ When selected, additional details will appear below, displaying an upload form
 for the file.
 
 ![image](img/cloud-native-gis-1.png)
-_image 1. New type of Cloud Native GIS Layer_
+_Image 1. New type of Cloud Native GIS Layer_
 
 ![image](img/cloud-native-gis-2.png)
 _Image 2. The layer will be served as vector tiles._
@@ -81,13 +81,14 @@ the [github repository](https://github.com/kartoza/CloudNativeGIS/).
 
 ## 3. Reference Dataset
 
-The Reference Dataset serves as a local version of GeoRepo.
+The Reference Dataset plugin (reference_dataset) serves as a local version of GeoRepo, i.e. allow GeoSight users to upload reference polygon layers (e.g. national boundaries, provinces or districts) directly within GeoSight, without relying on a remote connection to GeoRepo.
+
 Users can upload their own vector files, similar to GeoRepo, which can then be
 used as a reference view in GeoSight.
 
 ![image](img/reference-dataset-1.png)
 _Image 4. If activated, a 'Local' tab will appear, allowing users to utilize
-the local reference dataset._
+the local reference datasets._
 
 ![image](img/reference-dataset-2.png)
 _Image 5. If activated, new view type options will be displayed as a tab._
