@@ -51,7 +51,7 @@ nav:
           - user/quickstart/index.md
       - Guide:
           - user/guide/index.md
-          - Visualisation Section: 
+          - Visualisation Section:
               - user/guide/visualisation/index.md
               - Indicators Page: user/guide/visualisation/indicators-page.md
               - Context Layers Page: user/guide/visualisation/context-layers-page.md
@@ -78,11 +78,11 @@ nav:
           - Sharing: user/guide/sharing.md
           - Access Requests: user/guide/access-request-guide.md
           - Project Page: user/guide/project-page.md
-          - Share Page: user/guide/share.md 
+          - Share Page: user/guide/share.md
           - "": user/guide/API_Documentation.md
-      - Manual: 
+      - Manual:
           - user/manual/index.md
-          - Visualisation Section: 
+          - Visualisation Section:
               - user/manual/visualisation/index.md
               - Indicators Page: user/manual/visualisation/indicators-page.md
               - Context Layers Page: user/manual/visualisation/context-layers-page.md
@@ -120,6 +120,15 @@ nav:
           - administrator/manual/index.md
   - Developers:
       - developer/index.md
+      - Setup:
+          - developer/setup/index.md
+          - Step 1 - docker: developer/setup/docker.md
+          - Step 2 - cloning: developer/setup/cloning.md
+          - Step 3 - code preparation: developer/setup/code-preparation.md
+          - Run with VSCode: developer/setup/run-with-vscode.md
+          - Run with PyCharm: developer/setup/run-with-pycharm.md
+          - Run without IDE: developer/setup/run-without-ide.md
+          - Demo data: developer/setup/demo-data.md
       - Guide:
           - developer/guide/index.md
           - Architecture: developer/guide/architecture.md
@@ -139,9 +148,9 @@ nav:
               - "Github": developer/guide/workflows/github.md
               - "End to End Test": developer/guide/workflows/end-to-end-test.md
           - FAQ: developer/guide/faq.md
-          - "": developer/guide/templates/pull-request-template.md 
+          - "": developer/guide/templates/pull-request-template.md
           - "": developer/guide/templates/commit-message-convention.md
-      - Documentation: 
+      - Documentation:
           - developer/documentation/index.md
           - "Simple Workflow": developer/documentation/easy-workflow.md
           - "Advanced Workflow": developer/documentation/overview.md
@@ -151,7 +160,7 @@ nav:
           - Reference: developer/api/manual/index.md
           - Guide: developer/api/guide/index.md
       - License: about/license.md
-  - DevOps: 
+  - DevOps:
       - devops/index.md
       - Guide: devops/guide/index.md
       - Manual: devops/manual/index.md
