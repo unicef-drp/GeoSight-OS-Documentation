@@ -21,7 +21,7 @@ WSL2 is needed to run linux environment in Windows. Follow step by step below to
 
 ![image.png](img/wsl-1.png)
 
-2. Install wsl with below command
+2. Install wsl2 with below command
 
 ```
 wsl --install
@@ -112,7 +112,21 @@ The SSH are preferred when fetching and pushing codes to GitHub. Please follow [
 
 11. **(Optional) Install GPG on WSL2**
 
-GPG signing keys are used to sign the commits. WSL can use the keys from Windows by following [this tutorial](https://gist.github.com/matthiasr/473072eeffe449459e3ccd0f5192afc7). Once the key is generated, please follow [this link](https://docs.github.com/en/authentication/managing-commit-signature-verification/adding-a-gpg-key-to-your-github-account) to add it into your GitHub account.
+GPG signing keys are used to sign the commits. WSL2 can use the keys from Windows by following [this tutorial](https://gist.github.com/matthiasr/473072eeffe449459e3ccd0f5192afc7). Next, we need to update the configuration inside WSL2, edit or create if this file does not exist: `~/.gnupg/gpg-agent.conf`.
+
+```
+default-cache-ttl 34560000
+max-cache-ttl 34560000
+pinentry-program "/mnt/c/Program Files (x86)/GnuPG/bin/pinentry-basic.exe"
+```
+
+It is recommended to explicitly restart the gpg agent to force these changes. Alternatively, restart Windows at this point.
+
+```
+gpgconf --kill gpg-agent
+```
+
+Once the key is generated, please follow [this link](https://docs.github.com/en/authentication/managing-commit-signature-verification/adding-a-gpg-key-to-your-github-account) to add it into your GitHub account.
 
 
 ### Install Docker Desktop
