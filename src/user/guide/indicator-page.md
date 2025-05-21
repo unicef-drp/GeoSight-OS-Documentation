@@ -33,12 +33,10 @@ Accessible indicators are highlighted with _blue_ text.
 
 ## General Tab
 
-3.	Fill in basic information in the General tab
-
-
-
 ![alt text](img/create-indicator-general-tab.png)
 
+
+3.	Fill in basic information in the General tab
 
     a.	**Name** - indicator name. 
 
