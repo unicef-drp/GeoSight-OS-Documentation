@@ -33,29 +33,31 @@ Accessible indicators are highlighted with _blue_ text.
 
 ## General Tab
 
-3.	Complete the General tab (figure 4)
-    
-    a.	Enter background on the indicator, including: 
+3.	Fill in basic information in the General tab
 
-         b.	Name
-         c.	Description
-         d.	Technical information about the data type. 
-         e.	Shortcode
+- **Name** - indicator name. 
+- **Description** - description of the indicator, including methodology, and other relevant metadata 
+- **Source** - information about data sources used by the indicator
+- **Shortcode** - a globally unique indicator shortcode. It is recommneded to use abbreviated safe names, e.g. `pop_total_flood_risk_high` for the total population exposed to a high flood risk. Also, note that the same indicator can store observation values for many different dates and geographies, so there is **no need to create separate indicators**, such as `demo_ind_a_2010` and `demo_ind_a_2020` or `demo_ind_angola` and `demo_ind_kenya` as the same indicator `demo_ind` can store data for all dates and countries.
+- **Category** - choose one of the categories.
+- **Unit** - type in the name of units in which indicator is calculated (e.g. people, %, ha)
+- **Indicator type** - the system supports the following data types for indicators:
+ - **Integer**  
+  Used for whole numbers without any decimal places.  
+  _Example: `0`, `25`, `-10`_
 
-        A shortcode is an abbreviated name that allows for the easy computer-to-computer management of datasets. 
+ - **Float**  
+  Used for real numbers that include decimal values.  
+  _Example: `3.14`, `0.75`, `-2.0`_
 
-          f. Category 
-          g. Indicator type 
-              - Integers are for whole 
-              numbers without decimals
-              - Float allows for different 
-              types of numerical data, such as decimals or percentages. 
-              - Categories are text values
+ - **Category**  
+  Used for categorical values represented as text, selected from a predefined code list. **Please note that currently only admins can create new code lists.**  
+  _Example: `"Low"`, `"Medium"`, `"High"`_
     A description, data source, unit as well as min and max values are optional.
 
-### Indicator Repitition
+### Duplicated Indicators
 
-As a part of the data management strategy of GeoSight, the goal is to prevent indicator repetition as all data should be stored within the same indicator across time series and geographies. 
+As a part of the data management strategy of GeoSight, the goal is to prevent creating duplicated indicators as all data should be stored within the same indicator across time series and geographies. 
 
 Because of this, GeoSight has a tool developed to prevent this and alert users of similar indicators during the creation process. 
 
