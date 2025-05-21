@@ -35,32 +35,38 @@ Accessible indicators are highlighted with _blue_ text.
 
 3.	Fill in basic information in the General tab
 
+
+
+![alt text](img/create-indicator-general-tab.png)
+
+
     a.	**Name** - indicator name. 
 
-    b.	**Description** - description of the indicator, including methodology, and other relevant metadata 
+    b.	**Description** (optional) - description of the indicator, including methodology, and other relevant metadata 
 
-    c.	**Source** - information about data sources used by the indicator
+    c.	**Source** (optional) - information about data sources used by the indicator
 
     d.	**Shortcode** - a globally unique indicator shortcode. It is recommneded to use abbreviated safe names, e.g. `pop_total_flood_risk_high` for the total population exposed to a high flood risk. Also, note that the same indicator can store observation values for many different dates and geographies, so there is **no need to create separate indicators**, such as `demo_ind_a_2010` and `demo_ind_a_2020` or `demo_ind_angola` and `demo_ind_kenya` as the same indicator `demo_ind` can store data for all dates and countries.
 
     e.	**Category** - choose one of the categories.
 
-    f.	**Unit** - type in the name of units in which indicator is calculated (e.g. people, %, ha)
+    f.	**Unit** (optional) - type in the name of units in which indicator is calculated (e.g. people, %, ha)
 
     g.	**Indicator type** - the system supports the following data types for indicators:
 
-        - **Integer**  
+        - Integer  
          Used for whole numbers without any decimal places.  
          _Example: `0`, `25`, `-10`_
 
-        - **Float**  
+        - Float
          Used for real numbers that include decimal values.  
          _Example: `3.14`, `0.75`, `-2.0`_
 
- - **Category**  
-  Used for categorical values represented as text, selected from a predefined code list. **Please note that currently only admins can create new code lists.**  
-  _Example: `"Low"`, `"Medium"`, `"High"`_
-    A description, data source, unit as well as min and max values are optional.
+        - Category
+         Used for categorical values represented as text, selected from a predefined code list. **Please note that currently only admins can create new code lists.**  
+         _Example: `"Low"`, `"Medium"`, `"High"`_
+
+
 
 ### Duplicated Indicators
 
