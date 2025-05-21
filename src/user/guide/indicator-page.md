@@ -35,16 +35,16 @@ Accessible indicators are highlighted with _blue_ text.
 
 3.	Fill in basic information in the General tab
 
-- **Name** - indicator name. 
-- **Description** - description of the indicator, including methodology, and other relevant metadata 
-- **Source** - information about data sources used by the indicator
-- **Shortcode** - a globally unique indicator shortcode. It is recommneded to use abbreviated safe names, e.g. `pop_total_flood_risk_high` for the total population exposed to a high flood risk. Also, note that the same indicator can store observation values for many different dates and geographies, so there is **no need to create separate indicators**, such as `demo_ind_a_2010` and `demo_ind_a_2020` or `demo_ind_angola` and `demo_ind_kenya` as the same indicator `demo_ind` can store data for all dates and countries.
-- **Category** - choose one of the categories.
-- **Unit** - type in the name of units in which indicator is calculated (e.g. people, %, ha)
-- **Indicator type** - the system supports the following data types for indicators:
- - **Integer**  
-  Used for whole numbers without any decimal places.  
-  _Example: `0`, `25`, `-10`_
+  a. **Name** - indicator name. 
+  b. **Description** - description of the indicator, including methodology, and other relevant metadata 
+  c. **Source** - information about data sources used by the indicator
+  d. **Shortcode** - a globally unique indicator shortcode. It is recommneded to use abbreviated safe names, e.g. `pop_total_flood_risk_high` for the total population exposed to a high flood risk. Also, note that the same indicator can store observation values for many different dates and geographies, so there is **no need to create separate indicators**, such as `demo_ind_a_2010` and `demo_ind_a_2020` or `demo_ind_angola` and `demo_ind_kenya` as the same indicator `demo_ind` can store data for all dates and countries.
+  e. **Category** - choose one of the categories.
+  f. **Unit** - type in the name of units in which indicator is calculated (e.g. people, %, ha)
+  g. **Indicator type** - the system supports the following data types for indicators:
+        - **Integer**  
+         Used for whole numbers without any decimal places.  
+         _Example: `0`, `25`, `-10`_
 
  - **Float**  
   Used for real numbers that include decimal values.  
