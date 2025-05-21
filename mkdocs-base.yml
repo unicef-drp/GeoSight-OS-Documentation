@@ -122,43 +122,42 @@ nav:
       - developer/index.md
       - Setup:
           - developer/setup/index.md
-          - Step 1 - docker: developer/setup/docker.md
-          - Step 2 - cloning: developer/setup/cloning.md
-          - Step 3 - code preparation: developer/setup/code-preparation.md
-          - Run with VSCode: developer/setup/run-with-vscode.md
-          - Run with PyCharm: developer/setup/run-with-pycharm.md
-          - Run without IDE: developer/setup/run-without-ide.md
+          - Prerequisites:
+              - developer/setup/prerequisites.md
+              - "Windows": developer/setup/os-windows.md
+              - "Linux": developer/setup/os-linux.md
+          - Codebase preparation: developer/setup/code-preparation.md
+          - Run the project:
+              - developer/setup/run.md
+              - "With VSCode": developer/setup/run-with-vscode.md
+              - "Without IDE": developer/setup/run-without-ide.md
           - Demo data: developer/setup/demo-data.md
-      - Guide:
-          - developer/guide/index.md
-          - Architecture: developer/guide/architecture.md
-          - Prerequisites: developer/guide/prerequisites.md
-          - Cloning: developer/guide/cloning.md
-          - IDE Setup: developer/guide/ide-setup.md
-          - Configuration: developer/guide/configuration.md
-          - Building: developer/guide/building.md
-          - Removing: developer/guide/removing.md
-          - Design: developer/guide/design.md
-          - Road Map: developer/guide/roadmap.md
-          - Testing: developer/guide/testing.md
-          - Plugins: developer/guide/plugins.md
-          - Translations: developer/guide/translations.md
+          - Uninstalling: developer/setup/removing.md
+      - Manual:
+          - developer/manual/index.md
+          - Architecture: developer/manual/architecture.md
+          - Design: developer/manual/design.md
+          - Road Map: developer/manual/roadmap.md
+          - Testing: developer/manual/testing.md
+          - Plugins: developer/manual/plugins.md
+          - Translations: developer/manual/translations.md
           - Workflows:
-              - developer/guide/workflows/index.md
-              - "Github": developer/guide/workflows/github.md
-              - "End to End Test": developer/guide/workflows/end-to-end-test.md
-          - FAQ: developer/guide/faq.md
-          - "": developer/guide/templates/pull-request-template.md
-          - "": developer/guide/templates/commit-message-convention.md
+              - developer/manual/workflows/index.md
+              - "Github": developer/manual/workflows/github.md
+              - "End to End Test": developer/manual/workflows/end-to-end-test.md
+          - FAQ: developer/manual/faq.md
+          - "": developer/manual/templates/pull-request-template.md
+          - "": developer/manual/templates/commit-message-convention.md
       - Documentation:
           - developer/documentation/index.md
           - "Simple Workflow": developer/documentation/easy-workflow.md
           - "Advanced Workflow": developer/documentation/overview.md
           - "Context Help": developer/documentation/context-help.md
-      - API:
-          - developer/api/index.md
-          - Reference: developer/api/manual/index.md
-          - Guide: developer/api/guide/index.md
+      # TODO: We will add this
+      # - API:
+      #   - developer/api/index.md
+      #   - Reference: developer/api/manual/index.md
+      #   - Guide: developer/api/guide/index.md
       - License: about/license.md
   - DevOps:
       - devops/index.md

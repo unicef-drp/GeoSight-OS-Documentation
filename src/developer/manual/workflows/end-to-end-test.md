@@ -22,7 +22,7 @@ The Playwright tests can be found in the `playwright/ci-test` folder.
 
 ### Prerequisites
 
-1. To ensure the end-to-end tests are functioning properly, you must run the development server. For setup instructions, please refer to [GeoSight Developer Guide](https://unicef-drp.github.io/GeoSight-OS-Documentation/developer/guide/building/).
+1. To ensure the end-to-end tests are functioning properly, you must run the development server. For setup instructions, please refer to [GeoSight Setup Guide](https://unicef-drp.github.io/GeoSight-OS-Documentation/developer/setup/).
 2. You must have the correct database configuration. This involves deleting the current database and loading the appropriate fixtures.
 3. Navigate to the `playwright/ci-test` directory to access the tests. Inside, you will find multiple folders.
 4. To identify the database used for each folder, consult the README file located within the respective folder.

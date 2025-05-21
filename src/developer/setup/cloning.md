@@ -13,22 +13,12 @@ license: This program is free software; you can redistribute it and/or modify it
 
 # Cloning out the Code
 
-This section outlines the process of checking out the code for local development.
-
-Make sure you have [Git](https://git-scm.com/) installed.
-
-Anonymous Git code check out [https://github.com/unicef-drp/GeoSight-OS.git](https://github.com/unicef-drp/GeoSight-OS.git)
+You need to check out over ssh:
 
 ```
-git clone -b deployment --single-branch https://github.com/unicef-drp/GeoSight-OS.git
-```
-
-Alternatively check out over ssh:
-
-```
-git clone -b deployment --single-branch git@github.com:unicef-drp/GeoSight-OS.git
+git clone git@github.com:unicef-drp/GeoSight-OS.git
 ```
 
 📒**Which branch to use?**: Note that we deploy our staging work from the `main` branch and our production environment from the release tag. If you are planning on contributing improvements to the project, please submit them against the `main` branch.
 
-🪧 Now that you have the docker and cloned the project, move on to the [Step 3 - code preparation](code-preparation.md).
+🪧 Now that you have the docker and cloned the project, move on to the [code preparation](code-preparation.md).
