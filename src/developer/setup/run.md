@@ -11,12 +11,11 @@ license: This program is free software; you can redistribute it and/or modify it
 #context_id: 1234
 ---
 
-# For Developers
-<!-- To Be Populated -->
+# Run the project
 
-This is the homepage for all developer related documentation.
+🪧 Now that the codebase is set up, you are ready to run the application.
 
-* The [setup](setup/index.md), which describes common workflows for developers in a tutorial format. This includes instructions on how to set up your developer environment, check out the code, run it locally etc.
-* The [manual](manual/index.md), which describes about application.
-* The [Workflows:](manual/workflows/index.md), Examples of typical workflows for adding features, fixing bugs etc.
+1. If you are using **VS Code**, please refer to the [Run with VSCode](run-with-vscode.md) guide.
+2. If you are not using an IDE and prefer to work directly with a text editor, please refer to the [Run without IDE](run-without-ide.md) guide.
 
+   Note: With this approach, you won’t have access to integrated debugging features provided by full IDEs.

@@ -11,6 +11,10 @@ license: This program is free software; you can redistribute it and/or modify it
 #context_id: 1234
 ---
 
+# Prerequisites
+
+In this section we cover any tools that need to be on your system so that you can have a local development environment.
+
 ## Docker
 
 We assume in our notes that you are using the current Ubuntu LTS - though we try to keep things generic so that you can repeat on other distros or WSL2 on windows.
@@ -108,4 +112,8 @@ docker run hello-world
 For more information how to install docker, please visit [Install Docker Engine](https://docs.docker.com/engine/install/)
 
 
-🪧 Now that you have the docker, move on to the [Step 2 - Cloning](cloning.md).
+## Git
+
+Make sure you have [Git](https://git-scm.com/) installed.
+
+🪧 Now that you have the docker, move on to the [Cloning](cloning.md).

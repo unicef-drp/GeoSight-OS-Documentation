@@ -37,10 +37,75 @@ the [deployment/docker/Dockerfile](https://github.com/unicef-drp/GeoSight-OS/blo
 #ARG PLATFORM=linux/arm64
 ```
 
-🪧 Now that the codebase is set up, you are ready to run the application.
+## Set up the project
 
-1. If you are using **VS Code**, please refer to the [Run with VSCode](run-with-vscode.md) guide.
-2. If you are using **PyCharm**, please refer to the [Run with PyCharm](run-with-pycharm.md) guide.
-3. If you are not using an IDE and prefer to work directly with a text editor, please refer to the [Run without IDE](run-without-ide.md) guide.
+This will set up the GeoSight project on your machine
+```
+cd GeoSight
+cd deployment
+cp docker-compose.override.template.yml docker-compose.override.yml
+cp .template.env .env
+cd ..
+make up
+```
+Wait until everything is done.
 
-   Note: With this approach, you won’t have access to integrated debugging features provided by full IDEs.
+After everything is done, open up a web browser and go to [http://127.0.0.1/](http://127.0.0.1/) and the dashboard will open:
+
+By Default, we can use the admin credential:
+```
+username : admin
+password : admin
+```
+
+## Set up different environment (optional)
+To set up different environment, for example the Default credential, or the port of server, open **deployment/.env**.
+You can check the description below for each of variable.
+
+```
+COMPOSE_PROJECT_NAME=geosight
+NGINX_TAG=0.0.1  -> Change this for different nginx image
+DJANGO_TAG=0.0.1 -> Change this for different django image
+DJANGO_DEV_TAG=0.0.1 -> Change this for different django dev image
+
+# Environments
+DJANGO_SETTINGS_MODULE=core.settings.prod -> Change this to use different django config file
+ADMIN_USERNAME=admin -> Default admin username 
+ADMIN_PASSWORD=admin -> Default admin password
+ADMIN_EMAIL=admin@example.com -> Default admin email
+INITIAL_FIXTURES=True
+HTTP_PORT=80 -> Change the port of nginx
+
+# Database Environment
+DATABASE_NAME=django -> Default database name
+DATABASE_USERNAME=docker -> Default database username
+DATABASE_PASSWORD=docker -> Default database password
+DATABASE_HOST=db -> Default database host. Change this if you use cloud database or any new docker container.
+RABBITMQ_HOST=rabbitmq
+
+# Onedrive
+PUID=1000
+PGID=1000
+
+# --------------------------------
+# ---------- APP DOMAIN ----------
+# Required for tenant configurations
+APP_DOMAIN=localhost -> The main domain for the application for tenants
+
+# -------------------------------
+# ---------- PLUGINS ------------
+# Specify the plugins to enable or disable
+# Use a comma-separated list
+
+# GeoSight plugins:
+# - tenants
+# - cloud_native_gis
+# - reference_dataset
+# - machine_info_fetcher
+PLUGINS=cloud_native_gis,reference_dataset -> Use comma separator for activate plugins
+# -----------------------------
+```
+
+
+🪧 Now that the codebase is set up, you are ready to run the application, move on to the [run guide](run.md).
+

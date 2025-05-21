@@ -38,14 +38,14 @@ If you wish to build a page but not have it in the menu system, you can give it 
 
 ```
 # Pages to render but exclude from navigation
-- "": developer/guide/templates/pull-request-template.md 
+- "": developer/manual/templates/pull-request-template.md 
 ```
 
 Conversely, to ensure it is shown in the menu, find the right place in the navigation tree and then insert it with a short descriptor. e.g.
 
 ```
 # Pages to render and include from navigation
-- "My Menu Item": developer/guide/my-page.md 
+- "My Menu Item": developer/manual/my-page.md 
 ```
 
 ## Adding images

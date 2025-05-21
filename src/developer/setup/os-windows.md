@@ -134,3 +134,5 @@ Once the key is generated, please follow [this link](https://docs.github.com/en/
 Follow [this guide](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-containers#overview-of-docker-containers) to install docker desktop that integrates with WSL2. After docker is installed and running, we recommend to disable the `Resource Saver` feature as it may cause unexpected issue during development.
 
 ![image.png](img/wsl-8.png)
+
+🪧 Now that you have the docker, move on to the [Cloning](cloning.md).
