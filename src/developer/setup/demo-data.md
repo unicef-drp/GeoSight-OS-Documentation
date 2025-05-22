@@ -19,11 +19,6 @@ GeoSight has demo data that can be restored.
 
 To restore demo data:
 ```
-cd django_project/
-python manage.py loaddata core/fixtures/demo/1.core.json
-python manage.py loaddata core/fixtures/demo/2.user_group.json
-python manage.py loaddata core/fixtures/demo/3.geosight_georepo.json
-python manage.py loaddata geosight/reference_dataset/fixtures/test/4.reference_dataset_levels.json
-python manage.py loaddata core/fixtures/demo/4.geosight_data.json
-python manage.py loaddata core/fixtures/demo/5.geosight_permission.json
+cd /home/web/django_project/
+python manage.py load_demo_data
 ```
