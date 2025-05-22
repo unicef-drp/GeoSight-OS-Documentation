@@ -132,6 +132,7 @@ nav:
               - "With VSCode": developer/setup/run-with-vscode.md
               - "Without IDE": developer/setup/run-without-ide.md
           - Demo data: developer/setup/demo-data.md
+          - Georepo configuration: developer/setup/georepo.md
           - Uninstalling: developer/setup/removing.md
       - Manual:
           - developer/manual/index.md

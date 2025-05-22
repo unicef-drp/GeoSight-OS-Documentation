@@ -69,29 +69,6 @@ At the end of this process, you will see a message like this:
 Once you see that, you can continue the next step below.<br>
 Note that the Port forwarding can changes everytime you deploy, so as long as it says `terminated with code 0 and signal null`, you are done and can continue to next step.
 
-## Open a dev container terminal
-
-Open  terminal within the dev container context by clicking the `+`icon in the terminal pane 1️⃣. The new terminal 2️⃣ will show up in the list of running terminals 3️⃣
-
-![image.png](img/building-3.png)
-
-
-## Run django migration
-
-```
-cd /home/web/project/django_project
-python manage.py migrate
-```
-
-## Create super user
-
-```
-cd /home/web/project/django_project
-python manage.py createsuperuser
-```
-
-During this process you will be prompted for your username (defaults to root), email address and a password (which you need to confirm). Complete these as needed.
-
 
 ## Run application
 
@@ -125,6 +102,12 @@ http://localhost:2000
 ![image.png](img/building-5.png)
 
 The site will be rather bare bones since it will need to be configured in the admin area to set up the theme etc.
+
+By Default, we can use the admin credential:
+```
+username : admin
+password : admin
+```
 
 🪧 Now that the application is set up, you may begin making updates or choose to work with the provided demo data. For instructions, please refer to the [Demo Data Guide](demo-data.md).
 

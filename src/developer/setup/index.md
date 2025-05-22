@@ -26,4 +26,5 @@ To get started, you will need to have both Docker and Git installed on your syst
   * **[With VSCode:](./run-with-vscode.md)** - This step explains how to run the project with VS Code.
   * **[Without IDE:](./run-without-ide.md)** - This step explains how to run without IDE or just using text editor.
 * **[Demo data:](./demo-data.md)** - This step explains how use demo data.
+* **[Georepo configuration:](./georepo.md)** - This step explains how set up georepo configurations.
 * **[Uninstalling:](./removing.md)** - This step explains how uninstall the project.
