@@ -48,7 +48,7 @@ If the code CLI is being installed, you can run
 ```
 And wait the process until it is done
 
-# Building the dev environment
+## Building the dev environment
 
 Simply click on this option, and it will automatically build the development containers for you.
 
