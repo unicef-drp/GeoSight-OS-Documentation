@@ -15,40 +15,46 @@ license: This program is free software; you can redistribute it and/or modify it
 
 ## Prerequisites
 
-You should have [VSCode](https://code.visualstudio.com/) installed (using PyCharm is also possible).
+For Linux, it is recommended to install it via:
+```bash
+sudo snap install code --classic
+```
 
-If using VSCode (our recommended IDE), you need the the VSCode [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension installed (minimum version 0.304.0).
+You should have [VSCode](https://code.visualstudio.com/) installed.
 
-![image.png](img/ide-dev-containers-1.png)  
+You also need to have the code CLI available.
 
-![image.png](img/ide-dev-containers-2.png)
+To check:
+```bash
+code --version
+```
 
-## Open project
+It should return like below
+```bash
+1.100.2
+848b80aeb52026648a8ff9f7c45a9b0a80641e2e
+x64
+```
 
-Open the project in VSCode (1️⃣, 2️⃣) by navigating the place on your file system where you checked out the code in the pre-requisites step above (3️⃣).
+🚧 If above check failed, you can check [No code CLI found](#no-code-cli-found) troubleshoot.
 
-![image.png](./img/ide-setup-1.png)
+## Run script
 
-Accept the 'trust authors' prompt
+With run script, it will help you install all of necessary extensions, as well as open the project on vscode.
 
-![image.png](./img/ide-setup-2.png)
-
+If the code CLI is being installed, you can run 
+```bash
+./vscode.sh
+```
+And wait the process until it is done
 
 # Building the dev environment
 
-This section covers the process of building and running the application from your IDE.
-
-🚩 Make sure you have gone through the [IDE Setup Process](ide-setup.md) before following these notes.
-
-Press `Ctrl -> P` 1️⃣ and then `>`and search for `Rebuild`. Select `Dev Containers: Rebuild and Reopen in Container`2️⃣. This will essentially mount your code tree inside a docker container and switch the development context of VSCode to be inside the container where all of the python etc. dependencies will be installed.
-
-![image.png](img/building-1.png)
-
-If the option above is not visible, you can click on the bell icon in the bottom-right corner (1). 
-If the DevContainers extension is already installed, an option to Reopen in Container will appear (2). 
 Simply click on this option, and it will automatically build the development containers for you.
 
 ![image.png](img/building-16.png)
+
+🚧 If no "Reopen in container" shows, you can build manually by checking [No Reopen in container shows](#no-reopen-in-container-shows) guide.
 
 Once the task is running, a notification 1️⃣ will be shown in the bottom right of the VSCode window. Clicking in the notification will show you the setup progress 2️⃣. Note that this make take quite a while depending on the internet bandwidth you have and the CPU power of your machine.
 
@@ -68,6 +74,7 @@ Note that the Port forwarding can changes everytime you deploy, so as long as it
 Open  terminal within the dev container context by clicking the `+`icon in the terminal pane 1️⃣. The new terminal 2️⃣ will show up in the list of running terminals 3️⃣
 
 ![image.png](img/building-3.png)
+
 
 ## Run django migration
 
@@ -101,7 +108,15 @@ You need to wait Python debug to finish by saying `Quit the server with CONTROL-
 
 ## Viewing your test instance
 
-After completing the steps above, you should have the development server available on port 2000 of your local host:
+After completing the steps above, you should have the development server available.
+
+Just ctrl + click the url link `0.0.0.0:8080` and click `Open`
+
+![image.png](img/building-23.png)
+![image.png](img/building-24.png)
+
+
+Or you can access your server directly on port 2000 of your local host:
 
 ```
 http://localhost:2000
@@ -112,3 +127,65 @@ http://localhost:2000
 The site will be rather bare bones since it will need to be configured in the admin area to set up the theme etc.
 
 🪧 Now that the application is set up, you may begin making updates or choose to work with the provided demo data. For instructions, please refer to the [Demo Data Guide](demo-data.md).
+
+# Troubleshoot
+
+## No code CLI found
+
+If code cli check is failed, you can check below how to set cli
+
+### Linux
+
+It will be already setup if using snap to install code
+
+### Windows
+
+1. Open Windows VS Code
+2. Install the "Remote - WSL" extension
+3. Open a WSL terminal and try check again
+
+### MacOS
+
+1. Open VS Code
+2. Press Cmd+Shift+P
+3. Type: Shell Command: Install 'code' command in PATH
+4. Press Enter
+5. This will create a symlink:
+```
+/usr/local/bin/code -> /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code
+```
+
+And try to check it again via
+```bash
+code --version
+```
+
+If you success setup code cli, you can move to [Run script](#run-script).
+
+If you are still having trouble with it, you can do next step, which is set up manually.
+
+### Installing devcontainers extension 
+
+You can install [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension manually (minimum version 0.304.0).
+
+![image.png](img/ide-dev-containers-1.png)  
+
+![image.png](img/ide-dev-containers-2.png)
+
+### Open project
+
+Open the project in VSCode (1️⃣, 2️⃣) by navigating the place on your file system where you checked out the code in the pre-requisites step above (3️⃣).
+
+![image.png](./img/ide-setup-1.png)
+
+Accept the 'trust authors' prompt
+
+![image.png](./img/ide-setup-2.png)
+
+After that everything above is done, you can move on to [Building the dev environment](#building-the-dev-environment).
+
+## No reopen in container shows 
+
+Press `Ctrl -> P` 1️⃣ and then `>`and search for `Rebuild`. Select `Dev Containers: Rebuild and Reopen in Container`2️⃣. This will essentially mount your code tree inside a docker container and switch the development context of VSCode to be inside the container where all of the python etc. dependencies will be installed.
+
+![image.png](img/building-1.png)
