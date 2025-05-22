@@ -1,8 +1,8 @@
 ---
-title: GeoSight-OS Data Importer Page 
+title: Run the project
 summary: GeoSight is UNICEF's geospatial web-based business intelligence platform.
-    - Tim Sutton
-    - Irwan Fathurrahman
+  - Tim Sutton
+  - Irwan Fathurrahman
 date: 2024-09-01
 some_url: https://github.com/unicef-drp/GeoSight-OS
 copyright: Copyright 2024, Unicef
