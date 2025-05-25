@@ -17,11 +17,11 @@ license: This program is free software; you can redistribute it and/or modify it
 ### WSL2
 WSL2 is needed to run linux environment in Windows. Follow step by step below to install WSL2.
 
-1. Open Powershell as Administrator
+Open Powershell as Administrator
 
 ![image.png](img/wsl-1.png)
 
-2. Install wsl2 with below command
+Install wsl2 with below command
 
 ```
 wsl --install
@@ -29,8 +29,7 @@ wsl --install
 
 ![image.png](img/wsl-2.png)
 
-3. Once completed, you need to restart the machine.
-4. You can check if the installation is completed successfully by checking the list of installed distribution from the Powershell.
+Once completed, you need to restart the machine. You can check if the installation is completed successfully by checking the list of installed distribution from the Powershell.
 
 ```
 wsl --list
@@ -40,7 +39,7 @@ By default, the Ubuntu is chosen and installed after running the first command. 
 
 ![image.png](img/wsl-3.png)
 
-5. To list all the available distribution, we can run command:
+To list all the available distribution, we can run command:
 
 ```
 wsl --list --online
@@ -74,7 +73,7 @@ OracleLinux_8_7                 Oracle Linux 8.7
 OracleLinux_9_1                 Oracle Linux 9.1
 ```
 
-6. We will use the latest Ubuntu version, 24.04 LTS. To install it, run command:
+We will use the latest Ubuntu version, 24.04 LTS. To install it, run command:
 
 ```
 wsl --install Ubuntu-24.04
@@ -82,7 +81,7 @@ wsl --install Ubuntu-24.04
 
 ![image.png](img/wsl-4.png)
 
-7. Once ubuntu is installed, we can setup the user account for Ubuntu. Search for ubuntu from the search bar and click Open to run it.
+Once ubuntu is installed, we can setup the user account for Ubuntu. Search for ubuntu from the search bar and click Open to run it.
 
 ![image.png](img/wsl-5.png)
 
@@ -94,23 +93,23 @@ After your user account is created, you will see below image that indicates the 
 
 ![image.png](img/wsl-7.png)
 
-8. You should update your system after this by running command:
+You should update your system after this by running command:
 
 ```
 sudo apt-get update && sudo apt-get upgrade
 ```
 
-9. **Install Git**
+**Install Git**
 
 ```
 sudo apt-get install git
 ```
 
-10. **(Optional) Generate SSH key pair**
+**(Optional) Generate SSH key pair**
 
 The SSH are preferred when fetching and pushing codes to GitHub. Please follow [this link](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=linux#generating-a-new-ssh-key) to generate SSH key pair and add it into your GitHub account.
 
-11. **(Optional) Install GPG on WSL2**
+**(Optional) Install GPG on WSL2**
 
 GPG signing keys are used to sign the commits. WSL2 can use the keys from Windows by following [this tutorial](https://gist.github.com/matthiasr/473072eeffe449459e3ccd0f5192afc7). Next, we need to update the configuration inside WSL2, edit or create if this file does not exist: `~/.gnupg/gpg-agent.conf`.
 
@@ -135,4 +134,22 @@ Follow [this guide](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-
 
 ![image.png](img/wsl-8.png)
 
-🪧 Now that you have the docker, move on to the [Cloning](cloning.md).
+
+### Install VSCode
+
+Follow the installation steps from [this link](https://code.visualstudio.com/docs/setup/windows) to setup the VSCode on Windows. The VSCode CLI will also be installed in the WSL2 and you can check by running below command in the WSL2 Ubuntu terminal.
+
+```
+code --version
+```
+
+It will return output like below:
+
+```
+1.100.2
+848b80aeb52026648a8ff9f7c45a9b0a80641e2e
+x64
+```
+
+
+🪧 Now that you have the docker and VSCode, move on to the [Cloning](cloning.md).
