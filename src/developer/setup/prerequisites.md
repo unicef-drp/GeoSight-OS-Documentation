@@ -17,4 +17,4 @@ In this section we cover any tools that need to be on your system so that you
 can have a local development environment.
 
 * **[windows](./os-windows.md):** Guide how to set up on windows.
-* **[linux](./os-linux.md):** Guide how to set up on windows.
+* **[linux](./os-linux.md):** Guide how to set up on linux.
