@@ -126,6 +126,7 @@ nav:
               - developer/setup/prerequisites.md
               - "Windows": developer/setup/os-windows.md
               - "Linux": developer/setup/os-linux.md
+          - Cloning: developer/setup/cloning.md
           - Codebase preparation: developer/setup/code-preparation.md
           - Run the project:
               - developer/setup/run.md
