@@ -11,15 +11,21 @@ license: This program is free software; you can redistribute it and/or modify it
 #context_id: 1234
 ---
 
-# Code preparation
+# Code Preparation
 
-This steps, you need to update some files to make the project works. But no worries, everything is already automated.
-What you need to do is
+In this step, you'll update some files to get the project working — but don’t worry, most of it is automated.
+All you need to do is:
 
+1. Navigate to the root of the project.
+2. Run the setup script:
+
+```bash
+./setup.sh
 ```
-Go to root project
-run `./setup.sh`
-```
+
+🪧 Now that the codebase is set up, you’re ready to run the application. Continue to the [Run Guide](run/index.md).
+You may also want to review how to set up other environments before running the project.
+
 
 ## Set up different environment (optional)
 To set up different environment, for example the Default credential, or the port of server, open **deployment/.env**.
@@ -63,6 +69,3 @@ APP_DOMAIN=localhost -> The main domain for the application for tenants
 PLUGINS=cloud_native_gis,reference_dataset -> Use comma separator for activate plugins
 # -----------------------------
 ```
-
-🪧 Now that the codebase is set up, you are ready to run the application, move on to the [run guide](run.md).
-

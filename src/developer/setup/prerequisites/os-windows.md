@@ -19,7 +19,7 @@ WSL2 is needed to run linux environment in Windows. Follow step by step below to
 
 Open Powershell as Administrator
 
-![image.png](img/wsl-1.png)
+![image.png](../img/wsl-1.png)
 
 Install wsl2 with below command
 
@@ -27,7 +27,7 @@ Install wsl2 with below command
 wsl --install
 ```
 
-![image.png](img/wsl-2.png)
+![image.png](../img/wsl-2.png)
 
 Once completed, you need to restart the machine. You can check if the installation is completed successfully by checking the list of installed distribution from the Powershell.
 
@@ -37,7 +37,7 @@ wsl --list
 
 By default, the Ubuntu is chosen and installed after running the first command. However if there is no distribution that is installed like image below, we can then install it manually.
 
-![image.png](img/wsl-3.png)
+![image.png](../img/wsl-3.png)
 
 To list all the available distribution, we can run command:
 
@@ -79,19 +79,19 @@ We will use the latest Ubuntu version, 24.04 LTS. To install it, run command:
 wsl --install Ubuntu-24.04
 ```
 
-![image.png](img/wsl-4.png)
+![image.png](../img/wsl-4.png)
 
 Once ubuntu is installed, we can setup the user account for Ubuntu. Search for ubuntu from the search bar and click Open to run it.
 
-![image.png](img/wsl-5.png)
+![image.png](../img/wsl-5.png)
 
 It will open a terminal where you can setup username and password for your Ubuntu.
 
-![image.png](img/wsl-6.png)
+![image.png](../img/wsl-6.png)
 
 After your user account is created, you will see below image that indicates the installation is successful.
 
-![image.png](img/wsl-7.png)
+![image.png](../img/wsl-7.png)
 
 You should update your system after this by running command:
 
@@ -132,7 +132,7 @@ Once the key is generated, please follow [this link](https://docs.github.com/en/
 
 Follow [this guide](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-containers#overview-of-docker-containers) to install docker desktop that integrates with WSL2. After docker is installed and running, we recommend to disable the `Resource Saver` feature as it may cause unexpected issue during development.
 
-![image.png](img/wsl-8.png)
+![image.png](../img/wsl-8.png)
 
 
 ### Install VSCode
@@ -152,4 +152,4 @@ x64
 ```
 
 
-🪧 Now that you have the docker and VSCode, move on to the [Cloning](cloning.md).
+🪧 Now that you have the docker and VSCode, move on to the [Cloning](../cloning.md).

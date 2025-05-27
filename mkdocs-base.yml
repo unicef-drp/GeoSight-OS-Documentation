@@ -123,13 +123,13 @@ nav:
       - Setup:
           - developer/setup/index.md
           - Prerequisites:
-              - developer/setup/prerequisites.md
+              - developer/setup/prerequisites/index.md
               - "Windows": developer/setup/os-windows.md
               - "Linux": developer/setup/os-linux.md
           - Cloning: developer/setup/cloning.md
           - Codebase preparation: developer/setup/code-preparation.md
           - Run the project:
-              - developer/setup/run.md
+              - developer/setup/run/index.md
               - "With VSCode": developer/setup/run-with-vscode.md
               - "Without IDE": developer/setup/run-without-ide.md
           - Demo data: developer/setup/demo-data.md

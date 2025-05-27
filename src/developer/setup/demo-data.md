@@ -22,3 +22,6 @@ To restore demo data:
 cd /home/web/django_project/
 python manage.py load_demo_data
 ```
+
+🪧 Now that you have loaded the demo data, you can optionally use **GeoRepo** to manage administrative boundaries.
+To set it up, refer to the [GeoRepo Guide](georepo.md).

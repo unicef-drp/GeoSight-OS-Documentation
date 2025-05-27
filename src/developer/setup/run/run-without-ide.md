@@ -32,7 +32,7 @@ After completing the steps above, you should have the development server availab
 http://localhost:2000
 ```
 
-![image.png](img/building-5.png)
+![image.png](../img/building-5.png)
 
 By Default, we can use the admin credential:
 ```
@@ -40,4 +40,4 @@ username : admin
 password : admin
 ```
 
-🪧 Now that the application is set up, you may begin making updates or choose to work with the provided demo data. For instructions, please refer to the [Demo Data Guide](demo-data.md).
+🪧 Now that the application is set up, you may begin making updates or choose to work with the provided demo data. For instructions, please refer to the [Demo Data Guide](../demo-data.md).
