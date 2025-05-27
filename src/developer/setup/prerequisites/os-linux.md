@@ -11,7 +11,7 @@ license: This program is free software; you can redistribute it and/or modify it
 #context_id: 1234
 ---
 
-## Setup Docker with on Linux
+## Setup Docker on Linux
 
 In this section we cover any tools that need to be on your system so that you can have a local development environment.
 
