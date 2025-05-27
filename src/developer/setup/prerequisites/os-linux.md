@@ -11,7 +11,7 @@ license: This program is free software; you can redistribute it and/or modify it
 #context_id: 1234
 ---
 
-# Prerequisites
+## Setup Docker with on Linux
 
 In this section we cover any tools that need to be on your system so that you can have a local development environment.
 
@@ -28,7 +28,7 @@ sudo usermod -a -G docker $user
 
 You need to have docker-compose installed - version 1.29 or later should work fine.
 
-![image.png](img/prerequisites-docker.png)
+![image.png](../img/prerequisites-docker.png)
 
 ## Dependencies installation
 
@@ -116,4 +116,4 @@ For more information how to install docker, please visit [Install Docker Engine]
 
 Make sure you have [Git](https://git-scm.com/) installed.
 
-🪧 Now that you have the docker, move on to the [Cloning](cloning.md).
+🪧 Now that you have the docker, move on to the [Cloning](../cloning.md).
