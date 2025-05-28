@@ -19,6 +19,7 @@ in pkgs.mkShell rec {
     # For PDF production  in mkdocs
     pythonPackages.venvShellHook
     python311Packages.weasyprint
+    python311Packages.mkdocs-bootswatch
     pinnedPkgs.cairo
     pinnedPkgs.pango
     pinnedPkgs.gdk-pixbuf
@@ -41,6 +42,7 @@ in pkgs.mkShell rec {
     pinnedPkgs.zlib
     pinnedPkgs.gnused
     pinnedPkgs.rpl
+    pinnedPkgs.vscode
   ];
 
   # Run this command, only after creating the virtual environment

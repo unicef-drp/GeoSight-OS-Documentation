@@ -1,7 +1,8 @@
 
 # Configuration
 theme:
-  name: material
+  # See https://mkdocs.github.io/mkdocs-bootswatch/
+  name: materia
   language: en
   direction: ltr
   include_search_page: false
