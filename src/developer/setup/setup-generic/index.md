@@ -11,7 +11,7 @@ license: This program is free software; you can redistribute it and/or modify it
 #context_id: 1234
 ---
 
-# GeoSight Developer Setup Guide
+#  GeoSight Developer Setup Guide
 
 This section of the documentation is designed to guide developers step by step through the process of setting up a development workstation.
 

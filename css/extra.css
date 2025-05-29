@@ -48,3 +48,15 @@ body {
     font-family: avenir;
     height: 100vh;
 }
+
+blockquote {
+    background: #f9f9f9;
+    border-left: 6px solid #4a90e2;
+    margin: 1.5em 0;
+    padding: 1em 1.5em;
+    font-style: italic;
+    position: relative;
+    color: #333;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
+    border-radius: 4px;
+}
