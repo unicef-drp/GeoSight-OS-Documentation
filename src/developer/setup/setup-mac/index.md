@@ -21,25 +21,25 @@ To get started, ensure that both **Docker** and **Git** are installed on your sy
 
 Once the prerequisites are complete, continue with the following steps:
 
-### [**Codebase Preparation**](./code-preparation.md)
+### [**Configuration**](../setup-generic/configuration.md)
 
 Learn how to prepare the necessary files in the project codebase.
 
-###  [**Run the Project**](./run/index.md)
+### [**Run the Project**](../setup-generic/run/index.md)
 
 Instructions for running the project.
 
-* [**With VS Code**](./run/run-with-vscode.md): How to run the project using Visual Studio Code.
-* [**Without IDE**](./run/run-without-ide.md): How to run the project using a text editor or from the terminal.
+* [**With VS Code**](../setup-generic/run/run-with-vscode.md): How to run the project using Visual Studio Code.
+* [**Without IDE**](../setup-generic/run/run-without-ide.md): How to run the project using a text editor or from the terminal.
 
-### [**Demo Data**](./demo-data.md)
+### [**Demo Data**](../setup-generic/demo-data.md)
 
 Learn how to use and load demo data into the project.
 
-###  [**Georepo Configuration**](./georepo.md)
+### [**Georepo Configuration**](../setup-generic/georepo.md)
 
 Instructions for setting up GeoRepo configurations.
 
-### [**Uninstalling**](./removing.md)
+### [**Uninstalling**](../setup-generic/removing.md)
 
 Steps to properly uninstall or remove the project from your system.

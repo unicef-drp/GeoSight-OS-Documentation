@@ -60,5 +60,5 @@ The following diagram represents all of the databsse entities that are created b
 
 
 
-🪧 If you already have all of the above criteria met, you can move on to [Prerequisites](prerequisites.md) to start the process of getting your local development environment set up.
+> 🪧 If you already have all of the above criteria met, you can move on to [setup](../setup/index.md) to start the process of getting your local development environment set up.
 

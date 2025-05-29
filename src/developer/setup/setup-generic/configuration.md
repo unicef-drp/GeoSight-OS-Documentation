@@ -23,7 +23,7 @@ All you need to do is:
 ./setup.sh
 ```
 
-🪧 Now that the codebase is set up, you’re ready to run the application. Continue to the [Run Guide](run/index.md).
+> 🪧 Now that the codebase is set up, you’re ready to run the application. Continue to the [Run Guide](run/index.md).
 You may also want to review how to set up other environments before running the project.
 
 

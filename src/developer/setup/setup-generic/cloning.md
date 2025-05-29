@@ -11,7 +11,7 @@ license: This program is free software; you can redistribute it and/or modify it
 #context_id: 1234
 ---
 
-# Cloning out the Code
+# Cloning the Code
 
 You need to check out over ssh:
 
@@ -21,4 +21,4 @@ git clone git@github.com:unicef-drp/GeoSight-OS.git
 
 📒**Which branch to use?**: Note that we deploy our staging work from the `main` branch and our production environment from the release tag. If you are planning on contributing improvements to the project, please submit them against the `main` branch.
 
-🪧 Now that you have the docker and cloned the project, move on to the [code preparation](code-preparation.md).
+> 🪧 Now that you have the docker and cloned the project, move on to the [configuration](configuration.md).

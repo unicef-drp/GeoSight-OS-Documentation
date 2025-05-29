@@ -143,4 +143,4 @@ Make sure you have [Git](https://git-scm.com/) installed.
 
 ## Next Steps
 
-🪧 Now that you have the docker, move on to the generic workflow, starting with [Cloning](../setup-generic/cloning.md).
+> 🪧 Now that you have the docker, move on to the generic workflow, starting with [Cloning](../setup-generic/cloning.md).

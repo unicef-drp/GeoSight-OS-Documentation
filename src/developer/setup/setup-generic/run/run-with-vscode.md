@@ -82,25 +82,25 @@ username : admin
 password : admin
 ```
 
-🪧 Now that the application is set up, you may begin making updates or choose to work with the provided demo data. For instructions, please refer to the [Demo Data Guide](demo-data.md).
+> 🪧 Now that the application is set up, you may begin making updates or choose to work with the provided demo data. For instructions, please refer to the [Demo Data Guide](../demo-data.md).
 
-# Troubleshoot
+## Troubleshooting
 
-## No code CLI found
+### No code CLI found
 
 If code cli check is failed, you can check below how to set cli
 
-### Linux
+#### Linux
 
 It will be already setup if using snap to install code
 
-### Windows
+#### Windows
 
 1. Open Windows VS Code
 2. Install the "Remote - WSL" extension
 3. Open a WSL terminal and try check again
 
-### MacOS
+#### MacOS
 
 1. Open VS Code
 2. Press Cmd+Shift+P
@@ -116,7 +116,7 @@ And try to check it again via
 code --version
 ```
 
-If you success setup code cli, you can move to [Run script](#run-script).
+If you success setup code cli, you can move to [configuration](../configuration.md).
 
 If you are still having trouble with it, you can do next step, which is set up manually.
 
@@ -140,9 +140,9 @@ Accept the 'trust authors' prompt
 
 After that everything above is done, you can move on to [Building the dev environment](#building-the-dev-environment).
 
-## No reopen in container shows 
+### No reopen in container shows 
 
 Press `Ctrl -> P` 1️⃣ and then `>`and search for `Rebuild`. Select `Dev Containers: Rebuild and Reopen in Container`2️⃣. This will essentially mount your code tree inside a docker container and switch the development context of VSCode to be inside the container where all of the python etc. dependencies will be installed.
 
 ![image.png](../img/building-1.png)
-🪧 Now that the application is set up, you may begin making updates or choose to work with the provided demo data. For instructions, please refer to the [Demo Data Guide](../demo-data.md).
+> 🪧 Now that the application is set up, you may begin making updates or choose to work with the provided demo data. For instructions, please refer to the [Demo Data Guide](../demo-data.md).
