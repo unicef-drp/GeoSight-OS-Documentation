@@ -120,21 +120,12 @@ nav:
           - administrator/manual/index.md
   - Developers:
       - developer/index.md
-      - Setup:
-          - developer/setup/index.md
-          - Prerequisites:
-              - developer/setup/prerequisites/index.md
-              - "Windows": developer/setup/prerequisites/os-windows.md
-              - "Linux": developer/setup/prerequisites/os-linux.md
-          - Cloning: developer/setup/cloning.md
-          - Codebase preparation: developer/setup/code-preparation.md
-          - Run the project:
-              - developer/setup/run/index.md
-              - "With VSCode": developer/setup/run/run-with-vscode.md
-              - "Without IDE": developer/setup/run/run-without-ide.md
-          - Demo data: developer/setup/demo-data.md
-          - Georepo configuration: developer/setup/georepo.md
-          - Uninstalling: developer/setup/removing.md
+      - Getting Started:
+          - "Before you start": developer/setup/index.md
+          - "Windows 11 Pro": developer/setup/setup-win/index.md
+          - "macOS 15": developer/setup/setup-mac/index.md
+          - "Ubuntu Linux 24.04 LTR": developer/setup/setup-linux/index.md
+          - "Generic Steps": developer/setup/setup-generic/index.md
       - Manual:
           - developer/manual/index.md
           - Architecture: developer/manual/architecture.md

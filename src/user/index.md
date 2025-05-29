@@ -1,5 +1,5 @@
 ---
-title: GeoSight-OS Documentation Home 
+title: Overview
 summary: GeoSight is UNICEF's geospatial web-based business intelligence platform.
     - Tim Sutton
     - Irwan Fathurrahman

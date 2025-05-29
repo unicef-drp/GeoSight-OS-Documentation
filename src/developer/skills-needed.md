@@ -11,9 +11,4 @@ license: This program is free software; you can redistribute it and/or modify it
 #context_id: 1234
 ---
 
-# Setup Guides
-
-* [Windows 11 Pro](./setup/setup-win/index.md)
-* [macOS 15](./setup/setup-mac/index.md)
-* [Ubuntu 24.04 LTR](./setup/setup-linux/index.md)
-* [Generic Steps](./setup/setup-generic/)
+# Skills Needed

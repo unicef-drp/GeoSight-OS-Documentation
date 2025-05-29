@@ -1,5 +1,5 @@
 ---
-title: GeoSight-OS Documentation Home 
+title: Overview
 summary: GeoSight is UNICEF's geospatial web-based business intelligence platform.
     - Tim Sutton
     - Irwan Fathurrahman
@@ -12,11 +12,15 @@ license: This program is free software; you can redistribute it and/or modify it
 ---
 
 # For Developers
-<!-- To Be Populated -->
 
 This is the homepage for all developer related documentation.
 
-* The [setup](setup/index.md), which describes common workflows for developers in a tutorial format. This includes instructions on how to set up your developer environment, check out the code, run it locally etc.
-* The [manual](manual/index.md), which describes about application.
-* The [Workflows:](manual/workflows/index.md), Examples of typical workflows for adding features, fixing bugs etc.
+* [Architecture Overview](architecture-overview.md): Provides a simplified overview of the system architecture.
+* [Skills Needed](skills-needed.md): Outlines the key skills you need in order to be able to work on and contribute to the code base.
+* [Setup Guides](./setup/index.md):  which describes common workflows for developers in a tutorial format. This includes instructions on how to set up your developer environment, check out the code, run it locally etc.
+
+Once you have your local development environment set up, we provide the following documentation sections to help you understand how to work and collaborate efficiently.
+
+* The [manual](manual/index.md), which describes application development processes that we typically follow when developing GeoSight.
+* The [Workflows:](manual/workflows/index.md), Examples of typical workflows for adding features, running tests, fixing bugs etc.
 
