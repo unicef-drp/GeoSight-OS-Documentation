@@ -1,5 +1,5 @@
 ---
-title: GeoSight-OS Data Importer Page 
+title: Visualisation Overview
 summary: GeoSight is UNICEF's geospatial web-based business intelligence platform.
     - Tim Sutton
     - Irwan Fathurrahman
@@ -12,7 +12,7 @@ license: This program is free software; you can redistribute it and/or modify it
 #context_id: 1234
 ---
 
-# Visualisation 
+## Visualisation Overview
 
 * **[Indicators](./indicators-page.md):** Guides you through an engaging exploration of the `Indicators` tab.
 

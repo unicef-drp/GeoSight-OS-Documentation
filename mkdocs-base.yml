@@ -4,8 +4,8 @@ site_author: "Unicef"
 docs_dir: ./src
 site_dir: ./site
 repo_name: "GeoSight-OS"
-repo_url: "https://github.com/unicef-drp/GeoSight-OS"
-edit_uri: "https://github.com/unicef-drp/GeoSight-OS/blob/main/docs/"
+repo_url: "https://github.com/unicef-drp/GeoSight-OS-Documentation"
+edit_uri: "https://github.com/unicef-drp/GeoSight-OS-Documentation/blob/main/src/"
 
 copyright: Unicef and Contributors
 
@@ -47,8 +47,7 @@ nav:
       - Running Instances: about/running-instances.md
   - Users:
       - user/index.md
-      - Quick Start:
-          - user/quickstart/index.md
+      - Quick Start: user/quickstart/index.md
       - Guide:
           - user/guide/index.md
           - Visualisation Section:
