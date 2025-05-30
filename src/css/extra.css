@@ -48,10 +48,51 @@ body {
     font-family: avenir;
     height: 100vh;
 }
+/* Accent color: UNICEF blue */
+/* Define accent and hover colors */
+:root {
+    --accent-color: #1cabe2;   /* UNICEF blue */
+    --hover-color: #e57373;    /* Off red (material red lighten-2) */
+}
 
+
+
+/* General heading styling */
+h1, h2, h3, h4 {
+    font-family: 'Avenir', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    color: #333;
+    margin-top: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+/* H1 and H2 full-width underline */
+h1::after, h2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    margin-top: 8px;
+    border-radius: 2px;
+}
+
+/* H3 subtle bottom underline */
+h3 {
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 4px;
+}
+
+/* H4 accent left bar */
+h4 {
+    border-left: 4px solid var(--accent-color);
+    padding-left: 8px;
+}
+
+/* Beautiful blockquote styling */
 blockquote {
     background: #f9f9f9;
-    border-left: 6px solid #4a90e2;
+    border-left: 6px solid var(--accent-color);
     margin: 1.5em 0;
     padding: 1em 1.5em;
     font-style: italic;
@@ -59,4 +100,88 @@ blockquote {
     color: #333;
     box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
     border-radius: 4px;
+}
+
+blockquote::before {
+    content: "";
+    font-size: 2em;
+    color: var(--accent-color);
+    position: absolute;
+    left: 10px;
+    top: -10px;
+}
+
+blockquote p {
+    margin: 0;
+}
+
+/* Material-inspired card style (no shadow) */
+.card {
+    border: 1px solid #e0e0e0; /* soft light gray border */
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 1.2em;
+    margin: 1em 0;
+    transition: border-color 0.3s, transform 0.2s;
+}
+
+.card:hover {
+    border-color: var(--accent-color); /* match your UNICEF blue */
+    transform: translateY(-2px); /* subtle lift on hover */
+}
+
+.card-header {
+    font-family: 'Avenir', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 0.5em;
+}
+
+.card-body {
+    font-family: 'Avenir', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', sans-serif;
+    font-size: 1em;
+    color: #555;
+}
+
+.card-footer {
+    font-size: 0.9em;
+    color: #888;
+    border-top: 1px solid #e0e0e0;
+    margin-top: 1em;
+    padding-top: 0.5em;
+    text-align: right;
+}
+
+
+/* Warning admonition styling */
+.admonition.warning {
+    background-color: #fff5f5; /* soft red background */
+    border-left: 6px solid #e57373; /* off-red accent line */
+    padding: 1em 1.5em;
+    margin: 1.5em 0;
+    border-radius: 4px;
+    font-family: 'Avenir', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', sans-serif;
+    color: #b71c1c; /* deep red text */
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.8em;
+}
+
+/* Icon styling */
+.admonition.warning::before {
+    content: "⚠️";
+    font-size: 1.5em;
+    flex-shrink: 0;
+    margin-top: 0.1em;
+}
+
+/* Text block */
+.admonition.warning p,
+.admonition.warning {
+    margin: 0;
+    padding: 0;
 }

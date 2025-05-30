@@ -12,11 +12,12 @@ license: This program is free software; you can redistribute it and/or modify it
 #context_id: 1234
 ---
 
-# Windows
+## 🪟 Windows
 
-## Setup Docker with WSL2 on Windows
+### Setup Docker with WSL2 on Windows
 
-### WSL2
+#### WSL2
+
 WSL2 is needed to run linux environment in Windows. Follow step by step below to install WSL2.
 
 Open Powershell as Administrator
@@ -25,7 +26,7 @@ Open Powershell as Administrator
 
 Install wsl2 with below command
 
-```
+```bash
 wsl --install
 ```
 
@@ -33,7 +34,7 @@ wsl --install
 
 Once completed, you need to restart the machine. You can check if the installation is completed successfully by checking the list of installed distribution from the Powershell.
 
-```
+```bash
 wsl --list
 ```
 
@@ -43,13 +44,13 @@ By default, the Ubuntu is chosen and installed after running the first command. 
 
 To list all the available distribution, we can run command:
 
-```
+```bash
 wsl --list --online
 ```
 
 The results:
 
-```
+```bash
 The following is a list of valid distributions that can be installed.
 Install using 'wsl.exe --install <Distro>'.
 
@@ -77,7 +78,7 @@ OracleLinux_9_1                 Oracle Linux 9.1
 
 We will use the latest Ubuntu version, 24.04 LTS. To install it, run command:
 
-```
+```bash
 wsl --install Ubuntu-24.04
 ```
 
@@ -97,13 +98,13 @@ After your user account is created, you will see below image that indicates the 
 
 You should update your system after this by running command:
 
-```
+```bash
 sudo apt-get update && sudo apt-get upgrade
 ```
 
 **Install Git**
 
-```
+```bash
 sudo apt-get install git
 ```
 
@@ -115,7 +116,7 @@ The SSH are preferred when fetching and pushing codes to GitHub. Please follow [
 
 GPG signing keys are used to sign the commits. WSL2 can use the keys from Windows by following [this tutorial](https://gist.github.com/matthiasr/473072eeffe449459e3ccd0f5192afc7). Next, we need to update the configuration inside WSL2, edit or create if this file does not exist: `~/.gnupg/gpg-agent.conf`.
 
-```
+```bash
 default-cache-ttl 34560000
 max-cache-ttl 34560000
 pinentry-program "/mnt/c/Program Files (x86)/GnuPG/bin/pinentry-basic.exe"
@@ -123,37 +124,35 @@ pinentry-program "/mnt/c/Program Files (x86)/GnuPG/bin/pinentry-basic.exe"
 
 It is recommended to explicitly restart the gpg agent to force these changes. Alternatively, restart Windows at this point.
 
-```
+```bash
 gpgconf --kill gpg-agent
 ```
 
 Once the key is generated, please follow [this link](https://docs.github.com/en/authentication/managing-commit-signature-verification/adding-a-gpg-key-to-your-github-account) to add it into your GitHub account.
 
-
-### Install Docker Desktop
+#### Install Docker Desktop
 
 Follow [this guide](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-containers#overview-of-docker-containers) to install docker desktop that integrates with WSL2. After docker is installed and running, we recommend to disable the `Resource Saver` feature as it may cause unexpected issue during development.
 
 ![image.png](./img/wsl-8.png)
 
-
-### Install VSCode
+#### Install VSCode
 
 Follow the installation steps from [this link](https://code.visualstudio.com/docs/setup/windows) to setup the VSCode on Windows. The VSCode CLI will also be installed in the WSL2 and you can check by running below command in the WSL2 Ubuntu terminal.
 
-```
+```bash
 code --version
 ```
 
 It will return output like below:
 
-```
+```bash
 1.100.2
 848b80aeb52026648a8ff9f7c45a9b0a80641e2e
 x64
 ```
 
 
-## Next Steps
+### Next Steps
 
 > 🪧 Now that you have the docker, move on to the generic workflow, starting with [Cloning](../setup-generic/cloning.md).

@@ -1,5 +1,5 @@
 ---
-title: GeoSight-OS Documentation Home 
+title: Generic Developer Setup 
 summary: GeoSight is UNICEF's geospatial web-based business intelligence platform.
     - Tim Sutton
     - Irwan Fathurrahman
@@ -11,13 +11,13 @@ license: This program is free software; you can redistribute it and/or modify it
 #context_id: 1234
 ---
 
-#  GeoSight Developer Setup Guide
+## Generic Developer Setup
 
 This section of the documentation is designed to guide developers step by step through the process of setting up a development workstation.
 
-To get started, ensure that both **Docker** and **Git** are installed on your system. Begin with the **Prerequisites** section.
+> ⭐️ Before running these generic steps, make sure you have completed the operating system specific steps available [here](../index.md).
 
----
+To get started, ensure that both **Docker** and **Git** are installed on your system. Begin with the **Prerequisites** section.
 
 Once the operating system specific steps are complete, continue with the following steps which apply to any OS:
 
