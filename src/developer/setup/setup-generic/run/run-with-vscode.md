@@ -27,11 +27,20 @@ This will install any needed extensions and launch vscode. Wait until the proces
 
 ## Building the dev environment
 
-Simply click on this option, and it will automatically build the development containers for you.
+When you open VSCode the second time, a pop up (see below) will appear asking you if you want to re-open the project in a dev container. Simply click on this option, and it will automatically build the development containers for you.
 
 ![image.png](../img/building-16.png)
 
-🚧 If no "Reopen in container" shows, you can build manually by checking [No Reopen in container shows](#no-reopen-in-container-shows) guide.
+> 🚧 If no "Reopen in container" popup appears automatically, you can initiate the process manually by checking [No Reopen in container shows](#no-reopen-in-container-shows) guide.
+
+So what happens when you run the project in a dev container? The script will do the following:
+
+1. Rebuild the dev container and mount your code tree inside the (docker) container.
+2. Install all the necessary Python dependencies inside the container.
+3. Set up port forwarding so that you can access the application running inside the container from your host machine.
+4. Start the Django development server inside the container.
+
+Once you click on the "Reopen in container" option, VSCode will start building the dev container. You can see the progress in the terminal window that opens up.
 
 Once the task is running, a notification 1️⃣ will be shown in the bottom right of the VSCode window. Clicking in the notification will show you the setup progress 2️⃣. Note that this make take quite a while depending on the internet bandwidth you have and the CPU power of your machine.
 
@@ -43,18 +52,20 @@ At the end of this process, you will see a message like this:
 [229365 ms] Port forwarding 53251 > 46727 > 46727 terminated with code 0 and signal null.
 ```
 
-Once you see that, you can continue the next step below.<br>
-Note that the Port forwarding can changes everytime you deploy, so as long as it says `terminated with code 0 and signal null`, you are done and can continue to next step.
+Once you see that, you can continue the next step below.
+
+> 🚩 **Note:** The Port forwarding can change everytime you deploy. As long as it says `terminated with code 0 and signal null`, you are done and can continue to next step.
 
 ## Run application
 
-After completing the steps above, You need to run the app.<br>
-Click `Run and Debug` button 1️⃣ and then select `Django: Run server` 2️⃣. After it is selected, click `Start Debugging` 3️⃣.
+After completing the steps above, You need to run the app.
+
+Click the `Run and Debug` button 1️⃣ and then select `Django: Run server` 2️⃣. After it is selected, click `Start Debugging` 3️⃣.
 
 ![image.png](../img/building-6.jpg)
 
-After run, it will a new tab in the right bottom.
-You need to wait Python debug to finish by saying `Quit the server with CONTROL-C.`3️⃣,
+After running, it will a new tab in the bottom right of the VSCode window.
+You need to wait for the Python debug to finish starting by saying `Quit the server with CONTROL-C.`3️⃣,
 
 ![image.png](../img/building-7.png)
 
@@ -69,7 +80,7 @@ Just ctrl + click the url link `0.0.0.0:8080` and click `Open`
 
 Or you can access your server directly on port 2000 of your local host:
 
-```
+```bash
 http://localhost:2000
 ```
 
@@ -79,7 +90,7 @@ The site will be rather bare bones since it will need to be configured in the ad
 
 By Default, we can use the admin credential:
 
-```
+```bash
 username : admin
 password : admin
 ```
@@ -90,11 +101,11 @@ password : admin
 
 ### No code CLI found
 
-If code cli check is failed, you can check below how to set cli
+If the VSCode cli check fails, you can try to install VSCode manually.
 
 #### Linux
 
-It will be already setup if using snap to install code
+Try following the installation instructions for your distribution on the VSCode [download page](https://code.visualstudio.com/docs/setup/linux).
 
 #### Windows
 
@@ -120,9 +131,9 @@ And try to check it again via
 code --version
 ```
 
-If you success setup code cli, you can move to [configuration](../configuration.md).
+If you succeed with setup code cli, you can move to [configuration](../configuration.md).
 
-If you are still having trouble with it, you can do next step, which is set up manually.
+If you are still having trouble you can try to set up things manually.
 
 ### Installing devcontainers extension
 
