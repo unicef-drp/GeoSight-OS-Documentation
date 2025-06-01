@@ -1,5 +1,5 @@
 ---
-title: GeoSight-OS Documentation Home 
+title: VSCode Launch Script
 summary: GeoSight is UNICEF's geospatial web-based business intelligence platform.
     - Tim Sutton
     - Irwan Fathurrahman
@@ -13,13 +13,17 @@ license: This program is free software; you can redistribute it and/or modify it
 
 ## VSCode Launch Script
 
-With run script, it will help you install all of necessary extensions, as well as open the project on vscode.
+When you use the ``./vscode.sh`` launch script, it will help you install all of necessary VSCode extensions, as well as open the project in VSCode.
 
-If the code CLI is being installed, you can run 
+If the code CLI is already installed, you can run
+
 ```bash
 ./vscode.sh
 ```
+
 This will install any needed extensions and launch vscode. Wait until the process is done...
+
+> ⭐️ **Note:** The first time you run the script, you will need to close the VSCode window that opens, and then run the script again. This is because the script will install the necessary extensions, and then you need to reopen VSCode to apply them.
 
 ## Building the dev environment
 
@@ -42,7 +46,6 @@ At the end of this process, you will see a message like this:
 Once you see that, you can continue the next step below.<br>
 Note that the Port forwarding can changes everytime you deploy, so as long as it says `terminated with code 0 and signal null`, you are done and can continue to next step.
 
-
 ## Run application
 
 After completing the steps above, You need to run the app.<br>
@@ -50,11 +53,10 @@ Click `Run and Debug` button 1️⃣ and then select `Django: Run server` 2️�
 
 ![image.png](../img/building-6.jpg)
 
-After run, it will a new tab in the right bottom. 
+After run, it will a new tab in the right bottom.
 You need to wait Python debug to finish by saying `Quit the server with CONTROL-C.`3️⃣,
 
 ![image.png](../img/building-7.png)
-
 
 ## Viewing your test instance
 
@@ -64,7 +66,6 @@ Just ctrl + click the url link `0.0.0.0:8080` and click `Open`
 
 ![image.png](../img/building-23.png)
 ![image.png](../img/building-24.png)
-
 
 Or you can access your server directly on port 2000 of your local host:
 
@@ -77,6 +78,7 @@ http://localhost:2000
 The site will be rather bare bones since it will need to be configured in the admin area to set up the theme etc.
 
 By Default, we can use the admin credential:
+
 ```
 username : admin
 password : admin
@@ -107,11 +109,13 @@ It will be already setup if using snap to install code
 3. Type: Shell Command: Install 'code' command in PATH
 4. Press Enter
 5. This will create a symlink:
+
 ```
 /usr/local/bin/code -> /Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code
 ```
 
 And try to check it again via
+
 ```bash
 code --version
 ```
@@ -120,7 +124,7 @@ If you success setup code cli, you can move to [configuration](../configuration.
 
 If you are still having trouble with it, you can do next step, which is set up manually.
 
-### Installing devcontainers extension 
+### Installing devcontainers extension
 
 You can install [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension manually (minimum version 0.304.0).
 
@@ -140,7 +144,7 @@ Accept the 'trust authors' prompt
 
 After that everything above is done, you can move on to [Building the dev environment](#building-the-dev-environment).
 
-### No reopen in container shows 
+### No reopen in container shows
 
 Press `Ctrl -> P` 1️⃣ and then `>`and search for `Rebuild`. Select `Dev Containers: Rebuild and Reopen in Container`2️⃣. This will essentially mount your code tree inside a docker container and switch the development context of VSCode to be inside the container where all of the python etc. dependencies will be installed.
 
