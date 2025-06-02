@@ -12,7 +12,6 @@ license: This program is free software; you can redistribute it and/or modify it
 ---
 
 # API Documentation
-<!-- Replace all of the titles with relevant titles -->
 This is the homepage for all API related documentation.
 
 * The [api guide](./guide/index.md), which describes common workflows for using the restful API.
