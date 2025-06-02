@@ -2,7 +2,7 @@ with import <nixpkgs> { };
 
 let
   # For packages pinned to a specific version
-  pinnedHash = "933d7dc155096e7575d207be6fb7792bc9f34f6d"; 
+  pinnedHash = "9ff2edbd1da172269d9dd58bcb482676d89b6d5b"; 
   pinnedPkgs = import (fetchTarball "https://github.com/NixOS/nixpkgs/archive/${pinnedHash}.tar.gz") { };
   pythonPackages = pinnedPkgs.python3Packages;
 in pkgs.mkShell rec {
@@ -41,6 +41,7 @@ in pkgs.mkShell rec {
     pinnedPkgs.zlib
     pinnedPkgs.gnused
     pinnedPkgs.rpl
+    pinnedPkgs.vscode
   ];
 
   # Run this command, only after creating the virtual environment

@@ -169,7 +169,7 @@ Since only the countries and not their subnational boundaries are needed, the GE
 ```python 
 alpha3_codes = []
   start_page = 1
-  response = [1]
+  response = \[1\]
   
   # get the codes for every page (because the max. number per page is 50)
   while response: 

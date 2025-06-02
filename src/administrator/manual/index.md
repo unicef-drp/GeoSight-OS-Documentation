@@ -1,5 +1,5 @@
 ---
-title: GeoSight-OS Documentation Home 
+title: Reference Manual
 summary: GeoSight is UNICEF's geospatial web-based business intelligence platform.
     - Tim Sutton
     - Irwan Fathurrahman
@@ -11,5 +11,7 @@ license: This program is free software; you can redistribute it and/or modify it
 #context_id: 1234
 ---
 
-# Administrator Reference Manual
+## Administrator Reference Manual
+
+> ⭐️ Note: This documentation section still needs to be written.
 <!-- Replace all of the titles with relevant titles -->

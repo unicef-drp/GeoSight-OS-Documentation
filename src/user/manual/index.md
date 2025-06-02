@@ -1,5 +1,5 @@
 ---
-title: GeoSight-OS Documentation Home 
+title: User Manual
 summary: GeoSight is UNICEF's geospatial web-based business intelligence platform.
     - Tim Sutton
     - Irwan Fathurrahman
@@ -11,12 +11,9 @@ license: This program is free software; you can redistribute it and/or modify it
 #context_id: 1234
 ---
 
-# User Manual
+## User Manual
 
-This section of the documentation describes every page in the application and
-what the various components of that page do. The manual is intended to function
-as a reference for the application. For narrative / workflow based tutorials,
-you may prefer to work through our [user guide](../guide/index.md).
+This section of the documentation describes every page in the application and what the various components of that page do. The manual is intended to function as a reference for the application. For narrative / workflow based tutorials, you may prefer to work through our [user guide](../guide/index.md).
 
 1. [Home Page](home.md): This is the 'landing page' that you arrive on when you open the site.
 2. [Dashboard Page](dashboard.md): This is the 'front-end page' that users can utilize to see visualized and analyzed datasets created by "back-end" users.

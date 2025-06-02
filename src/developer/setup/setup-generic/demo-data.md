@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: Demo Data
 summary: GeoSight is UNICEF's geospatial web-based business intelligence platform.
     - Tim Sutton
     - Irwan Fathurrahman
@@ -11,12 +11,17 @@ license: This program is free software; you can redistribute it and/or modify it
 #context_id: 1234
 ---
 
-# DevOps Documentation
-<!-- Replace all of the titles with relevant titles -->
+## Demo data
 
-This section contains all documentation relevant to DevOps procedures.
+### Run demo data
 
-The devops content is divided into three sections:
+GeoSight has demo data that can be restored to help you test the application and see how it works with sample data.
 
-* The [devops guide](guide/index.md), which describes common workflows for deployment and management of running instances in a tutorial format.
-* The [devops manual](manual/index.md), which provides links and references to deployment configuration files, frameworks and deployment systems used etc.
+To restore demo data, use the dev container terminal to navigate to the Django project directory and run the fixtures by using the following commands:
+
+```bash
+cd /home/web/django_project/
+python manage.py load_demo_data
+```
+
+> 🪧 More advanced setups can use **GeoRepo** to manage administrative boundaries. To set this up, refer to the [GeoRepo Guide](georepo.md).

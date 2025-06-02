@@ -1,7 +1,8 @@
 
 # Configuration
 theme:
-  name: material
+  # See https://mkdocs.github.io/mkdocs-bootswatch/
+  name: materia
   language: en
   direction: ltr
   include_search_page: false
@@ -55,6 +56,7 @@ extra:
 
 extra_css:
   - css/print.css
+  - css/extra.css
 
 extra_javascript:
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
@@ -76,7 +78,7 @@ plugins:
             # Lots of other nice options can be found at  
             # https://mkdocstrings.github.io/python/usage/
             docstring_style: sphinx
-            heading_level: 2
+            heading_level: 3
             show_bases: true
             show_signature: true
             separate_signature: true
@@ -95,21 +97,21 @@ plugins:
         #'old.md': 'new.md'
         #'old/file.md': 'new/file.md'
         #'some_file.md': 'http://external.url.com/foobar'
-  - enumerate-headings:
-      toc_depth: 3
-      strict: true
-      increment_across_pages: true
-      include:
-        - "*"
-      exclude:
-        - index.md
-        - user/index.md
-        #- administrator/index.md
-        - developer/index.md
-        - developer/manual/*.md
-        #- devops/index.md
-      restart_increment_after:
-        - second_section.md
+  # - enumerate-headings:
+  #     toc_depth: 3
+  #     strict: true
+  #     increment_across_pages: true
+  #     include:
+  #       - "*"
+  #     exclude:
+  #       - index.md
+  #       - user/index.md
+  #       #- administrator/index.md
+  #       - developer/index.md
+  #       - developer/manual/*.md
+  #       #- devops/index.md
+  #     restart_increment_after:
+  #       - second_section.md
 
 # Hook to add a uuid to every anchor
 # see also hook.py and https://github.com/squidfunk/mkdocs-material/discussions/3758#discussioncomment-4397373

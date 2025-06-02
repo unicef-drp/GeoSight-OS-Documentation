@@ -1,5 +1,5 @@
 ---
-title: GeoSight-OS Documentation Home 
+title: Overview
 summary: GeoSight is UNICEF's geospatial web-based business intelligence platform.
     - Tim Sutton
     - Irwan Fathurrahman
@@ -11,7 +11,7 @@ license: This program is free software; you can redistribute it and/or modify it
 #context_id: 1234
 ---
 
-# GeoSight Developer Guide
+## GeoSight Developer Guide
 
 In this section of the documentation, we aim to onboard developers onto the process of setting up a developer workstation, understanding the system architecture, contributing back to the project and so forth. Here is a brief overview of the content provided here:
 
@@ -22,7 +22,7 @@ In this section of the documentation, we aim to onboard developers onto the proc
 * **[Plugins:](./plugins.md)** - In this section, we cover the GeoSight plugins that can be activated.
 * **[Translation:](./translations.md)** - In this section, we cover how to do translations.
 * **[Workflow:](./workflows/index.md)** - In this section of the documentation, we explain how to work with workflows, examples of typical workflows for adding features, fixing bugs etc.
-  * **[Github Workflow](./github.md)** Here, we present the documentation workflow for creating a new feature or reporting a bug. 
-  * **[End to End Test Workflow](./end-to-end-test.md)** Here, we present the documentation workflow for interacting with end-to-end tests to ensure the frontend functions correctly. 
+  * **[Github Workflow](./workflows/github.md)** Here, we present the documentation workflow for creating a new feature or reporting a bug. 
+  * **[End to End Test Workflow](./workflows/end-to-end-test.md)** Here, we present the documentation workflow for interacting with end-to-end tests to ensure the frontend functions correctly. 
 
 
