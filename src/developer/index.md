@@ -22,5 +22,5 @@ This is the homepage for all developer related documentation.
 Once you have your local development environment set up, we provide the following documentation sections to help you understand how to work and collaborate efficiently.
 
 * The [manual](manual/index.md), which describes application development processes that we typically follow when developing GeoSight.
-* The [Workflows:](manual/workflows/index.md), Examples of typical workflows for adding features, running tests, fixing bugs etc.
+* The [workflows:](manual/workflows/index.md), Examples of typical workflows for adding features, running tests, fixing bugs etc.
 
