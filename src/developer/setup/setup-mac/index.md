@@ -1,9 +1,9 @@
 ---
-title: GeoSight-OS Documentation Home 
+title: macOS Setup Guide 
 summary: GeoSight is UNICEF's geospatial web-based business intelligence platform.
     - Tim Sutton
     - Irwan Fathurrahman
-date: 2023-08-03
+date: 2025-06-20
 some_url: https://github.com/unicef-drp/GeoSight-OS
 copyright: Copyright 2023, Unicef
 contact: geosight-no-reply@unicef.org
@@ -11,35 +11,71 @@ license: This program is free software; you can redistribute it and/or modify it
 #context_id: 1234
 ---
 
-# GeoSight Developer macOS Setup Guide
+## macOS Setup Guide
 
-This section of the documentation is designed to guide developers step by step through the process of setting up a development workstation.
+### VSCode
 
-To get started, ensure that both **Docker** and **Git** are installed on your system. Begin with the **Prerequisites** section.
+For macOS it is recommended to fetch and install VSCode from [the VSCode home page](https://code.visualstudio.com/).
 
----
+You also need to have the code CLI available.
 
-Once the prerequisites are complete, continue with the following steps:
+To check:
 
-### [**Configuration**](../setup-generic/configuration.md)
+```bash
+code --version
+```
 
-Learn how to prepare the necessary files in the project codebase.
+It should return something like the output below:
 
-### [**Run the Project**](../setup-generic/run/index.md)
+```bash
+1.100.2
+848b80aeb52026648a8ff9f7c45a9b0a80641e2e
+x64
+```
 
-Instructions for running the project.
+### Setup Docker on macOS
 
-* [**With VS Code**](../setup-generic/run/run-with-vscode.md): How to run the project using Visual Studio Code.
-* [**Without IDE**](../setup-generic/run/run-without-ide.md): How to run the project using a text editor or from the terminal.
+We recommend using the official Docker packages. See [docker.io's guide](https://docs.docker.com/engine/install/ubuntu/) for setup notes and below for adding yourself to the docker group.
 
-### [**Demo Data**](../setup-generic/demo-data.md)
+### Homebrew
 
-Learn how to use and load demo data into the project.
+Make sure you have [Homebrew](https://brew.sh) installed. If not, you can install it by running:
 
-### [**Georepo Configuration**](../setup-generic/georepo.md)
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+Follow the on-screen instructions. After installation, you may need to add Homebrew to your shell profile (.zprofile, .zshrc, etc.).
 
-Instructions for setting up GeoRepo configurations.
+### ✅ jq
 
-### [**Uninstalling**](../setup-generic/removing.md)
+jq is a command-line JSON processor.
 
-Steps to properly uninstall or remove the project from your system.
+```bash
+brew install jq
+```
+
+Verify:
+
+```bash
+jq --version
+```
+
+### ✅ make
+
+Option 1: Install via Xcode Command Line Tools
+
+```bash
+xcode-select --install
+```
+
+### Git
+
+brew install git
+
+### Recommended
+
+If you want to share changes upstream to GeoSight-OS, you should sign your commits. See the [GitHub Documentation](https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits) on this topic to see how to prepare your system for this.
+
+## Next Steps
+
+> 🪧 Now that you have the docker, move on to the generic workflow, starting with [Cloning](../setup-generic/cloning.md).
