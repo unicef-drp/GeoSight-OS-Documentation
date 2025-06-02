@@ -21,14 +21,4 @@ git clone git@github.com:unicef-drp/GeoSight-OS.git
 
 > 📒**Which branch to use?**: Note that we deploy our **staging** site from the `main` branch and our production environment from the latest **release** tag. If you are planning on contributing improvements to the project, please submit them against the `main` branch.
 
-```mermaid
-flowchart TD
-    A[main branch] -->|Deploys to| B[Staging Site]
-    A -->|Release Tag Created| C[Release Tag]
-    C -->|Deploys to| D[Production Environment]
-    E[Contributions] -->|Pull Requests| A
-    style B fill:#e0f7fa,stroke:#00796b,stroke-width:2px
-    style D fill:#ffe0b2,stroke:#f57c00,stroke-width:2px
-```
-
 > 🪧 Now that you have cloned the project, move on to the [configuration](configuration.md).
