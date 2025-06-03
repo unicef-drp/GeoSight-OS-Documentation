@@ -11,8 +11,6 @@ license: This program is free software; you can redistribute it and/or modify it
 #context_id: 1234
 ---
 
-## Skills Needed
-
 GeoSight is a complex web-based business intelligence platform that requires a diverse set of skills for effective development and maintenance. Here are some of the key skills needed:
 
 - Proficiency in web development technologies (HTML, CSS, JavaScript)

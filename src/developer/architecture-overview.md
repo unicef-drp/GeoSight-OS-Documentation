@@ -11,9 +11,7 @@ license: This program is free software; you can redistribute it and/or modify it
 #context_id: 1234
 ---
 
-## Architecture Overview
-
-GeoSight is built on a modern web stack that leverages the power of Django, PostgreSQL, and GeoDjango for geospatial capabilities. The architecture is designed to be modular, scalable, and maintainable, allowing for easy integration of new features and data sources.
+GeoSight is built on a modern web stack that leverages the power of Django, PostgreSQL, and Cloud Native GIS (vector tiles, COGS) for geospatial capabilities. The architecture is designed to be modular, scalable, and maintainable, allowing for easy integration of new features and data sources.
 
 ### Key Components
 
@@ -27,11 +25,10 @@ GeoSight is built on a modern web stack that leverages the power of Django, Post
 
 ```mermaid
 graph TD
-    Django["Django"]
     PostgreSQL["PostgreSQL<br>Database"]
     Docker["Docker"]
 
-    Docker --> Djangoss
+    Docker --> Django
     Docker --> PostgreSQL
     Docker --> Celery    
 ```
