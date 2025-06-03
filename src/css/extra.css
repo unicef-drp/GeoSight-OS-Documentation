@@ -236,6 +236,32 @@ body {
 #navbar-collapse {
     justify-content: space-between;
 }
+@media (min-width: 991.98px) {
+    #navbar-collapse {
+        align-items: flex-start;
+        padding-top: 0.5rem;
+    }
+  .navbar > .container {
+    position: relative;
+  }
+  .navbar .navbar-brand {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    padding-top: 1rem;
+  }
+  #navbar-collapse > ul {
+      height: 48px;
+  }
+  #navbar-collapse > ul:first-child {
+    margin-top: 30px;
+    margin-left: -0.5rem;
+  }
+}
 
 #navbar-collapse .dropdown-toggle::after {
     vertical-align: 0.15em;
@@ -326,4 +352,18 @@ body {
         background: unset;
         box-shadow: unset;
     }
+}
+
+.modal, .modal-backdrop {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.modal.show {
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+}
+.modal-backdrop.show {
+    opacity: 0.5;
+    transition: opacity 0.2s ease-in-out;
 }
