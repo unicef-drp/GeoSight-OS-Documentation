@@ -284,6 +284,9 @@ footer a:hover {
     right: 0;
     padding-right: 15px;
   }
+  .navbar .edit-url a {
+      padding-bottom: 10px;
+  }
   .navbar .navbar-brand {
     position: absolute;
     top: 0;
