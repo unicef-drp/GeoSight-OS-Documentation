@@ -2,6 +2,7 @@
 theme:
   # See https://mkdocs.github.io/mkdocs-bootswatch/
   name: material
+  #custom_dir: templates
   language: en
   direction: ltr
   include_search_page: false
@@ -10,7 +11,7 @@ theme:
     - content.code.annotate
     - content.tabs.link
     - header.autohide
-    # - navigation.expand
+    - navigation.expand
     - navigation.indexes
     - navigation.instant
     - navigation.sections
@@ -60,13 +61,13 @@ theme:
 
 extra:
   social:
-    - icon: fontawesome/brands/github
+    - icon: fab fa-github
       link: https://github.com/unicef-drp/
-    - icon: fontawesome/brands/twitter
+    - icon: fab fa-twitter
       link: https://twitter.com/UNICEF
-    - icon: fontawesome/brands/facebook
+    - icon: fab fa-facebook
       link: https://www.facebook.com/unicef/
-    - icon: fontawesome/solid/earth-africa
+    - icon: fas fa-globe-africa
       link: https://www.unicef.org/
 
 extra_css:
@@ -74,9 +75,10 @@ extra_css:
   - css/extra.css
 
 extra_javascript:
-  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
   - js/tablesort.js
   - js/mermaid-theme.js
+  - search/worker.js
+  - search/main.js
 
 # Needed for the hooks below to work
 plugins:
@@ -102,7 +104,7 @@ plugins:
             # Lots of other nice options can be found at  
             # https://mkdocstrings.github.io/python/usage/
             docstring_style: sphinx
-            heading_level: 3
+            heading_level: 1
             show_bases: true
             show_signature: true
             separate_signature: true
