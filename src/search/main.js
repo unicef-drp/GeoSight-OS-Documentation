@@ -1,4 +1,3 @@
-const min_search_length = 3
 function getSearchTermFromLocation() {
   var sPageURL = window.location.search.substring(1);
   var sURLVariables = sPageURL.split('&');

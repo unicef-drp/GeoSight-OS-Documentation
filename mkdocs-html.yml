@@ -62,7 +62,7 @@ extra_javascript:
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
   - js/tablesort.js
   - search/worker.js
-  - search/search.js
+  - search/main.js
 
 # Needed for the hooks below to work
 plugins:
