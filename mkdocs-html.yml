@@ -1,8 +1,7 @@
-
 # Configuration
 theme:
   # See https://mkdocs.github.io/mkdocs-bootswatch/
-  name: materia
+  name: material
   language: en
   direction: ltr
   include_search_page: false
@@ -25,7 +24,7 @@ theme:
     - toc.follow
   palette:
     - scheme: default
-      primary: blue
+      primary: custom # see css/extra.css for custom color
       accent: grey
       toggle:
         icon: material/brightness-4
@@ -36,6 +35,22 @@ theme:
       toggle:
         icon: material/brightness-6
         name: Switch to light mode
+    # Needed for mermaid diagram themese
+    # See https://mkdocs-mermaid2.readthedocs.io/en/latest/tips/
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: light-blue
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode        
   font:
     text: Roboto
     code: Roboto Mono
@@ -61,12 +76,21 @@ extra_css:
 extra_javascript:
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
   - js/tablesort.js
+  - js/mermaid-theme.js
 
 # Needed for the hooks below to work
 plugins:
   - search
   - git-revision-date-localized
   - mkdocs-video
+  - mermaid2:
+      version: 10.4.0
+      arguments:
+        # test if its __palette_1 (dark) or __palette_2 (light)
+        # for mkdocs-material >=8.0.0
+        theme: |
+          ^(JSON.parse(__md_get("__palette").index == 1)) ? 'dark' : 'light'      
+      # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#color-palette
   - mkdocstrings:
       handlers:
         python:
@@ -97,21 +121,6 @@ plugins:
         #'old.md': 'new.md'
         #'old/file.md': 'new/file.md'
         #'some_file.md': 'http://external.url.com/foobar'
-  # - enumerate-headings:
-  #     toc_depth: 3
-  #     strict: true
-  #     increment_across_pages: true
-  #     include:
-  #       - "*"
-  #     exclude:
-  #       - index.md
-  #       - user/index.md
-  #       #- administrator/index.md
-  #       - developer/index.md
-  #       - developer/manual/*.md
-  #       #- devops/index.md
-  #     restart_increment_after:
-  #       - second_section.md
 
 # Hook to add a uuid to every anchor
 # see also hook.py and https://github.com/squidfunk/mkdocs-material/discussions/3758#discussioncomment-4397373

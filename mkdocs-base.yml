@@ -8,8 +8,17 @@ repo_url: "https://github.com/unicef-drp/GeoSight-OS-Documentation"
 edit_uri: "https://github.com/unicef-drp/GeoSight-OS-Documentation/blob/main/src/"
 
 copyright: Unicef and Contributors
-
 markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.details
+  - pymdownx.emoji
+  - pymdownx.tasklist
+  - pymdownx.snippets
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.caret
   - attr_list
   - pymdownx.highlight:
       anchor_linenums: true
@@ -22,16 +31,11 @@ markdown_extensions:
       base_path: .
   - admonition
   - tables
-  - pymdownx.details
-  - pymdownx.caret
-  - pymdownx.keys
-  - pymdownx.mark
-  - pymdownx.tilde
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+          format: !!python/name:mermaid2.fence_mermaid_custom
   - pymdownx.emoji:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
       emoji_index: !!python/name:material.extensions.emoji.twemoji
@@ -145,6 +149,7 @@ nav:
           - "Simple Workflow": developer/documentation/easy-workflow.md
           - "Advanced Workflow": developer/documentation/overview.md
           - "Context Help": developer/documentation/context-help.md
+          
       # Other Dev docs not in menus:
           - "": developer/architecture-overview.md
           - "": developer/skills-needed.md
@@ -159,7 +164,7 @@ nav:
           - "": developer/setup/setup-generic/removing.md
           - "": developer/setup/setup-generic/run/index.md
           - "": developer/setup/setup-generic/run/run-with-vscode.md
-          - "": developer/setup/setup-generic/run/run-without-ide.md
+          - "": developer/setup/setup-generic/run/run-without-ide.md          
       # TODO: We will add this
       # - API:
       #   - developer/api/index.md

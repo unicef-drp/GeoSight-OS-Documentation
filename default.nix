@@ -30,6 +30,7 @@ in pkgs.mkShell rec {
     pythonPackages.pygobject3
     # Doesnt work properly
     #python311Packages.cffi
+    pythonPackages.mkdocs-mermaid2-plugin
     pinnedPkgs.gobject-introspection 
     pinnedPkgs.gtk3
     pinnedPkgs.taglib

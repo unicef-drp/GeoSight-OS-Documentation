@@ -13,9 +13,9 @@
  * __copyright__ = ('Copyright 2023, Unicef')
  */
 
-document$.subscribe(function() {
-    var tables = document.querySelectorAll("article table:not([class])")
-    tables.forEach(function(table) {
-      new Tablesort(table)
-    })
+document$.subscribe(function () {
+  var tables = document.querySelectorAll("article table:not([class])")
+  tables.forEach(function (table) {
+    new Tablesort(table)
   })
+})
