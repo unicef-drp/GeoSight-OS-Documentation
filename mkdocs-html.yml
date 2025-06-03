@@ -11,7 +11,7 @@ theme:
     - content.code.annotate
     - content.tabs.link
     - header.autohide
-    # - navigation.expand
+    - navigation.expand
     - navigation.indexes
     - navigation.instant
     - navigation.sections
@@ -61,6 +61,8 @@ extra_css:
 extra_javascript:
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
   - js/tablesort.js
+  - search/worker.js
+  - search/main.js
 
 # Needed for the hooks below to work
 plugins:
@@ -78,7 +80,7 @@ plugins:
             # Lots of other nice options can be found at  
             # https://mkdocstrings.github.io/python/usage/
             docstring_style: sphinx
-            heading_level: 3
+            heading_level: 1
             show_bases: true
             show_signature: true
             separate_signature: true

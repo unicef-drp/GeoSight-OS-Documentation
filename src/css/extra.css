@@ -15,7 +15,6 @@
 
 @font-face {
     src: url(../assets/AvenirLTStd-Book.otf);
-    font-family: avenir;
 }
 
 @page {
@@ -23,7 +22,6 @@
     margin: 0mm;
     padding: 25mm 10mm 25mm 10mm;
     counter-increment: page;
-    font-family: avenir;
     font-size: 8pt;
     white-space: normal;
     color: grey;
@@ -45,7 +43,6 @@ body {
     background-image: url('../img/BackgroundBorder.png');
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: avenir;
     height: 100vh;
 }
 /* Accent color: UNICEF blue */
@@ -59,7 +56,6 @@ body {
 
 /* General heading styling */
 h1, h2, h3, h4 {
-    font-family: 'Avenir', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', sans-serif;
     font-weight: 700;
     color: #333;
     margin-top: 1.2em;
@@ -131,7 +127,6 @@ blockquote p {
 }
 
 .card-header {
-    font-family: 'Avenir', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', sans-serif;
     font-weight: 700;
     font-size: 1.2em;
     color: #333;
@@ -141,7 +136,6 @@ blockquote p {
 }
 
 .card-body {
-    font-family: 'Avenir', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', sans-serif;
     font-size: 1em;
     color: #555;
 }
@@ -163,7 +157,6 @@ blockquote p {
     padding: 1em 1.5em;
     margin: 1.5em 0;
     border-radius: 4px;
-    font-family: 'Avenir', 'Avenir Next', 'Segoe UI', 'Helvetica Neue', sans-serif;
     color: #b71c1c; /* deep red text */
     position: relative;
     display: flex;
@@ -184,4 +177,153 @@ blockquote p {
 .admonition.warning {
     margin: 0;
     padding: 0;
+}
+/* MATERIAL THEME */
+.md-sidebar--primary nav {
+    padding-left: 16px;
+    margin-left: 0 !important;
+}
+.md-sidebar--primary nav ul {
+    padding-left: 0 !important;
+}
+@media screen and (max-width: 76.2344em) {
+    .md-sidebar--primary nav {
+        padding-left: 0;
+    }
+}
+.md-sidebar--primary .md-nav--lifted > ul > li > nav > ul > li {
+    margin-top: 0;
+}
+.md-sidebar--primary .md-nav--lifted > ul > li > nav {
+    padding-left: 0;
+}
+.md-sidebar--primary .md-nav--lifted > ul {
+    padding-left: 0;
+}
+.md-sidebar--primary .md-nav--lifted>.md-nav__list>.md-nav__item--active>.md-nav__link {
+    display: none;
+}
+:root {
+    --md-accent-fg-color: #2094f3;
+}
+
+/* NEW THEME */
+#toc-collapse {
+    padding: 0;
+}
+#toc-collapse ul {
+    padding-left: 16px;
+}
+#toc-collapse > ul {
+    padding-left: 0;
+}
+.bs-sidebar .nav li a {
+    padding-left: 0;
+}
+
+#toc-collapse {
+    border: unset !important;
+    box-shadow: unset !important;
+}
+#toc-collapse:hover {
+    transform: unset;
+}
+
+body {
+    font-family: var(--font-family-sans-serif) !important;
+}
+
+#navbar-collapse {
+    justify-content: space-between;
+}
+
+#navbar-collapse .dropdown-toggle::after {
+    vertical-align: 0.15em;
+}
+.navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.navbar-brand {
+    font-weight: 700;
+    font-size: .9rem;
+}
+footer {
+    padding: 0;
+    padding-bottom: 15px;
+    height: fit-content;
+    flex: unset !important;
+    margin-bottom: 0!important;
+}
+body > .container {
+    flex-grow: 1;
+}
+footer hr {
+    margin-bottom: 15px;
+}
+footer p {
+    margin-bottom: 3px;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.navbar-toggler {
+    border: unset !important;
+}
+.navbar-toggler:focus, .navbar-toggler:focus-visible {
+    outline: unset !important;
+}
+.btn-close {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 1px;
+    border: unset;
+    border-bottom: 2px solid;
+}
+#mkdocs_search_modal .modal-header {
+    padding-left: 0;
+    align-items: center;
+}
+#mkdocs_search_modal .modal-title {
+    margin-top: 0 !important;
+}
+@media (max-width: 991.98px) {
+    .navbar-toggler {
+        padding-right: 0;
+    }
+    #navbar-collapse {
+        padding-right: 1rem;
+    }
+    #navbar-collapse ul {
+        padding: 0;
+    }
+    #navbar-collapse a {
+        padding-top: 0;
+        padding-bottom: 0.5rem;
+        display: flex;
+        align-items: center;
+        color: white;
+        gap: 0.25rem;
+    }
+    #navbar-collapse a.active {
+        font-weight: 700;
+        background: unset;
+    }
+    #navbar-collapse .dropdown-toggle::after {
+        margin-left: 0;
+    }
+    #navbar-collapse .dropdown-submenu > a::after {
+        margin-top: 0;
+        border-left-color: white;
+    }
+    #navbar-collapse a:hover, #navbar-collapse a:focus, #navbar-collapse a:hover {
+        background: unset;
+        outline: unset;
+    }
+    #navbar-collapse .dropdown-menu {
+        background: unset;
+        box-shadow: unset;
+    }
 }
