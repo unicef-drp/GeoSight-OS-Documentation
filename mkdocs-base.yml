@@ -5,7 +5,7 @@ docs_dir: ./src
 site_dir: ./site
 repo_name: "GeoSight-OS"
 repo_url: "https://github.com/unicef-drp/GeoSight-OS-Documentation"
-edit_uri: "https://github.com/unicef-drp/GeoSight-OS-Documentation/blob/main/src/"
+edit_uri: "https://github.com/unicef-drp/GeoSight-OS-Documentation/edit/main/src/"
 
 copyright: Unicef and Contributors
 
