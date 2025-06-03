@@ -23,6 +23,8 @@ on:
       - "**.md"
       - "**.py"
       - "**.yml"
+      - "**.html"
+      - "**.css"
       - "assets/**"
   # Allow manually running in the actions tab
   workflow_dispatch:
