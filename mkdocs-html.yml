@@ -3,6 +3,7 @@
 theme:
   # See https://mkdocs.github.io/mkdocs-bootswatch/
   name: materia
+  custom_dir: templates
   language: en
   direction: ltr
   include_search_page: false
@@ -45,13 +46,13 @@ theme:
 
 extra:
   social:
-    - icon: fontawesome/brands/github
+    - icon: fab fa-github
       link: https://github.com/unicef-drp/
-    - icon: fontawesome/brands/twitter
+    - icon: fab fa-twitter
       link: https://twitter.com/UNICEF
-    - icon: fontawesome/brands/facebook
+    - icon: fab fa-facebook
       link: https://www.facebook.com/unicef/
-    - icon: fontawesome/solid/earth-africa
+    - icon: fas fa-globe-africa
       link: https://www.unicef.org/
 
 extra_css:
