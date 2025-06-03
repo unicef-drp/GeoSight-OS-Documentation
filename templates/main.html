@@ -27,7 +27,7 @@
     {%- if page and page.edit_url %}
         <li class="nav-item edit-url">
             <a href="{{ page.edit_url }}" class="nav-link" target="_blank">
-                <i class="fa-brands fa-github"></i> {% trans repo_name=config.repo_name %}Edit on {{ repo_name }}{% endtrans %}
+                <i class="fas fa-pen-to-square"></i> {% trans repo_name=config.repo_name %}Edit{% endtrans %}
             </a>
         </li>
     {%- endif %}
