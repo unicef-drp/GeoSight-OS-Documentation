@@ -216,6 +216,26 @@ if [[ " $* " == *" --verbose "* ]]; then
     cat "$SETTINGS_FILE"
 fi
 
+# Add VSCode runner configuration
+
+cat <<EOF >.vscode/tasks.json
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Generate MkDocs HTML Config",
+            "type": "shell",
+            "command": "\${workspaceFolder}/create-mkdocs-html-config.sh",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}
+EOF
+
 echo "🗨️ Installing required extensions..."
 for ext in "${REQUIRED_EXTENSIONS[@]}"; do
     if echo "$installed_exts" | grep -q "^${ext}$"; then

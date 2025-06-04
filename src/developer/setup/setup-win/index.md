@@ -1,5 +1,5 @@
 ---
-title: GeoSight-OS Documentation Home 
+title: Windows Development Setup
 summary: GeoSight is UNICEF's geospatial web-based business intelligence platform.
     - Tim Sutton
     - Irwan Fathurrahman
@@ -12,11 +12,10 @@ license: This program is free software; you can redistribute it and/or modify it
 #context_id: 1234
 ---
 
-## 🪟 Windows
 
-### Setup Docker with WSL2 on Windows
+For windows development setup, we will use WSL2 (Windows Subsystem for Linux) to run the development environment. This allows us to run a Linux distribution on Windows, which is more compatible with the tools and libraries used in GeoSight.
 
-#### WSL2
+## WSL2
 
 WSL2 is needed to run linux environment in Windows. Follow step by step below to install WSL2.
 
@@ -102,17 +101,17 @@ You should update your system after this by running command:
 sudo apt-get update && sudo apt-get upgrade
 ```
 
-**Install Git**
+## Install Git
 
 ```bash
 sudo apt-get install git
 ```
 
-**(Optional) Generate SSH key pair**
+## (Optional) SSH Setup
 
 The SSH are preferred when fetching and pushing codes to GitHub. Please follow [this link](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=linux#generating-a-new-ssh-key) to generate SSH key pair and add it into your GitHub account.
 
-**(Optional) Install GPG on WSL2**
+## (Optional) GPG Setup
 
 GPG signing keys are used to sign the commits. WSL2 can use the keys from Windows by following [this tutorial](https://gist.github.com/matthiasr/473072eeffe449459e3ccd0f5192afc7). Next, we need to update the configuration inside WSL2, edit or create if this file does not exist: `~/.gnupg/gpg-agent.conf`.
 
@@ -130,13 +129,13 @@ gpgconf --kill gpg-agent
 
 Once the key is generated, please follow [this link](https://docs.github.com/en/authentication/managing-commit-signature-verification/adding-a-gpg-key-to-your-github-account) to add it into your GitHub account.
 
-#### Install Docker Desktop
+## Docker Setup
 
 Follow [this guide](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-containers#overview-of-docker-containers) to install docker desktop that integrates with WSL2. After docker is installed and running, we recommend to disable the `Resource Saver` feature as it may cause unexpected issue during development.
 
 ![image.png](./img/wsl-8.png)
 
-#### Install VSCode
+## Install VSCode
 
 Follow the installation steps from [this link](https://code.visualstudio.com/docs/setup/windows) to setup the VSCode on Windows. The VSCode CLI will also be installed in the WSL2 and you can check by running below command in the WSL2 Ubuntu terminal.
 
@@ -152,7 +151,6 @@ It will return output like below:
 x64
 ```
 
-
-### Next Steps
+## Next Steps
 
 > 🪧 Now that you have the docker, move on to the generic workflow, starting with [Cloning](../setup-generic/cloning.md).

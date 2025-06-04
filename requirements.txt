@@ -1,6 +1,7 @@
 #Alternative for pdf creation - broken on nixos and lately ubuntu
 mkdocs-with-pdf
 mkdocs-bootswatch==1.1
+mkdocs-mermaid2-plugin
 # Export to pdf - see https://comwes.github.io/mkpdfs-mkdocs-plugin/index.html
 #mkpdfs-mkdocs
 # Rather do
