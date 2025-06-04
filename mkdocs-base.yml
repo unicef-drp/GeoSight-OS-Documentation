@@ -134,13 +134,13 @@ nav:
             - "Overview": developer/setup/setup-generic/index.md
             - "Cloning": developer/setup/setup-generic/cloning.md
             - "Configuration": developer/setup/setup-generic/configuration.md
+            - "Running":
+              - "Overview": developer/setup/setup-generic/run/index.md
+              - "VSCode": developer/setup/setup-generic/run/run-with-vscode.md
+              - "CLI": developer/setup/setup-generic/run/run-without-ide.md
             - "Demo Data": developer/setup/setup-generic/demo-data.md
             - "GeoRepo": developer/setup/setup-generic/georepo.md
             - "Removing": developer/setup/setup-generic/removing.md
-            - "Running": 
-              - "Overview": developer/setup/setup-generic/run/index.md
-              - "VSCode": developer/setup/setup-generic/run/run-with-vscode.md
-              - "CLI": developer/setup/setup-generic/run/run-without-ide.md      
       - Manual:
           - developer/manual/index.md
           - Architecture: developer/manual/architecture.md

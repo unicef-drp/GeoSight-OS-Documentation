@@ -61,13 +61,13 @@ theme:
 
 extra:
   social:
-    - icon: fab fa-github
+    - icon: fontawesome/brands/github
       link: https://github.com/unicef-drp/
-    - icon: fab fa-twitter
+    - icon: fontawesome/brands/twitter
       link: https://twitter.com/UNICEF
-    - icon: fab fa-facebook
+    - icon: fontawesome/brands/facebook
       link: https://www.facebook.com/unicef/
-    - icon: fas fa-globe-africa
+    - icon: fontawesome/solid/earth-africa
       link: https://www.unicef.org/
 
 extra_css:
