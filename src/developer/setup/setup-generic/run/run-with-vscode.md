@@ -78,6 +78,10 @@ Just ctrl + click the url link `0.0.0.0:8080` and click `Open`
 ![image.png](../img/building-23.png)
 ![image.png](../img/building-24.png)
 
+> ⭐️ **Note**: On macOS, this will show a blank page because VSCode copies using 0.0.0.0:2000, which does not work on macOS.
+You can manually access it at http://localhost:2000.
+
+
 Or you can access your server directly on port 2000 of your local host:
 
 ```bash
