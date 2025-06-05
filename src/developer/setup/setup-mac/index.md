@@ -71,10 +71,10 @@ jq --version
 
 ### ✅ make
 
-Option 1: Install via Xcode Command Line Tools
+Make is a build automation tool that is used to manage dependencies and automate the build process.
 
 ```bash
-xcode-select --install
+brew install make
 ```
 
 ### Git
