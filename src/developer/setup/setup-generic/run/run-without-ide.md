@@ -24,6 +24,16 @@ make dev
 
 Note: With this approach, you won’t have access to integrated debugging features provided by full IDEs.
 
+To verify that the development instance is running correctly, execute the following command:
+```bash
+docker logs -f geosight_dev
+```
+Allow the process to continue until the following message or indicator appears:
+
+![image.png](../img/building-25.png)
+
+Once this confirmation is visible, you may proceed to the next step to access your running instance.
+
 ## Viewing your test instance
 
 After completing the steps above, you should have the development server available on port 2000 of your local host:
