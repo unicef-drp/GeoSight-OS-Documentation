@@ -24,7 +24,7 @@ Our development workflow is container centric, which means that you will need to
 | Applications (vscode, wsl, docker desktop, etc.) | 7 GB |
 | **Total** | **23 GB** |
 
-Note the docker volumes could group significantly in size depending on the amount of data you have in your media and static files, as well as the size of your database. The source code and documentation sizes are relatively stable. Also some operating systems will require less space than others, for example, Windows will require more space than Linux or macOS due to the way Docker is implemented on those platforms.
+Note the docker volumes could vary significantly in size depending on the amount of data you have in your media and static files, as well as the size of your database. The source code and documentation sizes are relatively stable. Also some operating systems will require less space than others, for example, Windows will require more space than Linux or macOS due to the way Docker is implemented on those platforms.
 
 ## Setup Guides
 
