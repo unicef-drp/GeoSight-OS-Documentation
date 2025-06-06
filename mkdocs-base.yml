@@ -125,8 +125,8 @@ nav:
       - developer/index.md
       - "Architecture Overview": developer/architecture-overview.md
       - "Skills Needed": developer/skills-needed.md      
-      - Getting Started:
-          - "Before you start": developer/setup/index.md
+      - Setup Guide:
+          - "Preparation": developer/setup/index.md
           - "Windows 11 Pro": developer/setup/setup-win/index.md
           - "macOS 15": developer/setup/setup-mac/index.md
           - "Ubuntu Linux 24.04 LTR": developer/setup/setup-linux/index.md
