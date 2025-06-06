@@ -78,10 +78,12 @@ After completing the steps above, you should have the development server availab
 
 To open the application, you should follow the operating system specific instructions below:
 
-> 🍏 **macOS**: On macOS, this will show a blank page because VSCode copies using 0.0.0.0:2000, which does not work on macOS.
+* 🍏 **macOS**: On macOS, this will show a blank page because VSCode copies using 0.0.0.0:2000, which does not work on macOS.
 You can manually access it at <http://localhost:2000>.
-> 🐧 **Linux**: On Linux, you can access the application at <http://localhost:2000>.
-> 🪟 **Windows**: On Windows, you can access the application at <http://host.docker.internal:2000>. Alternatively you can access it on http://[your ip address]:2000.
+
+* 🐧 **Linux**: On Linux, you can access the application at <http://localhost:2000>.
+
+* 🪟 **Windows**: On Windows, you can access the application at <http://host.docker.internal:2000>. Alternatively you can access it on http://[your ip address]:2000.
 
 ![image.png](../img/building-5.png)
 
