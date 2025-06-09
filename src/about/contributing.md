@@ -22,7 +22,7 @@ feel free to propose changes to this document in a pull request.
 ## Reporting Bugs
 
 Bugs are tracked as GitHub issues. Search the list and try reproduce on your
-local machine with a clean profile before you create an issue. 
+local machine with a clean profile before you create an issue.
 When you create an issue, please provide the following information by filling
 in the template.
 
@@ -79,33 +79,39 @@ through these `document`, `good first issue` and `help wanted` issues:
 ## Pull Requests
 
 ### Development workFlow
-- Set up your development environment
-- Make change from a right branch
-- Be sure the code passes tests
-- Make a pull request
+
+* Set up your development environment
+
+* Make change from a branch
+* Be sure the code passes tests
+* Make a pull request
 
 ### Development environment
 
-- Prepare your machine and it's packages installed.
-- Checkout our repository
-- Install dependencies by `pip install -r REQUIREMENTS-dev.txt`
-
+We provide detailed documentation on setting up your development environment - see the [developer section](../developer/index.md) for more information.
 
 ### Make changes
+
 #### Checkout a branch
-- **master**: PR Base branch.
-- **production**: lastest release branch with distribution files. Never make a PR on this.
-- **gh-pages**: API docs, examples and demo
+
+Our codebase has the following standard branches:
+* **master**: PR Base branch.
+
+* **production**: lastest release branch with distribution files. Never make a PR on this.
+* **gh-pages**: API docs, examples and demo
 
 #### Check Code Style
+
 Run the pylance extension and make sure all the tests pass.
 
 #### Test
+
 Run `TODO` and verify all the tests pass.
 If you are adding new commands or features, they must include tests.
 If you are changing functionality, update the tests if you need to.
 
 #### Commit
+
 Follow our [commit message conventions](../developer/manual/templates/commit-message-convention.md).
 
 ### Yes! Pull request
@@ -113,25 +119,30 @@ Follow our [commit message conventions](../developer/manual/templates/commit-mes
 Make your pull request, then describe your changes.
 
 #### Title
+
 Follow other PR title format on below.
+
 ```
     <Type>: Short Description (fix #111)
     <Type>: Short Description (fix #123, #111, #122)
     <Type>: Short Description (ref #111)
 ```
+
+Where type is one of Feature, Bug Fix, Enhancement
+
 * capitalize first letter of Type
 * use present tense: 'change' not 'changed' or 'changes'
 
 #### Description
 
-If it has related issues, add links to the issues(like `#123`) in the description.
+If your PR has related issues, add links to the issues(like `#123`) in the description.
 Fill in the [Pull Request Template](../developer/manual/templates/pull-request-template.md) by check your case.
 
 ## Code of Conduct
 
 This project and everyone participating in it is governed by the [Code of
 Conduct](code-of-conduct.md). By participating, you are expected to uphold this
-code. Please report unacceptable behavior to tim@kartoza.com.
+code. Please report unacceptable behavior to <tim@kartoza.com>.
 
 > This guide is based on [atom contributing
 guide](https://github.com/atom/atom/blob/master/CONTRIBUTING.md),
