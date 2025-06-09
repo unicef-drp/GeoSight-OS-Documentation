@@ -11,9 +11,9 @@ license: This program is free software; you can redistribute it and/or modify it
 #context_id: 1234
 ---
 
-# Github Workflows
+## Github Workflows
 
-## Adding a Feature
+### Adding a Feature
 
 - Create an Issue
 - Wait for it to be added to a Sprint
@@ -21,14 +21,14 @@ license: This program is free software; you can redistribute it and/or modify it
 - Playwright Tests
 - Write end user documentation
 
-## Fixing a Bug
+### Fixing a Bug
 
 - Claim an Issue
 - Wait for it to be added to a Sprint
 - Regression Test
 - Implement Fix
 
-## Make PR for Feature/Bug Fix
+### Make PR for Feature/Bug Fix
 
 ### Committing To Project
 
