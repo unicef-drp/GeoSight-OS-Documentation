@@ -95,6 +95,7 @@ We provide detailed documentation on setting up your development environment - s
 #### Checkout a branch
 
 Our codebase has the following standard branches:
+
 * **master**: PR Base branch.
 
 * **production**: lastest release branch with distribution files. Never make a PR on this.
@@ -109,6 +110,10 @@ Run the pylance extension and make sure all the tests pass.
 Run `TODO` and verify all the tests pass.
 If you are adding new commands or features, they must include tests.
 If you are changing functionality, update the tests if you need to.
+
+#### Translate
+
+If you are adding new strings, please make sure to update the translation files. The workflow for doing this is described in the [translation guide](../developer/manual/translations.md).
 
 #### Commit
 
