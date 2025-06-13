@@ -13,7 +13,11 @@ license: This program is free software; you can redistribute it and/or modify it
 
 ## Quickstart
 
-This section describes the key steps for preparing your first GeoSight dashboard.
+This section describes the key steps for preparing your first GeoSight dashboard and uploading sample data.
+
+> 🗂️ **Here are a few sample datasets that you can start with:** 
+> - [Sample admin boundary dataset - Somalia Districts (SHP)](data/som_admin_2.zip)
+> - [Sample indicator data for Somalia districts (XLSX)](data/som_sampl_ind_a_2010_2020.xlsx)
 
 ![Quick Steps](img/geosight-quick-start-main-steps.png)
 
