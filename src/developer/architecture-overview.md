@@ -32,3 +32,4 @@ graph TD
     Docker --> PostgreSQL
     Docker --> Celery    
 ```
+![Architecture Diagram](./img/geosight_architecture.svg)
