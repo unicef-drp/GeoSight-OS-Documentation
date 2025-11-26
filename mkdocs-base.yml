@@ -115,12 +115,12 @@ nav:
           - Users and Groups: user/manual/users-and-groups.md
           - PDF User Guide: user/manual/GeoSight User Guide.pdf
           - "": user/manual/date-and-time.md
-  - Administrators:
-      - administrator/index.md
-      - Guide:
-          - administrator/guide/index.md
-      - Manual:
-          - administrator/manual/index.md
+#  - Administrators:
+#      - administrator/index.md
+#      - Guide:
+#          - administrator/guide/index.md
+#      - Manual:
+#          - administrator/manual/index.md
   - Developers:
       - developer/index.md
       - "Architecture Overview": developer/architecture-overview.md
@@ -175,7 +175,7 @@ nav:
       #   - Reference: developer/api/manual/index.md
       #   - Guide: developer/api/guide/index.md
       - License: about/license.md
-  - DevOps:
-      - devops/index.md
-      - Guide: devops/guide/index.md
-      - Manual: devops/manual/index.md
+#  - DevOps:
+#      - devops/index.md
+#      - Guide: devops/guide/index.md
+#      - Manual: devops/manual/index.md
