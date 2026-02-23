@@ -14,22 +14,7 @@ license: This program is free software; you can redistribute it and/or modify it
 A Cloud Native GIS Context Layer is a type of context layer designed to store vector data and display it on the map.
 This section explains how to manage Cloud Native GIS Context Layers through the RESTful API.
 
-## Authentication
-
-All API requests must include an API token in the `Authorization` header. You can generate or retrieve your token from the GeoSight user settings page.
-
-```
-Authorization: Token <your-api-token>
-```
-
-**Example using curl:**
-
-```bash
-curl -X GET "https://<your-geosight-host>/api/v1/context-layers/" \
-  -H "Authorization: Token <your-api-token>"
-```
-
-Requests made without a valid token will receive an `HTTP 401 Unauthorized` response.
+For authentication details, see the [API Guide](../../guide/index.md#authentication).
 
 ------------------------------------
 
