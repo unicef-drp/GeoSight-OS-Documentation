@@ -12,6 +12,12 @@ license: This program is free software; you can redistribute it and/or modify it
 # Related Tables 
 Related Tables are disaggregated sheets that span one and/or all of different dimensions including dataset, location and time series. Instead of users sorting these tables and uploading them individually, they can be ingested into GeoSight for more front and back-end malleability. 
 
+> 💡 **Here are a few quick tips for working with Related Tables:** 
+> - **Related Tables** can be used within GeoSight for 1) creating point context layers (including heatmaps) and 2) creating indicator layers
+> - To create a **point context layer**, the Related Table must have a **lat/lon** numeric columns
+> - To create an **indicator layer**, the Related Table must have a **Ucode** and **DateTime** columns
+> - When importing Related Tables - please check that your **data is properly formatted**. Lat/lon values must be **numeric**, Ucodes must exist in reference datasaets, dates must be formatted as `2026-01-01T00:00:00.000Z`
+
 ## Importing Related Tables
 Importing related tables is quite simple and only requires GeoSight to ingest the sheet. In this process, many of the tabs above will not be available.
 
