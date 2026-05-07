@@ -1,23 +1,47 @@
-#Alternative for pdf creation - broken on nixos and lately ubuntu
-mkdocs-with-pdf
-mkdocs-bootswatch==1.1
-mkdocs-mermaid2-plugin
-# Export to pdf - see https://comwes.github.io/mkpdfs-mkdocs-plugin/index.html
-#mkpdfs-mkdocs
-# Rather do
-# pip install -e git+https://github.com/jwaschkau/mkpdfs-mkdocs-plugin.git#egg=mkpdfs-mkdocs
-mkdocs-material==9.5.39
-mdx_gh_links
-mkdocs-pdf-export-plugin
-mkdocstrings-python
+# MkDocs core theme with Material Design
+mkdocs-material
+
+# Embed videos in documentation pages
 mkdocs-video
+
+# Page redirects for moved/renamed pages
 mkdocs-redirects
-#mkdocs-enumerate-headings-plugin
+
+# Auto-number headings across pages
+mkdocs-enumerate-headings-plugin
+
+# Show last git revision date on pages
 mkdocs-git-revision-date-localized-plugin
-# needed for the create-uuid.py helper script
-shortuuid
-# Needed for mkdocstrings python documentation generator
+
+# Export documentation to PDF
+mkdocs-with-pdf
+
+# Alternative PDF export plugin
+mkdocs-pdf-export-plugin
+
+# Auto-generate docs from Python docstrings
+mkdocstrings-python
+
+# Markdown extension for GitHub user/repo/issue links
+mdx_gh_links
+
+# Code formatter, used by mkdocstrings for rendering
 black
+
+# C Foreign Function Interface, required by some mkdocs plugins
 cffi
-# Needed for PDF back page QR Code
+
+# Generate short UUIDs, used by create-uuid.py helper script
+shortuuid
+
+# Generate QR codes for PDF back page
 qrcode
+
+# Mermaid diagram rendering in MkDocs
+mkdocs-mermaid2-plugin
+
+# Bootswatch themes for MkDocs
+mkdocs-bootswatch==1.1
+
+# Git pre-commit hooks framework
+pre-commit

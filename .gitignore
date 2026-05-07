@@ -4,6 +4,7 @@ pdfs/
 
 # mkdocs related
 mkdocs.yml
+!.github/workflows/mkdocs.yml
 templates/graphics.scss
 site/*
 
