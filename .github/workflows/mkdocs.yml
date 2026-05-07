@@ -6,10 +6,11 @@ on:
       - docs
     # Paths can be used to only trigger actions when you have edited certain files, such as a file within the /docs directory
     paths:
-      - "mkdocs.yml"
-      - "docs/**.md"
-      - "docs/**.py"
-      - "docs/assets/**"
+      - "mkdocs*.yml"
+      - "src/**.md"
+      - "src/**.py"
+      - "assets/**"
+      - "requirements.txt"
   pull_request:
   # Allow manually running in the actions tab
   workflow_dispatch:
@@ -31,7 +32,7 @@ jobs:
       - name: Install dependencies
         run: |
             pip install --upgrade pip
-            pip install --no-cache-dir -r docs/requirements.txt
+            pip install --no-cache-dir -r requirements.txt
 
       - name: Verify installed packages
         run: |
@@ -39,14 +40,13 @@ jobs:
           pip list | grep mkdocs-video || echo "mkdocs-video is NOT installed!"
 
       - name: Create MkDocs Config 🚀
-        working-directory: ./docs
         run: ./create-mkdocs-html-config.sh
 
       - name: Build MkDocs Site (Explicit Config Path)
-        run: mkdocs build --clean --config-file ./docs/mkdocs.yml
+        run: mkdocs build --clean --config-file ./mkdocs.yml
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs/site
+          publish_dir: ./site
