@@ -48,7 +48,7 @@ nav:
       - Code of Conduct: about/code-of-conduct.md
       - Disclaimer: about/disclaimer.md
       - License: about/license.md
-      - Running Instances: about/running-instances.md
+      #- Running Instances: about/running-instances.md
   - Users:
       - user/index.md
       - Quick Start: user/quickstart/index.md

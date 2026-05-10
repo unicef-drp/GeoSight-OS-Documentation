@@ -10,30 +10,92 @@ license: This program is free software; you can redistribute it and/or modify it
 #context_id: 1234
 ---
 # Creating a Project
-The project helps to display context and indicators layers have tools and widgets for performing data analysis on country/regional levels. 
+The Project is an interactive, map-based dashboard designed to visualize and analyze spatial data. It enables users to display multiple contextual and indicator layers, apply filters to indicator datasets, and use a range of analytical tools such as zonal analysis and overlays. Indicator data can also be summarized and presented through interactive widgets.
 
-1.	Navigate to the project section under the admin panel. 
+A Project can be configured by following these steps:
 
-2.	Select “Add New Project” 
+1.	Navigate to the Project section under the admin panel. 
+
+2.	Click Create New Project
 
 ## General Tab
-3.	Complete the General tab.
+1. Provide the Name of the Project
 
-    a.	Select a reference dataset
-        
-        i.	This must align with the reference dataset for your indicators (this is the vector layer from GeoRepo). 
-    b.	Enter a name
+2. Select Project Category (create new one if needed)
 
-    c.	Define available levels
+3. Adjust the Project URL (if needed)
 
-        i.	This allows users to control what administrative levels can be used. This can limit the display of empty datasets and allow the management of datasets across different scales.
-    d.	Define the extent
 
-        i.	Extent- T view you would like the dashboard to open on. 
+### General Settings for Indicator Data
+If a Project is intended for visualizing indicator data (layers), configure the following settings:
 
-        ii.	Enter the latitude and longitude for the corners of the extent OR 
+4. Select a Geospatial Reference Dataset
 
-4.	Draw a polygon by selecting the pentagon in the top right corner.
+    a. Choose the geospatial reference dataset that will be used to visualize indicator data. Depending on the plugins installed in your GeoSight instance, you can select either a **Local** or **Remote (GeoRepo)** repository of reference layers.
+
+    Leave this field empty (or clear the selection using the **X** icon) if the map will only use contextual layers.
+
+    b. Select the Repository Type
+    Open the **View** dropdown and choose the type of reference dataset:
+    - **Local**
+    - **Remote (GeoRepo)**
+
+    c. Select the View
+    - For a **Local** repository, select the required **View** (reference dataset).
+    - For a **Remote (GeoRepo)** repository:
+        1. Select the main **Dataset**
+        2. Then select the appropriate **View**
+
+5. Define the Default Level
+    Specify the administrative level at which the dashboard will open by default. Examples typically include:
+    - **Level 0** — Country / Territory
+    - **Level 1** — Province / Governorate / State
+    - **Level 2+** — Lower administrative levels such as Districts, Subdistricts, etc.
+
+6. Define Available Levels
+
+Enable or disable specific administrative levels as needed. For example, you may want to create a web map that only supports a single admin level (e.g. country level).
+
+This setting allows you to:
+- Control which administrative levels are available to users
+- Reduce the display of empty datasets
+- Manage datasets across different geographic scales more effectively
+
+Note that this setting can be overwritten for each Indicator Layer.
+
+7. Select the Mapping Method
+
+The mapping method defines how indicator data is joined with the reference layer.
+
+    GeoRepo generates a new Ucode for every new version of an administrative unit. For example:
+    - `AGO_V1` = Angola boundary, version 1
+    - `AGO_V2` = Angola boundary, version 2
+
+    If indicator data references `AGO_V1`, it will not display on a reference layer using `AGO_V2`, because the Ucodes differ.
+
+    However, if both versions represent the same geographic entity and share similar geometry, they will also share the same **Concept UUID**. In this case, legacy data referencing `AGO_V1` can still be mapped to `AGO_V2` boundaries when using the **Concept UUID** mapping method.
+
+    a. Latest Ucode
+    This option joins indicator data with geographic boundaries using the **Ucode** field.
+
+    b. Concept UUID
+    This option joins indicator data with geographic boundaries using the **Concept UUID** field.
+
+
+### Other General Settings
+
+8. Define the Map Extent
+
+Define the initial map extent displayed when the Project opens.
+
+You can configure the extent in one of the following ways:
+
+    a. Enter Coordinates Manually
+    Provide the latitude and longitude coordinates for the corners of the extent.
+
+    b. Draw a Polygon
+    Use the polygon drawing tool by selecting the **pentagon icon** in the top-right corner of the map interface.
+
 
 ![Determining an extent by drawing the coverage box](image.png)
 
