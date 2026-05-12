@@ -54,32 +54,32 @@ If a Project is intended for visualizing indicator data (layers), configure the 
 
 6. Define Available Levels
 
-Enable or disable specific administrative levels as needed. For example, you may want to create a web map that only supports a single admin level (e.g. country level).
+    Enable or disable specific administrative levels as needed. For example, you may want to create a web map that only supports a single admin level (e.g. country level).
 
-This setting allows you to:
-- Control which administrative levels are available to users
-- Reduce the display of empty datasets
-- Manage datasets across different geographic scales more effectively
+    This setting allows you to:
+        - Control which administrative levels are available to users
+        - Reduce the display of empty datasets
+        - Manage datasets across different geographic scales more effectively
 
-Note that this setting can be overwritten for each Indicator Layer.
+    Note that this setting can be overwritten for each Indicator Layer.
 
 7. Select the Mapping Method
 
-The mapping method defines how indicator data is joined with the reference layer.
+    The mapping method defines how indicator data is joined with the reference layer.
 
     GeoRepo generates a new Ucode for every new version of an administrative unit. For example:
-    - `AGO_V1` = Angola boundary, version 1
-    - `AGO_V2` = Angola boundary, version 2
+        - **AGO_V1** = Angola boundary, version 1
+        - **AGO_V2** = Angola boundary, version 2
 
-    If indicator data references `AGO_V1`, it will not display on a reference layer using `AGO_V2`, because the Ucodes differ.
+    If indicator data references **AGO_V1**, it will not display on a reference layer using **AGO_V2**, because the Ucodes differ.
 
-    However, if both versions represent the same geographic entity and share similar geometry, they will also share the same **Concept UUID**. In this case, legacy data referencing `AGO_V1` can still be mapped to `AGO_V2` boundaries when using the **Concept UUID** mapping method.
+    However, if both versions represent the same geographic entity and share similar geometry, they will also share the same **Concept UUID**. In this case, legacy data referencing **AGO_V1** can still be mapped to **AGO_V2** boundaries when using the **Concept UUID** mapping method.
 
     a. Latest Ucode
-    This option joins indicator data with geographic boundaries using the **Ucode** field.
+        This option joins indicator data with geographic boundaries using the **Ucode** field.
 
     b. Concept UUID
-    This option joins indicator data with geographic boundaries using the **Concept UUID** field.
+        This option joins indicator data with geographic boundaries using the **Concept UUID** field.
 
 
 ### Other General Settings
