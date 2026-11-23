@@ -641,6 +641,55 @@
     </span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#configuring-sdmx-indicator-layers">
+<span class="md-ellipsis">
+      
+        Configuring SDMX Indicator Layers
+      
+    </span>
+</a>
+<nav aria-label="Configuring SDMX Indicator Layers" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#layer-metadata">
+<span class="md-ellipsis">
+      
+        Layer Metadata
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#sdmx-config">
+<span class="md-ellipsis">
+      
+        SDMX Config
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#filter-dimensions">
+<span class="md-ellipsis">
+      
+        Filter Dimensions
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#data-config">
+<span class="md-ellipsis">
+      
+        Data Config
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
 </ul>
 </nav>
 </li>
@@ -1883,6 +1932,55 @@
     </span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#configuring-sdmx-indicator-layers">
+<span class="md-ellipsis">
+      
+        Configuring SDMX Indicator Layers
+      
+    </span>
+</a>
+<nav aria-label="Configuring SDMX Indicator Layers" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#layer-metadata">
+<span class="md-ellipsis">
+      
+        Layer Metadata
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#sdmx-config">
+<span class="md-ellipsis">
+      
+        SDMX Config
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#filter-dimensions">
+<span class="md-ellipsis">
+      
+        Filter Dimensions
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#data-config">
+<span class="md-ellipsis">
+      
+        Data Config
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
 </ul>
 </nav>
 </div>
@@ -1912,6 +2010,9 @@
 <li>
 <p><em>Dynamic Layers</em> are customizable layers that can be created by using a custom expression tailored by user feedback.</p>
 <p>a. Users will be prompted to define SQL expressions that allow for data to be filtered and selected from other datasets for visualization.</p>
+</li>
+<li>
+<p><em>SDMX Indicator Layers</em> read their data directly from an SDMX (Statistical Data and Metadata eXchange) API, such as the UNICEF Data Warehouse, instead of from an indicator stored in GeoSight. See <a href="#configuring-sdmx-indicator-layers">Configuring SDMX Indicator Layers</a>.</p>
 </li>
 <li>
 <p><em>Related Tables</em> are layers that allow for Splicing and the manipulation of previously uploaded related tables. See Related Tables for more details.</p>
@@ -2007,13 +2108,70 @@
 <li>
 <p>Apply any visualization changes (it is same process as all other layers).</p>
 </li>
-</ol></div>
+</ol>
+<h2 id="configuring-sdmx-indicator-layers">Configuring SDMX Indicator Layers<a class="headerlink" href="#configuring-sdmx-indicator-layers" title="Permanent link">¶</a></h2>
+<p>An SDMX indicator layer shows data that GeoSight reads directly from an SDMX API. The data isn't imported into GeoSight; the layer asks the API for it whenever the project is opened.</p>
+<p>To create one, open the project's Indicator Layers tab and select <strong>Add Indicator Layer</strong>, then <strong>SDMX Indicators Layer</strong>. If the <strong>SDMX layer</strong> tool is turned on in the project's Tools tab, the <strong>Create SDMX layer</strong> button in the project's toolbar opens the same window.</p>
+<p>The <strong>General</strong> tab of the configuration window has four sections.</p>
+<h3 id="layer-metadata">Layer Metadata<a class="headerlink" href="#layer-metadata" title="Permanent link">¶</a></h3>
+<ol>
+<li>
+<p>Enter the layer's name and description.</p>
+</li>
+<li>
+<p><strong>Source</strong> is filled in with the agency of the selected dataflow. You can change it.</p>
+</li>
+</ol>
+<h3 id="sdmx-config">SDMX Config<a class="headerlink" href="#sdmx-config" title="Permanent link">¶</a></h3>
+<p><img alt="SDMX Config section of an SDMX indicator layer" src="../img/sdmx-indicator-layer-sdmx-config.png"/></p>
+<ol>
+<li>
+<p>Choose the <strong>SDMX Mode</strong>:</p>
+<p>a.  <strong>config</strong>: pick the source step by step from an SDMX configuration set up by an administrator: <strong>SDMX Config</strong>, <strong>Agency</strong>, <strong>Dataflow</strong> and <strong>Dataflow Version</strong>. GeoSight builds the <strong>SDMX URL</strong> for you.</p>
+<p>b.  <strong>url</strong>: paste a complete SDMX data URL.</p>
+</li>
+<li>
+<p>SDMX configurations (the base URL of an SDMX API) are managed by administrators in the Django admin, under <strong>Sdmx configs</strong>.</p>
+</li>
+</ol>
+<h3 id="filter-dimensions">Filter Dimensions<a class="headerlink" href="#filter-dimensions" title="Permanent link">¶</a></h3>
+<ol>
+<li>
+<p>Limit the data to the dimension values you need, for example one indicator or a set of areas. Leave a dimension empty to include all its values.</p>
+</li>
+<li>
+<p>Use the time period fields to limit the data to a date range. Dates before 1900-01-01 aren't applied, and the end date must be after the start date.</p>
+</li>
+</ol>
+<h3 id="data-config">Data Config<a class="headerlink" href="#data-config" title="Permanent link">¶</a></h3>
+<p>Tell GeoSight how to read the data. GeoSight fills in the fields it can recognise:</p>
+<p><img alt="Data Config section of an SDMX indicator layer" src="../img/sdmx-indicator-layer-data-config.png"/></p>
+<ol>
+<li>
+<p><strong>Column Geograph Code</strong>: the column with the area codes (REF_AREA by default). The codes must match the project's reference dataset.</p>
+</li>
+<li>
+<p><strong>Value Column</strong>: the column with the values (OBS_VALUE by default).</p>
+</li>
+<li>
+<p><strong>Aggregation</strong>: how to combine several values for the same area and date (SUM by default).</p>
+</li>
+<li>
+<p><strong>Date Time Column/Field</strong>: the column with the date (TIME_PERIOD by default).</p>
+</li>
+<li>
+<p><strong>Date Time Format</strong>: the format of the dates in that column. GeoSight detects it from the data, for example <strong>Date (YYYY-MM-DD)</strong> or <strong>Year-Month (YYYY-MM)</strong>.</p>
+<p>a.  If you choose another format, GeoSight keeps your choice when you change other settings, such as the time period or the aggregation. It only detects the format again if the data changes to a different date format, for example after you choose another dataflow.</p>
+</li>
+</ol>
+<p>All required fields must be filled in before <strong>Apply Changes</strong> becomes available.</p>
+<p>Use the <strong>Data Preview</strong> tab to check the data the layer will show, and the <strong>Style</strong>, <strong>Label</strong> and <strong>Popup</strong> tabs as for other indicator layers.</p></div>
 <aside class="md-source-file">
 <span class="md-source-file__fact">
 <span class="md-icon" title="Last update">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
 </span>
-<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 23, 2026 18:45:39 UTC">November 23, 2026</span>
+<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 23, 2026 18:48:01 UTC">November 23, 2026</span>
 </span>
 </aside>
 </article>
