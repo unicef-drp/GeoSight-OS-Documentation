@@ -136,8 +136,6 @@ To create one, open the project's Indicator Layers tab and select **Add Indicato
 
 The **General** tab of the configuration window has four sections.
 
-![SDMX indicator layer configuration](img/sdmx-indicator-layer-config.png)
-
 ### Layer Metadata
 
 1.	Enter the layer's name and description.
@@ -145,6 +143,8 @@ The **General** tab of the configuration window has four sections.
 2.	**Source** is filled in with the agency of the selected dataflow. You can change it.
 
 ### SDMX Config
+
+![SDMX Config section of an SDMX indicator layer](img/sdmx-indicator-layer-sdmx-config.png)
 
 1.	Choose the **SDMX Mode**:
 
@@ -163,6 +163,8 @@ The **General** tab of the configuration window has four sections.
 ### Data Config
 
 Tell GeoSight how to read the data. GeoSight fills in the fields it can recognise:
+
+![Data Config section of an SDMX indicator layer](img/sdmx-indicator-layer-data-config.png)
 
 1.	**Column Geograph Code**: the column with the area codes (REF_AREA by default). The codes must match the project's reference dataset.
 
