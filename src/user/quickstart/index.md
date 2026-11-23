@@ -194,7 +194,7 @@ In GeoSight users can import data from multiple sources:
 - APIs (JSON)
 - Excel files
 - SharePoint Excel
-- SDMX Data Warehouse (coming soon)
+- SDMX APIs, such as the UNICEF Data Warehouse
 
 The easiest way is to import data using standalone Excel file.Excel import supports two formats:
 
