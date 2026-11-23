@@ -15,11 +15,29 @@ license: This program is free software; you can redistribute it and/or modify it
 
 GeoSight allows for multi-lingual interface using built-in Django and React components.
 
+## Supported Languages
+
+| Language | `LANGUAGES` code | React folder | Django folder |
+|---|---|---|---|
+| English | `en-us` | `en-US` | `en_US` |
+| Spanish | `es-es` | `es-ES` | `es_ES` |
+| French | `fr-fr` | `fr-FR` | `fr_FR` |
+| Portuguese (Portugal) | `pt-pt` | `pt-PT` | `pt_PT` |
+| Portuguese (Brazil) | `pt-br` | `pt-BR` | `pt_BR` |
+
+The same language is written three ways: lowercase with a hyphen in `LANGUAGES` and in the URL, `xx-XX` for the React folder, and `xx_XX` for the Django folder.
+
+### How a Language Is Picked Up
+
+- **React** finds every folder in `frontend/locales/react/` automatically, so there is no list to update. `native.name` and `native.flag` in its `common.json` are what the language selector shows.
+- **Django** serves every page under a language prefix (`/en-us/`, `/fr-fr/`, ...). A language that is missing from `LANGUAGES` returns 404 as soon as a user selects it, even if its React and Django files exist.
+- Missing React keys fall back to English (`en-US`).
+
 ## Adding a New Language
 
 To add a new language, do the following
 
-1. Find the two letter language code from [this website](http://www.i18nguy.com/unicode/language-identifiers.html) (eg. for Brazilian Portuguese, this would be `pt-BR`)
+1. Find the language code (language and region, for example `pt-BR`) from [this website](http://www.i18nguy.com/unicode/language-identifiers.html)
 2. In `django_project/core/settings/project.py`, add the language with its name in English and the code **in all lowercase** as follows:
 
     ```python
@@ -28,7 +46,7 @@ To add a new language, do the following
         ('en-us', _('English')),
         ('es-es', _('Spanish')),
         ...
-        ('pt-br', _('Portuguese')), # <- Example addition
+        ('pt-br', _('Portuguese (Brazil)')), # <- Example addition
     )
     ```
 
@@ -129,11 +147,11 @@ To add a new language, do the following
     django_project/
     └── frontend/
       └── locales/
-        └── react/
-            └── en-US/
-            └── es-ES/
+        └── django/
+            └── en_US/
+            └── es_ES/
              ...
-            └── pt-BR/
+            └── pt_BR/
               └── LC_MESSAGES/ <- (example addition)
     ```
 
@@ -143,11 +161,11 @@ To add a new language, do the following
     django_project/
     └── frontend/
       └── locales/
-        └── react/
-            └── en-US/
-            └── es-ES/
+        └── django/
+            └── en_US/
+            └── es_ES/
              ...
-            └── pt-BR/
+            └── pt_BR/
               └── LC_MESSAGES/
                 └── django.po <- (example addition)
     ```
@@ -179,7 +197,7 @@ To add a new language, do the following
     ...
     ```
 
-12. Change lines 11 and 12 to the language name (in English) and the folder name, respectively, as follows:
+12. Change the `Language-Team` and `Language` lines to the language name (in English) and the folder name, respectively. Also check that `Plural-Forms` matches the language (see [Generating the Django Catalog](#generating-the-django-catalog)):
 
     ```bash
     # English translations for GeoSight package.
@@ -228,7 +246,7 @@ To add a new language, do the following
     
     #: frontend/views/admin/dashboard/list.py:38
     msgid "Projects"
-    msgstr "Projectos" # <- CHANGED
+    msgstr "Projetos" # <- CHANGED
     
     ...
     ```
@@ -245,17 +263,49 @@ To add a new language, do the following
     django_project/
     └── frontend/
       └── locales/
-        └── react/
-            └── en-US/
-            └── es-ES/
+        └── django/
+            └── en_US/
+            └── es_ES/
              ...
-            └── pt-BR/
+            └── pt_BR/
               └── LC_MESSAGES/
                 └── django.po
                 └── django.mo <- (just appeared)
     ```
 
 Now, you should be able to see the new language available, and when you switch to it, all marked strings should be translated.
+
+### Generating the Django Catalog
+
+Instead of copying a `django.po` from another language (steps 8–13), you can let Django create it with every current string. Run this inside `django_project`, using the Django folder name:
+
+```bash
+python manage.py makemessages -l pt_BR
+```
+
+`makemessages -a` only updates languages that already have a folder, so use `-l` the first time. Then fill in every `msgstr` and compile as in step 14.
+
+Check these header lines in the new file:
+
+- `"Language: pt_BR\n"`
+- `"Plural-Forms: ...\n"` must match the language, for example `nplurals=2; plural=(n != 1);` for English, Spanish and Portuguese (Portugal), and `nplurals=2; plural=(n > 1);` for French and Portuguese (Brazil).
+
+### Fuzzy Entries
+
+When a source string changes, `makemessages` may keep the old translation and mark it `#, fuzzy`. Django ignores fuzzy entries and shows the English text instead. Review each one, correct the `msgstr`, and delete the `#, fuzzy` line.
+
+### Before Opening a Pull Request
+
+- Every `common.json` has the same keys as `en-US/common.json`, with no extra keys and no English copied in as a placeholder.
+- Every `django.po` has no empty `msgstr` and no `#, fuzzy` entries. This command shows the counts:
+
+    ```bash
+    msgfmt --statistics -c -o /dev/null frontend/locales/django/pt_BR/LC_MESSAGES/django.po
+    ```
+
+- Placeholders are unchanged: `{{pageName}}` in React, and `{host}`, `{layer}` and HTML tags in Django.
+- The `.mo` files are compiled and committed with the `.po` files.
+- Open `/<code>/` (for example `/pt-br/`) and check that the language selector lists the new language.
 
 ## Adding a New Translation
 
@@ -272,7 +322,7 @@ In any file that requires translation, do the following:
         const label = "Context Layers"
         ```
 
-        1. For each `django_project/frontend/locales/react/[LANGUGE-CODE]/common.json` (where `[LANGUAGE-CODE]` is `en-US`, `es-ES`, etc.), add a key-value pair for you new translation, where the key is a [camelCase](https://en.wikipedia.org/wiki/Camel_case) descriptor of the string and the value is the string in the proper language
+        1. For each `django_project/frontend/locales/react/[LANGUAGE-CODE]/common.json` (where `[LANGUAGE-CODE]` is `en-US`, `es-ES`, etc.), add a key-value pair for you new translation, where the key is a [camelCase](https://en.wikipedia.org/wiki/Camel_case) descriptor of the string and the value is the string in the proper language
 
             ```json
             {
@@ -293,7 +343,7 @@ In any file that requires translation, do the following:
         const label = "Create New " + page
         ```
 
-        1. For each `django_project/frontend/locales/react/[LANGUGE-CODE]/common.json` (where `[LANGUAGE-CODE]` is `en-US`, `es-ES`, etc.), add a key-value pair for you new translation, where the key is a [camelCase](https://en.wikipedia.org/wiki/Camel_case) descriptor of the string and the value is the string in the proper language with any variables in double curly brackets
+        1. For each `django_project/frontend/locales/react/[LANGUAGE-CODE]/common.json` (where `[LANGUAGE-CODE]` is `en-US`, `es-ES`, etc.), add a key-value pair for you new translation, where the key is a [camelCase](https://en.wikipedia.org/wiki/Camel_case) descriptor of the string and the value is the string in the proper language with any variables in double curly brackets
 
             ```json
             {
@@ -308,26 +358,20 @@ In any file that requires translation, do the following:
             const label = {t('createNewPageName', {pageName: page})}
             ```
 
-<aside>
-<img src="https://www.notion.so/icons/flag-swallowtail_gray.svg" alt="https://www.notion.so/icons/flag-swallowtail_gray.svg" width="40px" />
+!!! note "Nested keys"
+    `common.json` is grouped by namespace (`admin.*`, `dashboard.*`, `components.*`, ...). Add new keys to the namespace they belong to and reference them with a dot, for example:
 
-If you have translations inside of sub-dictionaries like this…
+    ```json
+    {
+     "pages": {
+      "indicators": "Indicators"
+     }
+    }
+    ```
 
-```json
-{
- "pages": {
-  "indicators": "Indicators"
- }
-}
-```
-
-The key to reference is like this
-
-```jsx
-t('pages.indicators')
-```
-
-</aside>
+    ```jsx
+    t('pages.indicators')
+    ```
 
 ### Django
 
@@ -352,7 +396,7 @@ In any file that requires translation, do the following:
     python manage.py makemessages -a
     ```
 
-4. For each `django_project/frontend/locales/django/[LANGUGE-CODE]/LC_MESSAGES/django.po` (where `[LANGUAGE-CODE]` is `en_US`, `es_ES`, etc.), add find the `msgid` corresponding to the new translation key and input the proper translation in the `msgstr` field below it
+4. For each `django_project/frontend/locales/django/[LANGUAGE-CODE]/LC_MESSAGES/django.po` (where `[LANGUAGE-CODE]` is `en_US`, `es_ES`, etc.), add find the `msgid` corresponding to the new translation key and input the proper translation in the `msgstr` field below it
 
     ```bash
     # Spanish translations for GeoSight package.
