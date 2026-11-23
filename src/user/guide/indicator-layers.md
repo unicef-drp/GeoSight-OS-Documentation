@@ -32,6 +32,8 @@ Types of Indicator Layers include:
 
     a. Users will be prompted to define SQL expressions that allow for data to be filtered and selected from other datasets for visualization.
 
+- _SDMX Indicator Layers_ read their data directly from an SDMX (Statistical Data and Metadata eXchange) API, such as the UNICEF Data Warehouse, instead of from an indicator stored in GeoSight. See [Configuring SDMX Indicator Layers](#configuring-sdmx-indicator-layers).
+
 - _Related Tables_ are layers that allow for Splicing and the manipulation of previously uploaded related tables. See Related Tables for more details.
 
 ## Configuring Indicator Layers
@@ -126,3 +128,54 @@ To create multi-Indicator layers, navigate to the Indicator Layer tab under proj
     b. Size can be standardized or flexible.
 
 4. Apply any visualization changes (it is same process as all other layers).
+
+## Configuring SDMX Indicator Layers
+An SDMX indicator layer shows data that GeoSight reads directly from an SDMX API. The data isn't imported into GeoSight; the layer asks the API for it whenever the project is opened.
+
+To create one, open the project's Indicator Layers tab and select **Add Indicator Layer**, then **SDMX Indicators Layer**. If the **SDMX layer** tool is turned on in the project's Tools tab, the **Create SDMX layer** button in the project's toolbar opens the same window.
+
+The **General** tab of the configuration window has four sections.
+
+![SDMX indicator layer configuration](img/sdmx-indicator-layer-config.png)
+
+### Layer Metadata
+
+1.	Enter the layer's name and description.
+
+2.	**Source** is filled in with the agency of the selected dataflow. You can change it.
+
+### SDMX Config
+
+1.	Choose the **SDMX Mode**:
+
+    a.	**config**: pick the source step by step from an SDMX configuration set up by an administrator: **SDMX Config**, **Agency**, **Dataflow** and **Dataflow Version**. GeoSight builds the **SDMX URL** for you.
+
+    b.	**url**: paste a complete SDMX data URL.
+
+2.	SDMX configurations (the base URL of an SDMX API) are managed by administrators in the Django admin, under **Sdmx configs**.
+
+### Filter Dimensions
+
+1.	Limit the data to the dimension values you need, for example one indicator or a set of areas. Leave a dimension empty to include all its values.
+
+2.	Use the time period fields to limit the data to a date range. Dates before 1900-01-01 aren't applied, and the end date must be after the start date.
+
+### Data Config
+
+Tell GeoSight how to read the data. GeoSight fills in the fields it can recognise:
+
+1.	**Column Geograph Code**: the column with the area codes (REF_AREA by default). The codes must match the project's reference dataset.
+
+2.	**Value Column**: the column with the values (OBS_VALUE by default).
+
+3.	**Aggregation**: how to combine several values for the same area and date (SUM by default).
+
+4.	**Date Time Column/Field**: the column with the date (TIME_PERIOD by default).
+
+5.	**Date Time Format**: the format of the dates in that column. GeoSight detects it from the data, for example **Date (YYYY-MM-DD)** or **Year-Month (YYYY-MM)**.
+
+    a.	If you choose another format, GeoSight keeps your choice when you change other settings, such as the time period or the aggregation. It only detects the format again if the data changes to a different date format, for example after you choose another dataflow.
+
+All required fields must be filled in before **Apply Changes** becomes available.
+
+Use the **Data Preview** tab to check the data the layer will show, and the **Style**, **Label** and **Popup** tabs as for other indicator layers.
