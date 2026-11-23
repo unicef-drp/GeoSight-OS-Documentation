@@ -24,5 +24,19 @@ The Dashboard page is where users can interact with the final GeoSight dashboard
 5.	Top panel - depending on privileges users can enter the Edit mode, open Admin panel, open the Help Center or access their Profile page.
 6.	Basemaps - provide underlaying views that include road maps and satellite data for the indicators to be superimposed upon.
 
+## On phones and small screens
 
+On screens up to 1000 px wide, the dashboard shows one view at a time. Use the tabs at the bottom of the screen to switch between them:
+
+| Tab | Shows |
+|---|---|
+| Map | The map, with the map toolbar and, when it is open, the [time slider](date-and-time.md#on-phones-and-small-screens). |
+| Context layers | The list of context layers (only if the project has context layers). |
+| Indicators | The list of indicator layers (only if the project has indicator layers). |
+| Filters | The filters (only if the project has filters). |
+| Widgets | The widget panel. |
+
+The tabs work the same in every interface language.
+
+![Dashboard on a phone, Indicators tab](img/dashboard-mobile-1.png)
 
