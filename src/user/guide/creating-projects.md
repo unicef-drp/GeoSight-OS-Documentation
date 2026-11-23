@@ -86,15 +86,18 @@ If a Project is intended for visualizing indicator data (layers), configure the 
 
 8. Define the Map Extent
 
-Define the initial map extent displayed when the Project opens.
+Define the initial map extent displayed when the Project opens. The **Back to Home** button in the map toolbar
+of the Project returns the map to this extent.
 
-You can configure the extent in one of the following ways:
+When you select the reference dataset, the extent is filled in with the bounding box of that dataset. You can
+change it in one of the following ways:
 
     a. Enter Coordinates Manually
-    Provide the latitude and longitude coordinates for the corners of the extent.
+    Enter the bounds of the extent in decimal degrees: **WEST** and **EAST** (longitude), **NORTH** and **SOUTH** (latitude).
 
     b. Draw a Polygon
     Use the polygon drawing tool by selecting the **pentagon icon** in the top-right corner of the map interface.
+    The bounding box of the polygon becomes the extent.
 
 
 ![Determining an extent by drawing the coverage box](image.png)
