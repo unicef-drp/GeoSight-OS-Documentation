@@ -10,9 +10,9 @@
 <link href="../plugins/" rel="prev"/>
 <link href="../workflows/" rel="next"/>
 <link href="../../../assets/logo.png" rel="icon"/>
-<meta content="mkdocs-1.6.1, mkdocs-material-9.7.6" name="generator"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.7.7" name="generator"/>
 <title>GeoSight-OS Documentation Home - GeoSight-OS</title>
-<link href="../../../assets/stylesheets/main.484c7ddc.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/main.ec1eaa64.min.css" rel="stylesheet"/>
 <link href="../../../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
@@ -503,6 +503,18 @@
     
   
     Creating Your Account
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../user/guide/changing-language/">
+<span class="md-ellipsis">
+    
+  
+    Changing the Language
   
 
     
@@ -1475,6 +1487,28 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
+<a class="md-nav__link" href="#supported-languages">
+<span class="md-ellipsis">
+      
+        Supported Languages
+      
+    </span>
+</a>
+<nav aria-label="Supported Languages" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#how-a-language-is-picked-up">
+<span class="md-ellipsis">
+      
+        How a Language Is Picked Up
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#adding-a-new-language">
 <span class="md-ellipsis">
       
@@ -1482,6 +1516,37 @@
       
     </span>
 </a>
+<nav aria-label="Adding a New Language" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#generating-the-django-catalog">
+<span class="md-ellipsis">
+      
+        Generating the Django Catalog
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#fuzzy-entries">
+<span class="md-ellipsis">
+      
+        Fuzzy Entries
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#before-opening-a-pull-request">
+<span class="md-ellipsis">
+      
+        Before Opening a Pull Request
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#adding-a-new-translation">
@@ -1778,6 +1843,28 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
+<a class="md-nav__link" href="#supported-languages">
+<span class="md-ellipsis">
+      
+        Supported Languages
+      
+    </span>
+</a>
+<nav aria-label="Supported Languages" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#how-a-language-is-picked-up">
+<span class="md-ellipsis">
+      
+        How a Language Is Picked Up
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#adding-a-new-language">
 <span class="md-ellipsis">
       
@@ -1785,6 +1872,37 @@
       
     </span>
 </a>
+<nav aria-label="Adding a New Language" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#generating-the-django-catalog">
+<span class="md-ellipsis">
+      
+        Generating the Django Catalog
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#fuzzy-entries">
+<span class="md-ellipsis">
+      
+        Fuzzy Entries
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#before-opening-a-pull-request">
+<span class="md-ellipsis">
+      
+        Before Opening a Pull Request
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#adding-a-new-translation">
@@ -1826,10 +1944,60 @@
 <article class="md-content__inner md-typeset">
 <div><h1 id="translations">Translations<a class="headerlink" href="#translations" title="Permanent link">¶</a></h1>
 <p>GeoSight allows for multi-lingual interface using built-in Django and React components.</p>
+<h2 id="supported-languages">Supported Languages<a class="headerlink" href="#supported-languages" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th>Language</th>
+<th><code>LANGUAGES</code> code</th>
+<th>React folder</th>
+<th>Django folder</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>English</td>
+<td><code>en-us</code></td>
+<td><code>en-US</code></td>
+<td><code>en_US</code></td>
+</tr>
+<tr>
+<td>Spanish</td>
+<td><code>es-es</code></td>
+<td><code>es-ES</code></td>
+<td><code>es_ES</code></td>
+</tr>
+<tr>
+<td>French</td>
+<td><code>fr-fr</code></td>
+<td><code>fr-FR</code></td>
+<td><code>fr_FR</code></td>
+</tr>
+<tr>
+<td>Portuguese (Portugal)</td>
+<td><code>pt-pt</code></td>
+<td><code>pt-PT</code></td>
+<td><code>pt_PT</code></td>
+</tr>
+<tr>
+<td>Portuguese (Brazil)</td>
+<td><code>pt-br</code></td>
+<td><code>pt-BR</code></td>
+<td><code>pt_BR</code></td>
+</tr>
+</tbody>
+</table>
+<p>The same language is written three ways: lowercase with a hyphen in <code>LANGUAGES</code> and in the URL, <code>xx-XX</code> for the React folder, and <code>xx_XX</code> for the Django folder.</p>
+<h3 id="how-a-language-is-picked-up">How a Language Is Picked Up<a class="headerlink" href="#how-a-language-is-picked-up" title="Permanent link">¶</a></h3>
+<ul>
+<li><strong>React</strong> finds every folder in <code>frontend/locales/react/</code> automatically, so there is no list to update. <code>native.name</code> and <code>native.flag</code> in its <code>common.json</code> are what the language selector shows.</li>
+<li><strong>Django</strong> serves every page under a language prefix (<code>/en-us/</code>, <code>/fr-fr/</code>, ...). A language that is missing from <code>LANGUAGES</code> returns 404 as soon as a user selects it, even if its React and Django files exist.</li>
+<li>Missing React keys fall back to English (<code>en-US</code>).</li>
+</ul>
 <h2 id="adding-a-new-language">Adding a New Language<a class="headerlink" href="#adding-a-new-language" title="Permanent link">¶</a></h2>
 <p>To add a new language, do the following</p>
 <ol>
-<li>Find the two letter language code from <a href="http://www.i18nguy.com/unicode/language-identifiers.html">this website</a> (eg. for Brazilian Portuguese, this would be <code>pt-BR</code>)</li>
+<li>Find the language code (language and region, for example <code>pt-BR</code>) from <a href="http://www.i18nguy.com/unicode/language-identifiers.html">this website</a></li>
 <li>
 <p>In <code>django_project/core/settings/project.py</code>, add the language with its name in English and the code <strong>in all lowercase</strong> as follows:</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1"># Set languages which want to be translated</span>
@@ -1837,7 +2005,7 @@
 <a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a>    <span class="p">(</span><span class="s1">'en-us'</span><span class="p">,</span> <span class="n">_</span><span class="p">(</span><span class="s1">'English'</span><span class="p">)),</span>
 <a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a>    <span class="p">(</span><span class="s1">'es-es'</span><span class="p">,</span> <span class="n">_</span><span class="p">(</span><span class="s1">'Spanish'</span><span class="p">)),</span>
 <a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a>    <span class="o">...</span>
-<a href="#__codelineno-0-6" id="__codelineno-0-6" name="__codelineno-0-6"></a>    <span class="p">(</span><span class="s1">'pt-br'</span><span class="p">,</span> <span class="n">_</span><span class="p">(</span><span class="s1">'Portuguese'</span><span class="p">)),</span> <span class="c1"># &lt;- Example addition</span>
+<a href="#__codelineno-0-6" id="__codelineno-0-6" name="__codelineno-0-6"></a>    <span class="p">(</span><span class="s1">'pt-br'</span><span class="p">,</span> <span class="n">_</span><span class="p">(</span><span class="s1">'Portuguese (Brazil)'</span><span class="p">)),</span> <span class="c1"># &lt;- Example addition</span>
 <a href="#__codelineno-0-7" id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="p">)</span>
 </code></pre></div>
 </li>
@@ -1931,11 +2099,11 @@
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-7-1" id="__codelineno-7-1" name="__codelineno-7-1"></a>django_project/
 <a href="#__codelineno-7-2" id="__codelineno-7-2" name="__codelineno-7-2"></a>└──<span class="w"> </span>frontend/
 <a href="#__codelineno-7-3" id="__codelineno-7-3" name="__codelineno-7-3"></a><span class="w">  </span>└──<span class="w"> </span>locales/
-<a href="#__codelineno-7-4" id="__codelineno-7-4" name="__codelineno-7-4"></a><span class="w">    </span>└──<span class="w"> </span>react/
-<a href="#__codelineno-7-5" id="__codelineno-7-5" name="__codelineno-7-5"></a><span class="w">        </span>└──<span class="w"> </span>en-US/
-<a href="#__codelineno-7-6" id="__codelineno-7-6" name="__codelineno-7-6"></a><span class="w">        </span>└──<span class="w"> </span>es-ES/
+<a href="#__codelineno-7-4" id="__codelineno-7-4" name="__codelineno-7-4"></a><span class="w">    </span>└──<span class="w"> </span>django/
+<a href="#__codelineno-7-5" id="__codelineno-7-5" name="__codelineno-7-5"></a><span class="w">        </span>└──<span class="w"> </span>en_US/
+<a href="#__codelineno-7-6" id="__codelineno-7-6" name="__codelineno-7-6"></a><span class="w">        </span>└──<span class="w"> </span>es_ES/
 <a href="#__codelineno-7-7" id="__codelineno-7-7" name="__codelineno-7-7"></a><span class="w">         </span>...
-<a href="#__codelineno-7-8" id="__codelineno-7-8" name="__codelineno-7-8"></a><span class="w">        </span>└──<span class="w"> </span>pt-BR/
+<a href="#__codelineno-7-8" id="__codelineno-7-8" name="__codelineno-7-8"></a><span class="w">        </span>└──<span class="w"> </span>pt_BR/
 <a href="#__codelineno-7-9" id="__codelineno-7-9" name="__codelineno-7-9"></a><span class="w">          </span>└──<span class="w"> </span>LC_MESSAGES/<span class="w"> </span>&lt;-<span class="w"> </span><span class="o">(</span>example<span class="w"> </span>addition<span class="o">)</span>
 </code></pre></div>
 </li>
@@ -1944,11 +2112,11 @@
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-8-1" id="__codelineno-8-1" name="__codelineno-8-1"></a>django_project/
 <a href="#__codelineno-8-2" id="__codelineno-8-2" name="__codelineno-8-2"></a>└──<span class="w"> </span>frontend/
 <a href="#__codelineno-8-3" id="__codelineno-8-3" name="__codelineno-8-3"></a><span class="w">  </span>└──<span class="w"> </span>locales/
-<a href="#__codelineno-8-4" id="__codelineno-8-4" name="__codelineno-8-4"></a><span class="w">    </span>└──<span class="w"> </span>react/
-<a href="#__codelineno-8-5" id="__codelineno-8-5" name="__codelineno-8-5"></a><span class="w">        </span>└──<span class="w"> </span>en-US/
-<a href="#__codelineno-8-6" id="__codelineno-8-6" name="__codelineno-8-6"></a><span class="w">        </span>└──<span class="w"> </span>es-ES/
+<a href="#__codelineno-8-4" id="__codelineno-8-4" name="__codelineno-8-4"></a><span class="w">    </span>└──<span class="w"> </span>django/
+<a href="#__codelineno-8-5" id="__codelineno-8-5" name="__codelineno-8-5"></a><span class="w">        </span>└──<span class="w"> </span>en_US/
+<a href="#__codelineno-8-6" id="__codelineno-8-6" name="__codelineno-8-6"></a><span class="w">        </span>└──<span class="w"> </span>es_ES/
 <a href="#__codelineno-8-7" id="__codelineno-8-7" name="__codelineno-8-7"></a><span class="w">         </span>...
-<a href="#__codelineno-8-8" id="__codelineno-8-8" name="__codelineno-8-8"></a><span class="w">        </span>└──<span class="w"> </span>pt-BR/
+<a href="#__codelineno-8-8" id="__codelineno-8-8" name="__codelineno-8-8"></a><span class="w">        </span>└──<span class="w"> </span>pt_BR/
 <a href="#__codelineno-8-9" id="__codelineno-8-9" name="__codelineno-8-9"></a><span class="w">          </span>└──<span class="w"> </span>LC_MESSAGES/
 <a href="#__codelineno-8-10" id="__codelineno-8-10" name="__codelineno-8-10"></a><span class="w">            </span>└──<span class="w"> </span>django.po<span class="w"> </span>&lt;-<span class="w"> </span><span class="o">(</span>example<span class="w"> </span>addition<span class="o">)</span>
 </code></pre></div>
@@ -1980,7 +2148,7 @@
 </code></pre></div>
 </li>
 <li>
-<p>Change lines 11 and 12 to the language name (in English) and the folder name, respectively, as follows:</p>
+<p>Change the <code>Language-Team</code> and <code>Language</code> lines to the language name (in English) and the folder name, respectively. Also check that <code>Plural-Forms</code> matches the language (see <a href="#generating-the-django-catalog">Generating the Django Catalog</a>):</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-10-1" id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="c1"># English translations for GeoSight package.</span>
 <a href="#__codelineno-10-2" id="__codelineno-10-2" name="__codelineno-10-2"></a><span class="c1"># Copyright (C) 2024 UNICEF</span>
 <a href="#__codelineno-10-3" id="__codelineno-10-3" name="__codelineno-10-3"></a><span class="c1"># This file is distributed under the same license as the GeoSight package.</span>
@@ -2026,7 +2194,7 @@
 <a href="#__codelineno-11-17" id="__codelineno-11-17" name="__codelineno-11-17"></a>
 <a href="#__codelineno-11-18" id="__codelineno-11-18" name="__codelineno-11-18"></a><span class="c1">#: frontend/views/admin/dashboard/list.py:38</span>
 <a href="#__codelineno-11-19" id="__codelineno-11-19" name="__codelineno-11-19"></a>msgid<span class="w"> </span><span class="s2">"Projects"</span>
-<a href="#__codelineno-11-20" id="__codelineno-11-20" name="__codelineno-11-20"></a>msgstr<span class="w"> </span><span class="s2">"Projectos"</span><span class="w"> </span><span class="c1"># &lt;- CHANGED</span>
+<a href="#__codelineno-11-20" id="__codelineno-11-20" name="__codelineno-11-20"></a>msgstr<span class="w"> </span><span class="s2">"Projetos"</span><span class="w"> </span><span class="c1"># &lt;- CHANGED</span>
 <a href="#__codelineno-11-21" id="__codelineno-11-21" name="__codelineno-11-21"></a>
 <a href="#__codelineno-11-22" id="__codelineno-11-22" name="__codelineno-11-22"></a>...
 </code></pre></div>
@@ -2039,11 +2207,11 @@
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-13-1" id="__codelineno-13-1" name="__codelineno-13-1"></a>django_project/
 <a href="#__codelineno-13-2" id="__codelineno-13-2" name="__codelineno-13-2"></a>└──<span class="w"> </span>frontend/
 <a href="#__codelineno-13-3" id="__codelineno-13-3" name="__codelineno-13-3"></a><span class="w">  </span>└──<span class="w"> </span>locales/
-<a href="#__codelineno-13-4" id="__codelineno-13-4" name="__codelineno-13-4"></a><span class="w">    </span>└──<span class="w"> </span>react/
-<a href="#__codelineno-13-5" id="__codelineno-13-5" name="__codelineno-13-5"></a><span class="w">        </span>└──<span class="w"> </span>en-US/
-<a href="#__codelineno-13-6" id="__codelineno-13-6" name="__codelineno-13-6"></a><span class="w">        </span>└──<span class="w"> </span>es-ES/
+<a href="#__codelineno-13-4" id="__codelineno-13-4" name="__codelineno-13-4"></a><span class="w">    </span>└──<span class="w"> </span>django/
+<a href="#__codelineno-13-5" id="__codelineno-13-5" name="__codelineno-13-5"></a><span class="w">        </span>└──<span class="w"> </span>en_US/
+<a href="#__codelineno-13-6" id="__codelineno-13-6" name="__codelineno-13-6"></a><span class="w">        </span>└──<span class="w"> </span>es_ES/
 <a href="#__codelineno-13-7" id="__codelineno-13-7" name="__codelineno-13-7"></a><span class="w">         </span>...
-<a href="#__codelineno-13-8" id="__codelineno-13-8" name="__codelineno-13-8"></a><span class="w">        </span>└──<span class="w"> </span>pt-BR/
+<a href="#__codelineno-13-8" id="__codelineno-13-8" name="__codelineno-13-8"></a><span class="w">        </span>└──<span class="w"> </span>pt_BR/
 <a href="#__codelineno-13-9" id="__codelineno-13-9" name="__codelineno-13-9"></a><span class="w">          </span>└──<span class="w"> </span>LC_MESSAGES/
 <a href="#__codelineno-13-10" id="__codelineno-13-10" name="__codelineno-13-10"></a><span class="w">            </span>└──<span class="w"> </span>django.po
 <a href="#__codelineno-13-11" id="__codelineno-13-11" name="__codelineno-13-11"></a><span class="w">            </span>└──<span class="w"> </span>django.mo<span class="w"> </span>&lt;-<span class="w"> </span><span class="o">(</span>just<span class="w"> </span>appeared<span class="o">)</span>
@@ -2051,6 +2219,32 @@
 </li>
 </ol>
 <p>Now, you should be able to see the new language available, and when you switch to it, all marked strings should be translated.</p>
+<h3 id="generating-the-django-catalog">Generating the Django Catalog<a class="headerlink" href="#generating-the-django-catalog" title="Permanent link">¶</a></h3>
+<p>Instead of copying a <code>django.po</code> from another language (steps 8–13), you can let Django create it with every current string. Run this inside <code>django_project</code>, using the Django folder name:</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-14-1" id="__codelineno-14-1" name="__codelineno-14-1"></a>python<span class="w"> </span>manage.py<span class="w"> </span>makemessages<span class="w"> </span>-l<span class="w"> </span>pt_BR
+</code></pre></div>
+<p><code>makemessages -a</code> only updates languages that already have a folder, so use <code>-l</code> the first time. Then fill in every <code>msgstr</code> and compile as in step 14.</p>
+<p>Check these header lines in the new file:</p>
+<ul>
+<li><code>"Language: pt_BR\n"</code></li>
+<li><code>"Plural-Forms: ...\n"</code> must match the language, for example <code>nplurals=2; plural=(n != 1);</code> for English, Spanish and Portuguese (Portugal), and <code>nplurals=2; plural=(n &gt; 1);</code> for French and Portuguese (Brazil).</li>
+</ul>
+<h3 id="fuzzy-entries">Fuzzy Entries<a class="headerlink" href="#fuzzy-entries" title="Permanent link">¶</a></h3>
+<p>When a source string changes, <code>makemessages</code> may keep the old translation and mark it <code>#, fuzzy</code>. Django ignores fuzzy entries and shows the English text instead. Review each one, correct the <code>msgstr</code>, and delete the <code>#, fuzzy</code> line.</p>
+<h3 id="before-opening-a-pull-request">Before Opening a Pull Request<a class="headerlink" href="#before-opening-a-pull-request" title="Permanent link">¶</a></h3>
+<ul>
+<li>Every <code>common.json</code> has the same keys as <code>en-US/common.json</code>, with no extra keys and no English copied in as a placeholder.</li>
+<li>
+<p>Every <code>django.po</code> has no empty <code>msgstr</code> and no <code>#, fuzzy</code> entries. This command shows the counts:</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-15-1" id="__codelineno-15-1" name="__codelineno-15-1"></a>msgfmt<span class="w"> </span>--statistics<span class="w"> </span>-c<span class="w"> </span>-o<span class="w"> </span>/dev/null<span class="w"> </span>frontend/locales/django/pt_BR/LC_MESSAGES/django.po
+</code></pre></div>
+</li>
+<li>
+<p>Placeholders are unchanged: <code>{{pageName}}</code> in React, and <code>{host}</code>, <code>{layer}</code> and HTML tags in Django.</p>
+</li>
+<li>The <code>.mo</code> files are compiled and committed with the <code>.po</code> files.</li>
+<li>Open <code>/&lt;code&gt;/</code> (for example <code>/pt-br/</code>) and check that the language selector lists the new language.</li>
+</ul>
 <h2 id="adding-a-new-translation">Adding a New Translation<a class="headerlink" href="#adding-a-new-translation" title="Permanent link">¶</a></h2>
 <h3 id="react">React<a class="headerlink" href="#react" title="Permanent link">¶</a></h3>
 <p>In any file that requires translation, do the following:</p>
@@ -2062,40 +2256,40 @@
 <ol>
 <li>
 <p>If the string looks like this</p>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-14-1" id="__codelineno-14-1" name="__codelineno-14-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">label</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Context Layers"</span>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-16-1" id="__codelineno-16-1" name="__codelineno-16-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">label</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Context Layers"</span>
 </code></pre></div>
 <ol>
 <li>
-<p>For each <code>django_project/frontend/locales/react/[LANGUGE-CODE]/common.json</code> (where <code>[LANGUAGE-CODE]</code> is <code>en-US</code>, <code>es-ES</code>, etc.), add a key-value pair for you new translation, where the key is a <a href="https://en.wikipedia.org/wiki/Camel_case">camelCase</a> descriptor of the string and the value is the string in the proper language</p>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-15-1" id="__codelineno-15-1" name="__codelineno-15-1"></a><span class="p">{</span>
-<a href="#__codelineno-15-2" id="__codelineno-15-2" name="__codelineno-15-2"></a><span class="w"> </span><span class="err">...</span>
-<a href="#__codelineno-15-3" id="__codelineno-15-3" name="__codelineno-15-3"></a><span class="w"> </span><span class="nt">"contextLayers"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Context Layers"</span>
-<a href="#__codelineno-15-4" id="__codelineno-15-4" name="__codelineno-15-4"></a><span class="p">}</span>
+<p>For each <code>django_project/frontend/locales/react/[LANGUAGE-CODE]/common.json</code> (where <code>[LANGUAGE-CODE]</code> is <code>en-US</code>, <code>es-ES</code>, etc.), add a key-value pair for you new translation, where the key is a <a href="https://en.wikipedia.org/wiki/Camel_case">camelCase</a> descriptor of the string and the value is the string in the proper language</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-17-1" id="__codelineno-17-1" name="__codelineno-17-1"></a><span class="p">{</span>
+<a href="#__codelineno-17-2" id="__codelineno-17-2" name="__codelineno-17-2"></a><span class="w"> </span><span class="err">...</span>
+<a href="#__codelineno-17-3" id="__codelineno-17-3" name="__codelineno-17-3"></a><span class="w"> </span><span class="nt">"contextLayers"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Context Layers"</span>
+<a href="#__codelineno-17-4" id="__codelineno-17-4" name="__codelineno-17-4"></a><span class="p">}</span>
 </code></pre></div>
 </li>
 <li>
 <p>Replace the string in the component with the dynamic dictionary entry</p>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-16-1" id="__codelineno-16-1" name="__codelineno-16-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">label</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="nx">t</span><span class="p">(</span><span class="s1">'contextLayers'</span><span class="p">)}</span>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-18-1" id="__codelineno-18-1" name="__codelineno-18-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">label</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="nx">t</span><span class="p">(</span><span class="s1">'contextLayers'</span><span class="p">)}</span>
 </code></pre></div>
 </li>
 </ol>
 </li>
 <li>
 <p>If the component looks like this</p>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-17-1" id="__codelineno-17-1" name="__codelineno-17-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">label</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Create New "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">page</span>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-19-1" id="__codelineno-19-1" name="__codelineno-19-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">label</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Create New "</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">page</span>
 </code></pre></div>
 <ol>
 <li>
-<p>For each <code>django_project/frontend/locales/react/[LANGUGE-CODE]/common.json</code> (where <code>[LANGUAGE-CODE]</code> is <code>en-US</code>, <code>es-ES</code>, etc.), add a key-value pair for you new translation, where the key is a <a href="https://en.wikipedia.org/wiki/Camel_case">camelCase</a> descriptor of the string and the value is the string in the proper language with any variables in double curly brackets</p>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-18-1" id="__codelineno-18-1" name="__codelineno-18-1"></a><span class="p">{</span>
-<a href="#__codelineno-18-2" id="__codelineno-18-2" name="__codelineno-18-2"></a><span class="w"> </span><span class="err">...</span>
-<a href="#__codelineno-18-3" id="__codelineno-18-3" name="__codelineno-18-3"></a><span class="w"> </span><span class="nt">"createNewPageName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Create New {{pageName}}"</span>
-<a href="#__codelineno-18-4" id="__codelineno-18-4" name="__codelineno-18-4"></a><span class="p">}</span>
+<p>For each <code>django_project/frontend/locales/react/[LANGUAGE-CODE]/common.json</code> (where <code>[LANGUAGE-CODE]</code> is <code>en-US</code>, <code>es-ES</code>, etc.), add a key-value pair for you new translation, where the key is a <a href="https://en.wikipedia.org/wiki/Camel_case">camelCase</a> descriptor of the string and the value is the string in the proper language with any variables in double curly brackets</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-20-1" id="__codelineno-20-1" name="__codelineno-20-1"></a><span class="p">{</span>
+<a href="#__codelineno-20-2" id="__codelineno-20-2" name="__codelineno-20-2"></a><span class="w"> </span><span class="err">...</span>
+<a href="#__codelineno-20-3" id="__codelineno-20-3" name="__codelineno-20-3"></a><span class="w"> </span><span class="nt">"createNewPageName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Create New {{pageName}}"</span>
+<a href="#__codelineno-20-4" id="__codelineno-20-4" name="__codelineno-20-4"></a><span class="p">}</span>
 </code></pre></div>
 </li>
 <li>
 <p>Replace the string in the component with the dynamic dictionary entry</p>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-19-1" id="__codelineno-19-1" name="__codelineno-19-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">label</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="nx">t</span><span class="p">(</span><span class="s1">'createNewPageName'</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="nx">pageName</span><span class="o">:</span><span class="w"> </span><span class="nx">page</span><span class="p">})}</span>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-21-1" id="__codelineno-21-1" name="__codelineno-21-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">label</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="nx">t</span><span class="p">(</span><span class="s1">'createNewPageName'</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="nx">pageName</span><span class="o">:</span><span class="w"> </span><span class="nx">page</span><span class="p">})}</span>
 </code></pre></div>
 </li>
 </ol>
@@ -2103,74 +2297,69 @@
 </ol>
 </li>
 </ol>
-<aside>
-<img alt="https://www.notion.so/icons/flag-swallowtail_gray.svg" src="https://www.notion.so/icons/flag-swallowtail_gray.svg" width="40px"/>
-
-If you have translations inside of sub-dictionaries like this…
-
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-20-1" id="__codelineno-20-1" name="__codelineno-20-1"></a><span class="p">{</span>
-<a href="#__codelineno-20-2" id="__codelineno-20-2" name="__codelineno-20-2"></a><span class="w"> </span><span class="nt">"pages"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a href="#__codelineno-20-3" id="__codelineno-20-3" name="__codelineno-20-3"></a><span class="w">  </span><span class="nt">"indicators"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Indicators"</span>
-<a href="#__codelineno-20-4" id="__codelineno-20-4" name="__codelineno-20-4"></a><span class="w"> </span><span class="p">}</span>
-<a href="#__codelineno-20-5" id="__codelineno-20-5" name="__codelineno-20-5"></a><span class="p">}</span>
+<div class="admonition note">
+<p class="admonition-title">Nested keys</p>
+<p><code>common.json</code> is grouped by namespace (<code>admin.*</code>, <code>dashboard.*</code>, <code>components.*</code>, ...). Add new keys to the namespace they belong to and reference them with a dot, for example:</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-22-1" id="__codelineno-22-1" name="__codelineno-22-1"></a><span class="p">{</span>
+<a href="#__codelineno-22-2" id="__codelineno-22-2" name="__codelineno-22-2"></a><span class="w"> </span><span class="nt">"pages"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a href="#__codelineno-22-3" id="__codelineno-22-3" name="__codelineno-22-3"></a><span class="w">  </span><span class="nt">"indicators"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Indicators"</span>
+<a href="#__codelineno-22-4" id="__codelineno-22-4" name="__codelineno-22-4"></a><span class="w"> </span><span class="p">}</span>
+<a href="#__codelineno-22-5" id="__codelineno-22-5" name="__codelineno-22-5"></a><span class="p">}</span>
 </code></pre></div>
-
-The key to reference is like this
-
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-21-1" id="__codelineno-21-1" name="__codelineno-21-1"></a><span class="nx">t</span><span class="p">(</span><span class="s1">'pages.indicators'</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-23-1" id="__codelineno-23-1" name="__codelineno-23-1"></a><span class="nx">t</span><span class="p">(</span><span class="s1">'pages.indicators'</span><span class="p">)</span>
 </code></pre></div>
-</aside>
+</div>
 <h3 id="django">Django<a class="headerlink" href="#django" title="Permanent link">¶</a></h3>
 <p>In any file that requires translation, do the following:</p>
 <ol>
 <li>Add <code>from django.utils.translation import gettext as _</code> to the top of the file</li>
 <li>
 <p>For any string requiring translation, change the string to a key entry for the dictionary using the <code>_</code> function from this…</p>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-22-1" id="__codelineno-22-1" name="__codelineno-22-1"></a><span class="k">return</span> <span class="s1">'Indicators'</span>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-24-1" id="__codelineno-24-1" name="__codelineno-24-1"></a><span class="k">return</span> <span class="s1">'Indicators'</span>
 </code></pre></div>
 <p>…to this</p>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-23-1" id="__codelineno-23-1" name="__codelineno-23-1"></a><span class="k">return</span> <span class="n">_</span><span class="p">(</span><span class="s1">'Indicators'</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-25-1" id="__codelineno-25-1" name="__codelineno-25-1"></a><span class="k">return</span> <span class="n">_</span><span class="p">(</span><span class="s1">'Indicators'</span><span class="p">)</span>
 </code></pre></div>
 </li>
 <li>
 <p>In the terminal, run this command inside <code>django_project</code>:</p>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-24-1" id="__codelineno-24-1" name="__codelineno-24-1"></a>python<span class="w"> </span>manage.py<span class="w"> </span>makemessages<span class="w"> </span>-a
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-26-1" id="__codelineno-26-1" name="__codelineno-26-1"></a>python<span class="w"> </span>manage.py<span class="w"> </span>makemessages<span class="w"> </span>-a
 </code></pre></div>
 </li>
 <li>
-<p>For each <code>django_project/frontend/locales/django/[LANGUGE-CODE]/LC_MESSAGES/django.po</code> (where <code>[LANGUAGE-CODE]</code> is <code>en_US</code>, <code>es_ES</code>, etc.), add find the <code>msgid</code> corresponding to the new translation key and input the proper translation in the <code>msgstr</code> field below it</p>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-25-1" id="__codelineno-25-1" name="__codelineno-25-1"></a><span class="c1"># Spanish translations for GeoSight package.</span>
-<a href="#__codelineno-25-2" id="__codelineno-25-2" name="__codelineno-25-2"></a><span class="c1"># Copyright (C) 2024 UNICEF</span>
-<a href="#__codelineno-25-3" id="__codelineno-25-3" name="__codelineno-25-3"></a><span class="c1"># This file is distributed under the same license as the GeoSight package.</span>
-<a href="#__codelineno-25-4" id="__codelineno-25-4" name="__codelineno-25-4"></a>msgid<span class="w"> </span><span class="s2">""</span>
-<a href="#__codelineno-25-5" id="__codelineno-25-5" name="__codelineno-25-5"></a>msgstr<span class="w"> </span><span class="s2">""</span>
-<a href="#__codelineno-25-6" id="__codelineno-25-6" name="__codelineno-25-6"></a><span class="s2">"Project-Id-Version: GeoSight\n"</span>
-<a href="#__codelineno-25-7" id="__codelineno-25-7" name="__codelineno-25-7"></a><span class="s2">"Report-Msgid-Bugs-To: \n"</span>
-<a href="#__codelineno-25-8" id="__codelineno-25-8" name="__codelineno-25-8"></a><span class="s2">"POT-Creation-Date: 2024-03-21 12:00+0000\n"</span>
-<a href="#__codelineno-25-9" id="__codelineno-25-9" name="__codelineno-25-9"></a><span class="s2">"PO-Revision-Date: 2024-03-21 12:00+0000\n"</span>
-<a href="#__codelineno-25-10" id="__codelineno-25-10" name="__codelineno-25-10"></a><span class="s2">"Last-Translator: \n"</span>
-<a href="#__codelineno-25-11" id="__codelineno-25-11" name="__codelineno-25-11"></a><span class="s2">"Language-Team: Spanish\n"</span>
-<a href="#__codelineno-25-12" id="__codelineno-25-12" name="__codelineno-25-12"></a><span class="s2">"Language: es_ES\n"</span>
-<a href="#__codelineno-25-13" id="__codelineno-25-13" name="__codelineno-25-13"></a><span class="s2">"MIME-Version: 1.0\n"</span>
-<a href="#__codelineno-25-14" id="__codelineno-25-14" name="__codelineno-25-14"></a><span class="s2">"Content-Type: text/plain; charset=UTF-8\n"</span>
-<a href="#__codelineno-25-15" id="__codelineno-25-15" name="__codelineno-25-15"></a><span class="s2">"Content-Transfer-Encoding: 8bit\n"</span>
-<a href="#__codelineno-25-16" id="__codelineno-25-16" name="__codelineno-25-16"></a><span class="s2">"Plural-Forms: nplurals=2; plural=(n != 1);\n"</span>
-<a href="#__codelineno-25-17" id="__codelineno-25-17" name="__codelineno-25-17"></a>
-<a href="#__codelineno-25-18" id="__codelineno-25-18" name="__codelineno-25-18"></a><span class="c1">#: frontend/views/admin/dashboard/list.py:38</span>
-<a href="#__codelineno-25-19" id="__codelineno-25-19" name="__codelineno-25-19"></a>msgid<span class="w"> </span><span class="s2">"Projects"</span>
-<a href="#__codelineno-25-20" id="__codelineno-25-20" name="__codelineno-25-20"></a>msgstr<span class="w"> </span><span class="s2">"Proyectos"</span>
-<a href="#__codelineno-25-21" id="__codelineno-25-21" name="__codelineno-25-21"></a>
-<a href="#__codelineno-25-22" id="__codelineno-25-22" name="__codelineno-25-22"></a>...
-<a href="#__codelineno-25-23" id="__codelineno-25-23" name="__codelineno-25-23"></a>
-<a href="#__codelineno-25-24" id="__codelineno-25-24" name="__codelineno-25-24"></a><span class="c1"># </span>
-<a href="#__codelineno-25-25" id="__codelineno-25-25" name="__codelineno-25-25"></a><span class="c1">#: frontend/views/admin/indicator/list.py:32 &lt;- JUST APPEARED</span>
-<a href="#__codelineno-25-26" id="__codelineno-25-26" name="__codelineno-25-26"></a>msgid<span class="w"> </span><span class="s2">"Indicators"</span>
-<a href="#__codelineno-25-27" id="__codelineno-25-27" name="__codelineno-25-27"></a>msgstr<span class="w"> </span><span class="s2">"Indicadores"</span><span class="w"> </span><span class="c1"># &lt;- CHANGED</span>
+<p>For each <code>django_project/frontend/locales/django/[LANGUAGE-CODE]/LC_MESSAGES/django.po</code> (where <code>[LANGUAGE-CODE]</code> is <code>en_US</code>, <code>es_ES</code>, etc.), add find the <code>msgid</code> corresponding to the new translation key and input the proper translation in the <code>msgstr</code> field below it</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-27-1" id="__codelineno-27-1" name="__codelineno-27-1"></a><span class="c1"># Spanish translations for GeoSight package.</span>
+<a href="#__codelineno-27-2" id="__codelineno-27-2" name="__codelineno-27-2"></a><span class="c1"># Copyright (C) 2024 UNICEF</span>
+<a href="#__codelineno-27-3" id="__codelineno-27-3" name="__codelineno-27-3"></a><span class="c1"># This file is distributed under the same license as the GeoSight package.</span>
+<a href="#__codelineno-27-4" id="__codelineno-27-4" name="__codelineno-27-4"></a>msgid<span class="w"> </span><span class="s2">""</span>
+<a href="#__codelineno-27-5" id="__codelineno-27-5" name="__codelineno-27-5"></a>msgstr<span class="w"> </span><span class="s2">""</span>
+<a href="#__codelineno-27-6" id="__codelineno-27-6" name="__codelineno-27-6"></a><span class="s2">"Project-Id-Version: GeoSight\n"</span>
+<a href="#__codelineno-27-7" id="__codelineno-27-7" name="__codelineno-27-7"></a><span class="s2">"Report-Msgid-Bugs-To: \n"</span>
+<a href="#__codelineno-27-8" id="__codelineno-27-8" name="__codelineno-27-8"></a><span class="s2">"POT-Creation-Date: 2024-03-21 12:00+0000\n"</span>
+<a href="#__codelineno-27-9" id="__codelineno-27-9" name="__codelineno-27-9"></a><span class="s2">"PO-Revision-Date: 2024-03-21 12:00+0000\n"</span>
+<a href="#__codelineno-27-10" id="__codelineno-27-10" name="__codelineno-27-10"></a><span class="s2">"Last-Translator: \n"</span>
+<a href="#__codelineno-27-11" id="__codelineno-27-11" name="__codelineno-27-11"></a><span class="s2">"Language-Team: Spanish\n"</span>
+<a href="#__codelineno-27-12" id="__codelineno-27-12" name="__codelineno-27-12"></a><span class="s2">"Language: es_ES\n"</span>
+<a href="#__codelineno-27-13" id="__codelineno-27-13" name="__codelineno-27-13"></a><span class="s2">"MIME-Version: 1.0\n"</span>
+<a href="#__codelineno-27-14" id="__codelineno-27-14" name="__codelineno-27-14"></a><span class="s2">"Content-Type: text/plain; charset=UTF-8\n"</span>
+<a href="#__codelineno-27-15" id="__codelineno-27-15" name="__codelineno-27-15"></a><span class="s2">"Content-Transfer-Encoding: 8bit\n"</span>
+<a href="#__codelineno-27-16" id="__codelineno-27-16" name="__codelineno-27-16"></a><span class="s2">"Plural-Forms: nplurals=2; plural=(n != 1);\n"</span>
+<a href="#__codelineno-27-17" id="__codelineno-27-17" name="__codelineno-27-17"></a>
+<a href="#__codelineno-27-18" id="__codelineno-27-18" name="__codelineno-27-18"></a><span class="c1">#: frontend/views/admin/dashboard/list.py:38</span>
+<a href="#__codelineno-27-19" id="__codelineno-27-19" name="__codelineno-27-19"></a>msgid<span class="w"> </span><span class="s2">"Projects"</span>
+<a href="#__codelineno-27-20" id="__codelineno-27-20" name="__codelineno-27-20"></a>msgstr<span class="w"> </span><span class="s2">"Proyectos"</span>
+<a href="#__codelineno-27-21" id="__codelineno-27-21" name="__codelineno-27-21"></a>
+<a href="#__codelineno-27-22" id="__codelineno-27-22" name="__codelineno-27-22"></a>...
+<a href="#__codelineno-27-23" id="__codelineno-27-23" name="__codelineno-27-23"></a>
+<a href="#__codelineno-27-24" id="__codelineno-27-24" name="__codelineno-27-24"></a><span class="c1"># </span>
+<a href="#__codelineno-27-25" id="__codelineno-27-25" name="__codelineno-27-25"></a><span class="c1">#: frontend/views/admin/indicator/list.py:32 &lt;- JUST APPEARED</span>
+<a href="#__codelineno-27-26" id="__codelineno-27-26" name="__codelineno-27-26"></a>msgid<span class="w"> </span><span class="s2">"Indicators"</span>
+<a href="#__codelineno-27-27" id="__codelineno-27-27" name="__codelineno-27-27"></a>msgstr<span class="w"> </span><span class="s2">"Indicadores"</span><span class="w"> </span><span class="c1"># &lt;- CHANGED</span>
 </code></pre></div>
 </li>
 <li>
 <p>In the terminal, run this commands inside <code>django_project</code>:</p>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-26-1" id="__codelineno-26-1" name="__codelineno-26-1"></a>python<span class="w"> </span>manage.py<span class="w"> </span>compilemessages
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-28-1" id="__codelineno-28-1" name="__codelineno-28-1"></a>python<span class="w"> </span>manage.py<span class="w"> </span>compilemessages
 </code></pre></div>
 </li>
 </ol></div>
@@ -2179,7 +2368,7 @@ The key to reference is like this
 <span class="md-icon" title="Last update">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
 </span>
-<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="May 12, 2026 08:52:13 UTC">May 12, 2026</span>
+<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 23, 2026 11:49:06 UTC">November 23, 2026</span>
 </span>
 </aside>
 </article>
@@ -2228,7 +2417,7 @@ The key to reference is like this
 <div class="md-dialog__inner md-typeset"></div>
 </div>
 <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.code.annotate", "content.tabs.link", "header.autohide", "navigation.expand", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
-<script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+<script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
 <script src="../../../js/tablesort.js"></script>
 <script src="../../../js/mermaid-theme.js"></script>
 <script src="../../../search/worker.js"></script>
