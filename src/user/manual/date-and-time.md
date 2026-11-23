@@ -27,19 +27,53 @@ Within projects, users can configure various analysis tools to improve user comp
 
 ### Date-Time Slider
 
-The Date-Time Slider allows users to see historical values for different indicators if this data has been previously imported. This is valuable because it allows for the visualization of data and enables users to observe visual changes in values overtime.
+The Date-Time Slider allows users to see historical values for different indicators if this data has been previously imported. This is valuable because it allows for the visualization of data and enables users to observe visual changes in values over time.
 
-1. To activate the time slider, navigate to the the **General** tab of the [project management back-end page](https://unicef-drp.github.io/GeoSight-OS-Documentation/user/guide/creating-projects/). Here you will see the following:
-![image](https://github.com/user-attachments/assets/dca16e5b-c77f-4bec-be38-b5f1211e0da4)
+#### Turning on the time slider
 
-2. The default option (shown above) _turns off_ the time slider and only displays the most recent data. Uncheck this to turn on the time slider.
+1. To activate the time slider, navigate to the **General** tab of the [project management back-end page](https://unicef-drp.github.io/GeoSight-OS-Documentation/user/guide/creating-projects/). Under **Default time mode** you will see the following:
+![Default time mode settings](img/dt-settings-1.png)
 
-3. _(optional)_ Check "Fit to current indicator range" to prevent dates from other indicators being shown.
+2. When **Use last know value for all indicators (disables time slider)** is checked, the time slider is turned off and the map only displays the most recent data. Uncheck it to turn on the time slider.
 
-4. _(optional)_ Adjust the default interval
+3. _(optional)_ Check **Fit to current indicator range** so the time slider only offers the dates of the indicator layer that is currently selected, instead of the dates of all indicator layers in the project.
 
-5. _(optional)_ Uncheck "Show last known values in range" to show historical values first
+4. _(optional)_ Choose the **Default interval** (Daily, Monthly or Yearly).
 
+5. _(optional)_ **Show last known value in range** is checked by default: for every area the map shows the most recent value between the start of the range and the selected date. Uncheck it to show only the values that fall inside the selected period.
+
+These are the defaults that every visitor starts with. Visitors can change the interval and the two options on the dashboard, and the **Stop** button brings them back to these defaults.
+
+#### Using the time slider
+
+Open the time slider with the clock button in the map toolbar. It appears as a bar along the bottom of the map:
+
+![Time slider](img/dt-slider-1.png)
+
+From left to right:
+
+| Control | What it does |
+|---|---|
+| **First**, **Previous**, **Next**, **Last** | Jump to the first, previous, next or last date that has data. |
+| **Play / Pause** | Steps through the dates automatically. While playing, the button shows a pause icon. |
+| **Stop** | Stops playing and resets the time slider to the project's default time settings (interval, the two options, the full range and the latest date). |
+| **Current period** (e.g. "Feb 2026") | The selected period. Open it to pick another date from the list. Hover over it to see the exact active window, e.g. "Jan 1, 2000 – Feb 28, 2026". |
+| **Interval** | Daily, Monthly or Yearly. |
+| **Track** | Every date with data is a dot. Drag the handle (it snaps to the nearest date) or click a dot. Dark brackets mark the start and end of the range; dates outside the range are shown as light dots and cannot be selected. Year labels are shown underneath. |
+| **Settings** | Opens the range (**From** and **To**) and the two options, **Fit to current indicator range** and **Show last known value in range**. Click outside the panel or press Escape to close it. |
+| **Hide** | Closes the time slider. The clock button in the map toolbar opens it again. |
+
+![Time slider settings](img/dt-slider-2.png)
+
+#### On phones and small screens
+
+On screens up to 1000 px wide, the time slider appears as a card docked above the bottom tabs. It shows play, previous and next, the current period with its position (e.g. "Monthly · 10 of 10") and a small track. The card is hidden while the layers, filters or widgets panel is open.
+
+![Time slider on a phone](img/dt-slider-mobile-1.png)
+
+Tap the up arrow to open all the time controls in a bottom sheet: the track, all playback buttons, the interval, the range and the two options. Tap the down arrow to close the sheet again.
+
+![Time controls on a phone](img/dt-slider-mobile-2.png)
 
 ### Time Series Widget
 
