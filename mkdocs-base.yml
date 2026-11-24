@@ -167,6 +167,7 @@ nav:
           - "Guide":
               - developer/api/guide/index.md
               - "Cloud Native GIS context layer" : developer/api/guide/context-layer/cloud-native-gis.md
+              - "Dashboard": developer/api/guide/dashboard.md
           - "Manual": developer/api/manual/index.md
       # Other Dev docs not in menus:
 
