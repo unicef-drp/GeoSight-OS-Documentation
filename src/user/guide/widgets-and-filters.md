@@ -93,6 +93,6 @@ The following options allow for you to filter the data and choose what aspects t
 
     a.	Users can control the color via the color selector on the right.
 
-    b.	Syncing “with the current map/dashboard” allows for users to include all indicators, geographical units, or time periods within the map
+    b.	Syncing “with the current map/dashboard” allows for users to include all indicators, geographical units, or time periods within the map. For dates, “Sync with dashboard” shows the date range selected on the time slider; “Predefined start/end date” shows the dates set in the widget.
 
 4.	Click apply to verify the creation of the widget and save the project to complete the creation for end users. 
