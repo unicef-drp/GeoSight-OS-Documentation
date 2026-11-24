@@ -29,8 +29,9 @@ curl -X GET "https://<your-geosight-host>/api/v1/context-layers/" \
   -H "GeoSight-User-Key: <your-email-address>"
 ```
 
-Requests made without a valid token will receive an `HTTP 401 Unauthorized` response.
+Requests with a missing or invalid token are refused with an `HTTP 403 Forbidden` response, for example `{"detail": "Invalid token."}`. Endpoints that also serve public data, such as the lists, answer without a token but only return public items.
 
 ------------------------------------
 
 * [Cloud Native GIS context layer](../guide/context-layer/cloud-native-gis.md), describes common workflows for handling cloud-native GIS context layers.
+* [Dashboard](dashboard.md), describes how to create a dashboard, read its configuration and update it.
