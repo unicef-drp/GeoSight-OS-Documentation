@@ -12,7 +12,7 @@ license: This program is free software; you can redistribute it and/or modify it
 
 A dashboard, called a project in the GeoSight interface, combines indicator layers, context layers, basemaps, widgets and filters on a map.
 This section explains how to create a dashboard, read its configuration and update it through the RESTful API.
-A script or an AI assistant can use these endpoints to build dashboards from a JSON configuration.
+A script or an AI assistant can use these endpoints to build dashboards from a JSON configuration; see [Generate dashboards with AI](#generate-dashboards-with-ai).
 
 For authentication details, see the [API Guide](index.md#authentication).
 
@@ -51,7 +51,17 @@ The configuration has two parts:
 | `*_structure` | How layers and widgets are grouped and ordered. |
 
 Every `id` of an indicator, context layer, basemap or related table must already exist in GeoSight.
-Find them with the list endpoints, for example `GET /api/v1/indicators/`, `GET /api/v1/context-layers/` and `GET /api/v1/basemaps/`.
+Find them with the list endpoints:
+
+| To fill | Use | Field |
+|---|---|---|
+| `reference_layer`, `extent`, `level_config` | `GET /api/v1/reference-datasets/` | `uuid` (the identifier), `bbox` (the extent), `dataset_levels` (the admin levels) |
+| `indicators`, the indicators of `indicator_layers` | `GET /api/v1/indicators/` | `id`, `name` |
+| `basemaps_layers` | `GET /api/v1/basemaps/` | `id`, `name` |
+| `context_layers` | `GET /api/v1/context-layers/` | `id`, `name` |
+| `related_tables` | `GET /api/v1/related-tables/` | `id`, `name` |
+
+Filters refer to indicators by id, in the form `indicator_<id>.value`. For example, `indicator_318.value` with the operator `<` and the value `50` keeps the areas where indicator 318 is below 50.
 
 ------------------------------------
 
@@ -241,6 +251,59 @@ Changing them needs the share permission on the dashboard; without it, the updat
 ### Response
 
 If successful, the API returns `HTTP 200 OK` with the updated configuration, including the new `modified_at` and the ids of added items.
+
+------------------------------------
+
+## Generate dashboards with AI
+
+Because a dashboard is a JSON configuration, an AI assistant (or any script) can write it, and the API checks and saves it.
+The API checks every id and required field before saving, and answers with a list of problems if something is wrong, so the assistant can correct its own output.
+
+### What the assistant needs
+
+1. **An example configuration.** Read the configuration of an existing dashboard that has the kinds of layers and widgets you want (`GET /api/v1/dashboards/<slug>/config/`). Widget configurations in particular are easiest to copy from an example, because each widget type has its own settings.
+2. **The building blocks it may use.** The results of the list endpoints in the table above: the reference datasets, indicators, basemaps, context layers and related tables, with their ids and names.
+3. **The rules on this page.** In short:
+    - use only ids from the lists;
+    - send `reference_layer`, `extent` and `name`; everything else is optional;
+    - give each new indicator layer an unused number as `id`;
+    - copy widget configurations from the example and change only the indicators, names and aggregation;
+    - leave out `permission`, unless the sharing settings should change;
+    - when updating, keep the `id` of every item that should stay, and send `modified_at`.
+
+### Create a dashboard from a request
+
+For example, ask:
+
+> Create a dashboard called "Sample Indicator A in Somalia" on the Somalia reference dataset, opening at admin level 2, with the OpenStreetMap basemap, the "Somalia healthsites" context layer, an indicator layer for Sample Indicator A, a filter that keeps the areas where Sample Indicator A is below 50, and a summary widget with the total of Sample Indicator A.
+
+The assistant looks up the ids, writes the configuration and sends it with `POST /api/v1/dashboards/`.
+
+- On `201 Created`, open the dashboard (`/project/<slug>`) and check it.
+- On `400 Bad Request`, give the assistant the `errors` list from the response. Each entry names the field, for example `data.indicator_layers[0].indicators[0].id`, so it can fix the configuration and send it again. Nothing is saved until the whole configuration is valid.
+
+### Update a dashboard from a request
+
+For example, ask:
+
+> In the dashboard "Sample Indicator A in Somalia", change the filter to keep the areas where Sample Indicator A is above 50, and rename the widget to "Total above 50".
+
+1. The assistant reads the current configuration with `GET /api/v1/dashboards/<slug>/config/`.
+2. It changes only what was asked, keeping the ids of everything else. It can send only the changed parts, for example only `data.filters` and `data.widgets`.
+3. It sends the change with `PUT /api/v1/dashboards/<slug>/`, including the `modified_at` it read.
+4. On `409 Conflict`, someone else saved the dashboard in the meantime: the assistant reads the configuration again and reapplies the change.
+
+The dashboard keeps its address, creator, creation date, sharing settings, bookmarks and embeds.
+
+### Access
+
+The assistant works with the API key of a GeoSight user, and can only do what that user is allowed to do:
+
+- creating dashboards needs the creator role or higher;
+- updating needs edit permission on the dashboard;
+- changing sharing needs share permission.
+
+Dashboards it creates belong to that user. Use an account whose rights match what the assistant should be able to change, and keep the API key secret.
 
 ------------------------------------
 
