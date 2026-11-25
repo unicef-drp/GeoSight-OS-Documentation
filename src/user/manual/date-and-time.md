@@ -77,7 +77,10 @@ Tap the up arrow to open all the time controls in a bottom sheet: the track, all
 
 ### Time Series Widget
 
-The time series widget is a tool that shows a line-graph depicting the change in values for a specific indicator or administrative area over the time period available in the dataset.
+The time series widget is a tool that shows a line-graph depicting the change in values for a specific indicator or administrative area over time. The dates it covers depend on the widget's **Date/Time** setting:
+
+- **Sync with dashboard:** the date range selected on the time slider.
+- **Predefined start/end date:** the start and end dates set in the widget. Leave the end date empty to show data up to today.
 
 They can be controlled on the Widget page of [Project Management](https://unicef-drp.github.io/GeoSight-OS-Documentation/user/guide/creating-projects/).
 
