@@ -10,7 +10,7 @@ license: This program is free software; you can redistribute it and/or modify it
 #context_id: 1234
 ---
 
-# Widgets and FIlters
+# Widgets and Filters
 
 Widgets & filters are some of the most powerful tools on GeoSight as they allow for the multi-variate analysis of humanitarian indicators across time and space. They can highlight areas with specific needs, as well as provide various graphs that help to improve the users understanding and comprehension of the data.
 
@@ -34,65 +34,105 @@ Filters are a valuable tool that administrators can enable to allow front-end us
 
 ## Widgets
 
-Widgets allow users to create summary apps that display the data in a non-geospatial way.
+Widgets show the project's data in the widget panel of the dashboard, next to the map: totals, tables of values, charts
+and text.
 
-When adding widgets in the project management page, users have quite a few capabilities available to enhance spatial analysis and reasoning.
+### Managing widgets
 
-### Creating Widgets
-Optionally, complete the Widgets tab to create data visualization tools that allow for summary information for different indicators. 
+Open the project in the project editor and go to the **Widgets** tab. It lists the widgets of the project with their
+type.
 
-1.	Add individual widgets using the “Add Widgets” button (figure 20). 
+- **Add Widget** opens the widget editor for a new widget.
+- The **pencil** icon opens a widget in the editor.
+- The **eye** icon shows or hides the widget on the dashboard.
+- Drag a widget by its handle (the dots on the left) to change the order.
 
-    a.	Select an indicator and operation to summarize the 
+Save the project to keep the changes. Widgets created with older versions of GeoSight show "(Legacy)" next to their
+type; they keep working and can still be edited.
 
-2.	To group widgets, select “Add Group”. 
+![The Widgets tab of the project editor](img/widgets-tab.png)
 
-    a.	You can name the group by selecting the pencil icon and entering the name in the text box.
+### Creating widgets
 
-    b.	You can add widgets to the group by selecting “Add to group” or adding a single widget and dragging it into the group. 
+1. Click **Add Widget**.
+2. Pick the widget type from the **Widget type** tiles: **Value(s)**, one of the eight chart types (**Bar**, **Line**,
+   **Donut**, **Scatter**, **Heatmap**, **Treemap**, **Gauge**, **KPI**) or **Text**.
+3. Enter a **Widget name** (required) and, optionally, a **Widget description**.
+4. Set what the widget shows (see the widget types below). Switching to another tile keeps the name, the description
+   and the data settings.
+5. Click **Apply**, then **Save** the project.
 
-Similarly, groups can be nested within one another, but a widget must be present within a group as well for the group to save. 
+All widget editors have the same layout, in a window of the same size: the widget type and the general settings on the
+left, the data settings in the middle and a live **Preview** on the right that updates as you change the settings. Each
+column scrolls on its own, and **Apply** stays in the lower right corner. On a smaller screen the preview moves above
+the data settings; on a phone everything is in one column, with the preview first.
 
-#### Summary Group Widget
-	The summary group widget is quite similar to a standard widget for a single indicator. However, it enables the analysis of multiple indicators instead of just one. 
+![The widget editor: widget type tiles and settings on the left, data in the middle, the preview on the right](img/chart-editor.png)
 
-![Summary Group Widget](image-20.png)
+The data settings are the same for the value(s) and the charts:
 
-##### Creating Summary Group Widgets
+- **Aggregation** (value(s), and charts that combine values): how the values are combined: SUM, MIN, MAX, AVG, COUNT or
+  COUNT_UNIQUE. **Decimal places** and **Auto units** (for example 1.5M instead of 1,500,000) set how the numbers are
+  shown (for charts, in their own **Number format** section): with **Decimal places** on, every number shows exactly
+  that many decimals, in the value(s), the tables and the charts.
+- **Indicators**: a **Predefined list** of indicators, or **Sync with the current map** to use the indicators of the
+  layers shown on the map.
+- **Geographical units**: a **Predefined list** of areas, or **Sync with the current map** to use the areas on the map
+  (including the ones left by the filters).
 
-1.	Add individual widgets using the “Add Widgets” button.
+In a **Predefined list**, the left-hand list shows each indicator with its short code in brackets, for example
+"Sample Indicator B (SOM_TEST_IND_B)", and each area with its code. Type in the search box to filter by name or code
+(upper or lower case). To add items, select one or more and click the arrow, or double-click an item.
 
-    a.	Select an indicator and operation to summarize the 
+![The indicator list filtered by "som_test": the short codes are in brackets, Sample Indicator B is added on the right](img/widget-list-picker.png){ width="500" }
+- **Date/Time**: **Sync with dashboard** to follow the dashboard date, or a **Predefined start/end date**.
 
-2.	To group widgets, select “Add Group”. 
+#### Value(s) widgets
 
-    a.	You can name the group by selecting the pencil icon and entering the name in the text box.
+A value(s) widget (called *Summary widget* in the Widgets tab) shows one value, for example the total of an indicator.
+With **Group By** set to **Geographical units** or **Indicators**, it shows a table with one value per area or per
+indicator. **Sort by** orders the table by value, name or code, and **Top N** keeps only the first values.
 
-    b.	You can add widgets to the group by selecting “Add to group” or adding a single widget and dragging it into the group
+With **Group By** set to **Geographical units**, **Link areas to the map** (on by default) makes the area names in the
+table clickable: a click zooms the map to the area and outlines it, and highlights its row; a second click clears it.
+Every second row of the table is shaded, and the row under the pointer is highlighted.
 
-#### Time Series Widgets
+![The widget editor for a value(s) widget grouped by area, with the table in the preview](img/widget-summary-editor.png)
 
-Users can create widgets that display the time series of an indicator to understand how a given value has changed overtime. Importantly, not only can users display this data in a graph, but they can also display the different values on the map as well. By navigating to the time pop-up on the bottom of the dashboard, you can change the date of the data displayed. 
+![A table on the dashboard: Bay selected on the map](img/widget-summary-table.png){ width="300" }
 
-To manage time series widgets, it is important to have multiple instances of data uploaded for a single indicator and reference dataset. This can be completed by importing data. 
+#### Text widgets
 
-By navigating to project management and then the Widgets tab, users can find, add and create these widgets. 
+A text widget shows your own text: a title and introduction for the dashboard, notes on the data, links to reports.
+Write it in the **Text** field in [Markdown](https://www.markdownguide.org/basic-syntax/): headings (`#`), **bold**,
+*italic*, lists, tables, links and images. HTML works too, with inline styles for colour, background, font, size,
+weight and alignment, for example:
 
-![Time Series Widget](image-21.png)
+```html
+<p style="color: #1a6ccc; font-size: 1.1rem; font-weight: 600">Updated monthly</p>
+```
 
-##### Creating Time Series Widgets
-When creating these widgets users have a range of capabilities and can filter a variety of aspects for indicators to create either a generalized or highly specific time series. Similarly, they can dictate the display of administrative units and target areas of interest for enhanced analysis. 
+Links open in a new tab. Links and images must use `https://` (or `http://`); scripts, event handlers and other unsafe
+content are removed, and styles that are not in the list above are ignored. An image needs the address of the image
+file itself (ending in `.png`, `.jpg`, `.svg`…), not of a web page that shows it; share links of file-hosting services
+(Google Drive, OneDrive, Dropbox) usually point to a page, and some websites refuse to show their images on other
+sites.
 
-1.	When adding a widget, select “Time Series Widget”
+![The widget editor for a text widget, with the preview](img/widget-text-editor.png)
 
-2.	The Series option allows you to decide if you would like to display and compare either indicators, or specific geographical areas
+#### Time series widgets
 
-The following options allow for you to filter the data and choose what aspects to highlight during the display of your widget.
+New time series are made with the **Line** chart: it shows values over time, one line per area or indicator, by date,
+month or year, follows the time slider, and lets viewers pick the indicator when several are shown. Time series widgets
+created before keep working on the dashboard and can still be edited; they show a **Time series** tile in the editor.
 
-3.	By selecting the values and then clicking the arrow within the filter, users can determine what indicators, geographical units or time periods to display within the time series widget. 
+On the dashboard, time series show the date range selected on the time slider when **Date/Time** is **Sync with
+dashboard**, and the dates set in the widget when it is **Predefined start/end date** (see
+[Date and Time](../manual/date-and-time.md)).
 
-    a.	Users can control the color via the color selector on the right.
+#### Chart widgets
 
-    b.	Syncing “with the current map/dashboard” allows for users to include all indicators, geographical units, or time periods within the map. For dates, “Sync with dashboard” shows the date range selected on the time slider; “Predefined start/end date” shows the dates set in the widget.
+A chart widget shows the data as a bar, line, donut, scatter, heatmap, treemap, gauge or KPI chart. Clicking an area in
+a chart selects it on the map. See [Chart Widgets](chart-widgets.md).
 
-4.	Click apply to verify the creation of the widget and save the project to complete the creation for end users. 
+![A bar chart widget with a target line](img/chart-bar.png){ width="300" }
