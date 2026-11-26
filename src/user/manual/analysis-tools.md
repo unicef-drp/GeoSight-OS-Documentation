@@ -19,10 +19,16 @@ Since GeoSight is a geospatial analysis and visualization, it provides a wide ra
 Widgets & filters are some of the most powerful tools on GeoSight as they allow for the multi-variate analysis of humanitarian indicators across time and space. They can highlight areas with specific needs, as well as provide various graphs that help to improve the users understanding and comprehension of the data.
 
 ## Compare Layers
-The Compare Layers tool is a unique data visualization tool that allows for the direct display of two indicators, within their respective classes, on the one map that occupies the dashboard. The tool can be activated on a project by selecting the compare layers button   which is located at the top of the project. 
+The Compare Layers tool is a unique data visualization tool that allows for the direct display of two indicators, within their respective classes, on the one map that occupies the dashboard. The tool can be activated on a project by selecting the compare layers button, which is located at the top of the project. 
 This enables the unique data visualization feature where one indicator becomes an outline, reflecting the same class and a secondary indicator fills in the polygon. This allows users to assess the difference in classes between indicators by district. At the same time, the legends of both indicators are provided which allows users to understand precisely what the color differences indicate. 
 
 ![Compare Layers Tool](image-3.png)
+
+## Side by Side View
+
+The Side by Side View tool shows up to four indicator layers next to each other, each on its own map. Activate it with the side by side view button at the top of the project, then select the indicator layers to show. The tool is only available when the project administrator has turned it on in the project's Tools tab.
+
+While the side by side view is on, a sync button (chain icon) appears next to it. When sync is on, moving or zooming one map moves all maps together. Turn it off to move each map on its own.
 
 ## 3D Layers
 
@@ -70,9 +76,18 @@ Users can have multiple measurements at once.
 
 ## Bookmarks
 
-In order to preserve any analysis that a user may develop, they have the capability to create Bookmarks. These bookmarks capture the current view and returns the user to that view anytime the bookmark is selected. 
+In order to preserve any analysis that a user may develop, they have the capability to create Bookmarks. These bookmarks capture the current view and return the user to that view anytime the bookmark is selected. 
 
-To create a bookmark, click the Bookmark star, click “Create New”, enter a name, and save.
+A bookmark saves:
+
+- the map extent, position, tilt and 3D view;
+- the basemap, the selected indicator layers and context layers, and their transparency;
+- the filters and the selected admin level;
+- the map mode: Compare Layers, Side by Side View (including whether the maps move in sync), or neither.
+
+Selecting a bookmark restores all of these. A bookmark saved without a map mode turns Compare Layers and Side by Side View off. The **Default** bookmark returns the project to its initial view, with both map modes off.
+
+To create a bookmark, click the Bookmark star, click **Save As...**, enter a **Bookmark Name** and click **Submit**. To update a bookmark you created, click its pencil icon and submit; it then saves the current view.
 
 ## Downloading Data
 Through the front-end of a project, users can download the available and currently visualized dataset. On the main toolbar, simply select the download button that is shaped like a downward facing arrow. 
