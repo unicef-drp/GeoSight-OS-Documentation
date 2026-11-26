@@ -78,6 +78,7 @@ nav:
           - Importing Data: user/guide/importing_data.md
           - Related Tables: user/guide/related-tables.md
           - Widgets and Filters: user/guide/widgets-and-filters.md
+          - Chart Widgets: user/guide/chart-widgets.md
           - Adding Users and Groups: user/guide/adding-users-groups.md
           - Sharing: user/guide/sharing.md
           - Access Requests: user/guide/access-request-guide.md
@@ -150,6 +151,7 @@ nav:
           - Testing: developer/manual/testing.md
           - Plugins: developer/manual/plugins.md
           - Translations: developer/manual/translations.md
+          - Chart Widget: developer/manual/chart-widget.md
           - Workflows:
               - developer/manual/workflows/index.md
               - "Github": developer/manual/workflows/github.md
