@@ -12,7 +12,7 @@ license: This program is free software; you can redistribute it and/or modify it
 #context_id: 1234
 ---
 # Projects 
-The project creation page allows users to add, edit and manipulate projects that they have access to. Each project consists of 8 main elements which you can find in the Project Menu as well as sharing controls. 
+The project creation page allows users to add, edit and manipulate projects that they have access to. Each project consists of the following elements, which you can find in the Project Menu, as well as sharing controls.
 
 1.	General -  incorporates basic metadata including the reference dataset, a description and allows users to set the extent of the dashboard.
 
@@ -30,4 +30,8 @@ The project creation page allows users to add, edit and manipulate projects that
 
 8.	Related tables – enables users to connect related tables to the project as well as filter the data so it can be added as indicator layers.
 
-9.	[Share](share.md) -  controls the ability of users, groups or the public to access the project.
+9.	Tools – turns the map tools of the project (for example zonal analysis and measurement) on or off and configures them.
+
+10.	[Story Map](story-map.md) – creates a guided story of map views (story pages) for the project, with an optional full-screen presentation mode.
+
+11.	[Share](share.md) -  controls the ability of users, groups or the public to access the project.
